@@ -1,0 +1,72 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+}
+
+.footer__vk,
+.footer__inst,
+.footer__facebook {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+}
+
+.footer__social-media-list {
+  display: flex;
+}
+
+.footer__social-media-item { 
+  margin-right: 20px;
+}
+
+.footer__social-media-item:last-child {
+  margin-right: 0;
+}
+
+.footer__vk {
+  background-image: url(../img/vk.svg);
+}
+
+.footer__inst {
+  background-image: url(../img/instagram.svg);
+}
+
+.footer__facebook {
+  background-image: url(../img/fb.svg);
+}
+
+.footer__vk:hover,
+.footer__vk:focus {
+  cursor: pointer;
+  background-image: url(../img/vk-hover-focus.svg);
+}
+
+.footer__vk:active {
+  background-image: url(../img/vk-active.svg);
+}
+
+.footer__inst:hover,
+.footer__inst:focus {
+  cursor: pointer;
+  background-image: url(../img/instagram-hover-focus.svg);
+}
+
+.footer__inst:active {
+  background-image: url(../img/instagram-active.svg);
+}
+
+.footer__facebook:hover,
+.footer__facebook:focus {
+  cursor: pointer;
+  background-image: url(../img/fb-hover-focus.svg);
+}
+
+.footer__facebook:active {
+  background-image: url(../img/fb-active.svg);
+}

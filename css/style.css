@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: var(--main-color);  
+  font-family: 'Open Sans', Arial, sans-serif;  
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1;
+}
+
+button, input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, p, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+/* container */
+
+.container {
+  max-width: 1920px;   
+  margin: 0 auto;
+  padding: 0 160px;  
+}
+
+:root {
+  --main-color: rgba(255, 255, 255, 1);
+  --add-color: #9D5CD0;
+  --text-color: rgba(51, 51, 51, 1);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+/* при работе с float */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

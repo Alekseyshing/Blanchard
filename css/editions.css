@@ -1,0 +1,228 @@
+.editions__container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.editions__header {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.editions__categories-header,
+.editions__form-header  {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.editions__form-header {
+  margin-bottom: 10px;
+}
+
+.editions__categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  min-height: 379px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.editions__item {
+  display: block;
+  font-weight: 400;
+  width: 350px;
+  transition: all .3s ease-in-out;
+}
+
+.editions__item:focus {
+  color: #C283F3;
+}
+
+.editions__price-form {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 277px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.editions__min-price,
+.editions__max-price {
+  max-width: 73px;
+  padding: 4px 0px 7px 10px;
+  border: none;
+  background-color: rgba(157, 92, 208, 0.5);
+  color: #ffffff;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+.editions__before,
+.editions__from,
+.editions__currency {
+  padding: 0 10px;
+}
+
+.editions__min-price::placeholder,
+.editions__max-price::placeholder {
+  color: #ffffff;
+}
+
+.editions__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editions__swiper {
+  max-width: 1160px;
+}
+
+.editions__swiper-container {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.editions__swiper-slider{
+  width: 100%;
+  min-height: 520px;
+}
+
+.editions__swiper-pagination {
+  display: flex;
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  max-width: 50px;
+  max-height: 23px;
+}
+
+.editions__swiper-pagination-current,
+.editions__swiper-pagination-total {
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--main-color);
+}
+
+.editions__swiper-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  max-width: 135px;
+}
+
+.editions__button-prev,
+.editions__button-next {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.editions__image-slide {
+  min-width: 350px !important; 
+  cursor: pointer;
+}
+
+.editions__button-prev {
+  background-image: url(../img/btn-prev.svg);
+}
+
+.editions__button-next {
+  background-image: url(../img/btn-next.svg);
+}
+
+.editions__image-slide {
+  color: #fff;
+}
+
+.editions__slyder-img {
+  margin-bottom: 15px;
+}
+
+.editions__article-text-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.editions__block-left-element {
+  font-weight: 700;
+  font-style: 16px;
+  line-height: 21px;
+}
+
+.editions__block-price {
+  font-style: italic;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 21px;
+}
+
+.editions__article-text {
+  margin-bottom: 20px;
+}
+
+.editions__article-btn {
+  position: relative;
+  padding: 8px 16px;
+  border: 2px solid var(--add-color);
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--main-color);
+  transition: all .3s ease-in-out;
+}
+
+.editions__label:hover {
+  color: #C283F3;
+}
+
+.editions__min-price:hover,
+.editions__max-price:hover {
+  background-color: var(--add-color);
+  cursor: pointer;
+}
+
+.editions__min-price:focus,
+.editions__max-price:focus {
+  background-color: var(--add-color);
+  border: 1px solid #ffffff;
+}
+
+.editions__min-price:active,
+.editions__max-price:active {
+  background-color: var(--add-color);
+  border: 1px solid transparent;
+}
+
+.editions__article-btn:hover,
+.editions__article-btn:focus {
+  background-color: var(--add-color);
+}
+
+.editions__article-btn:active {
+  background-color: var(--add-color);
+  border: 2px solid #7943A4;
+}
+

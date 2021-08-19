@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.hero__container {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 45px;
+  z-index: 1;
+}
+
+.hero__container::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hero__header {
+  max-width: 597px;
+  margin-bottom: 20px;
+  font-size: 72px;
+  line-height: 82px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.hero__text {
+  max-width: 597px;
+  margin-bottom: 90px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.hero__btn {
+  position: relative;
+  padding: 22px 35px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  color: var(--main-color);
+  background-color: var(--add-color);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.hero__btn:after {
+  position: absolute;
+  content: '';
+  padding: 27px 40px;
+  width: 330px;
+  height: 84px;
+  top: -8px;
+  right: 0;
+  bottom: 0;
+  left: -8px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.hero__swiper-container {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.hero .hero__swiper-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 112%;
+  overflow-x: hidden;
+}
+
+.hero__swiper-slide-active {
+  animation: zoomImage infinite 7s ease-in-out;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@keyframes zoomImage {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero__swiper-wrapper {
+  width: 100%;
+  height: 800px;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero__btn:hover {
+  border: 3px solid #D1A9F0;
+}
+
+.hero__btn:active {
+  background-color: #7943A4;
+  border: 3px solid #D1A9F0;
+}
+
+.hero__btn:focus-visible::after {
+  border: 2px solid #C283F3;
+}
+

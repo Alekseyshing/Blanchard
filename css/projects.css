@@ -1,0 +1,202 @@
+.projects__container {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.projects__header {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.projects__description {
+  max-width: 1100px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.projects__description-ref {
+  color: var(--add-color);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.projects__description-ref:hover {
+  border-bottom: 1px solid var(--add-color);
+}
+
+.projects__description-ref:focus-visible {
+  background-color: var(--add-color);
+  color: #ffffff;
+}
+
+.projects__description-ref:active {
+  border-bottom: 1px solid #7943A4;
+  color: #7943A4;
+}
+
+.projects__partners-header {
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.projects__main-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 160px;
+}
+
+.projects__swiper-container {
+  width: 1450px;
+  height: 160px;
+}
+
+.projects__sw-slide {
+  cursor: pointer;
+  display: block;
+  max-height: 150px;
+  border: none;
+  filter: grayscale(100%);
+  opacity: 0.4;
+  transition: all 200ms ease-in-out;
+}
+
+.projects__sw-img {
+  display: block;
+}
+
+.projects__sw-slide:focus {
+  filter: grayscale(0%);
+  opacity: 1;
+  border: 1px solid var(--add-color);
+}
+
+.projects__sw-slide:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.projects__button-prev,
+.projects__button-next {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  filter: grayscale(100%);
+  opacity: 0.4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+}
+
+.projects__button-prev:hover,
+.projects__button-next:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.projects__button-prev {
+  background-image: url(../img/project-btn-prev.svg);
+}
+
+.projects__button-next {
+  background-image: url(../img/project-btn-next.svg);
+}
+
+.projects__tooltip__span {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/i\ -\ Тултип.svg);
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+}
+
+.projects__tooltip__span:hover,
+.projects__tooltip__span:focus { 
+  background-image: url(../img/tooltip-hover-focus.svg);
+}
+
+.projects__tooltip__span:active { 
+  background-image: url(../img/i\ -\ active.svg);
+}
+
+.tippy-box[data-theme~='light-1'] {
+  display: flex;
+  text-align: center;
+  width: 300px;
+  padding: 8px 11px 22px 11px;
+  background-color: var(--add-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tippy-box[data-theme~='light-2'] {
+  display: flex;
+  width: 264px;
+  padding: 7px 11px 19px 11px;
+  background-color: var(--add-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tippy-box[data-theme~='light-3'] {
+  display: flex;
+  text-align: center;
+  max-width: 250px;
+  height: 42px;
+  padding: 7px 5px 19px 5px;
+  background-color: var(--add-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tippy-box .tippy-arrow:before {
+  color: var(--add-color) !important; 
+}
+
+.projects__button-prev:hover {
+  background-image: url(../img/btn-4-prev-hover.svg);
+}
+
+.projects__button-next:hover {
+  background-image: url(../img/btn-4-next-hover.svg);
+}
+
+.projects__button-prev:focus {
+  background-image: url(../img/btn-4-prev-focus.svg);
+}
+
+.projects__button-next:focus {
+  background-image: url(../img/btn-4-next-focus.svg);
+}
+
+.projects__button-prev:active {
+  background-image: url(../img/btn-4-prev-active.svg);
+}
+
+.projects__button-next:active {
+  background-image: url(../img/btn-4-next-active.svg);
+}
+
+.projects__button-prev .swiper-button-disabled {
+  background-image: url(../img/btn-4-prev-disable.svg);
+}
+
+.projects__button-next .swiper-button-disabled {
+  background-image: url(../img/btn-4-next-disable.svg);
+}
