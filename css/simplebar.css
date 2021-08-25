@@ -12,8 +12,8 @@
 
 .simplebar-track.simplebar-vertical {
   position: absolute;
-  top: 40px;
-  right: 19px;
+  top: 0;
+  right: 0;
   width: 11px;
   visibility: visible !important;
   background-color: #000000;
@@ -22,158 +22,31 @@
   opacity: 1;
 }
 
-.header__scroll-1,
-.header__scroll-2,
-.header__scroll-3,
-.header__scroll-4,
-.header__scroll-5 {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  display: none;
-  z-index: 1;
-  padding: 40px;
-  padding-right: 0;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.6);
+.simplebar-visible {
+  transform: translate3d(0px, 190px, 0px)
 }
 
 .header__scroll-1-inactive {
   display: inline-block;
 }
 
-.header__scroll-list-item {
-  width: 220px;
-  height: 40px;
-  margin-bottom: 20px;
-  padding: 9px 0 12px 14px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #ffffff;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: rgba(216, 143, 153, 1);
-  text-align: start;
-  transition: all .3s ease-in-out;
-}
-
-.header__scroll-list-item:last-child {
-  margin-bottom: 0;
-}
-
-.header__scroll-list-item-1 {
-  background-image: url(../img/scroll-img1.png);
-}
-
-.header__scroll-list-item-2 {
-  background-image: url(../img/scroll-img2.png);
-}
-
-.header__scroll-list-item-3 {
-  background-image: url(../img/scroll-img3.png);
-}
-
-.header__scroll-list-item-4 {
-  background-image: url(../img/scroll-img4.png);
-}
-
-.header__scroll-list-item:last-child {
-  margin-bottom: 0;
-}
-
-.header__scroll-2 {
-  top: 28px;
-  left: 175px;
-}
-
 .simplebar-track.simplebar-horizontal {
   visibility: hidden;
 }
 
-.header__scroll-list-item-5 {
-  background-image: url(../img/scroll-img5.png);
+.header__item-link::before {
+
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid transparent;
 }
 
-.header__scroll-list-item-6 {
-  background-image: url(../img/scroll-img6.png);
-}
 
-.header__scroll-list-item-7 {
-  background-image: url(../img/scroll-img7.png);
-}
-
-.header__scroll-list-item-8 {
-  background-image: url(../img/scroll-img8.png);
-}
-
-.header__scroll-3 {
-  top: 28px;
-  left: 425px;
-}
-
-.header__scroll-list-item-9 {
-  background-image: url(../img/scroll-img9.png);
-}
-
-.header__scroll-list-item-10 {
-  background-image: url(../img/scroll-img10.png);
-}
-
-.header__scroll-list-item-11 {
-  background-image: url(../img/scroll-img11.png);
-}
-
-.header__scroll-list-item-12 {
-  background-image: url(../img/scroll-img12.png);
-}
-
-.header__scroll-4 {
-  top: 28px;
-  left: 705px;
-}
-
-.header__scroll-list-item-13 {
-  background-image: url(../img/scroll-img13.png);
-}
-
-.header__scroll-list-item-14 {
-  background-image: url(../img/scroll-img14.png);
-}
-
-.header__scroll-list-item-15 {
-  background-image: url(../img/scroll-img15.png);
-}
-
-.header__scroll-list-item-16 {
-  background-image: url(../img/scroll-img16.png);
-}
-
-.header__scroll-5 {
-  top: 28px;
-  left: 905px;
-}
-
-.header__scroll-list-item-17 {
-  background-image: url(../img/scroll-img17.png);
-}
-
-.header__scroll-list-item-18 {
-  background-image: url(../img/scroll-img18.png);
-}
-
-.header__scroll-list-item-19 {
-  background-image: url(../img/scroll-img19.png);
-}
-
-.header__scroll-list-item-20 {
-  background-image: url(../img/scroll-img20.png);
-}
-
-.header__scroll-list-item:hover,
-.header__scroll-list-item:focus-visible {
-  outline: 2px solid var(--add-color);
+.header__item-link:hover,
+.header__item-link:focus-visible {
+  border: 2px solid var(--add-color);
   cursor: pointer;
 }
 

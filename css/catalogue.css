@@ -124,14 +124,6 @@
   justify-content: space-between;
 }
 
-.catalogue__item {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #cacaca;
-  transition: all .3s ease-in-out;
-}
-
 .ui-accordion-content {
   padding: 15px 0;
 }
@@ -154,7 +146,7 @@
   display: block;
 }
 
-.catalogue__article-first::before {
+.catalogue__article--first::before {
   content: '';
   display: block;
   position: absolute;
@@ -167,7 +159,20 @@
   background-repeat: no-repeat;
 }
 
-.catalogue__article-second::before {
+.catalogue__article--second::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 470px;
+  background-image: url(../img/emptyartist.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catalogue__article--third::before {
   content: '';
   display: block;
   position: absolute;
@@ -175,7 +180,46 @@
   left: 0;
   width: 750px;
   height: 100%;
-  background-image: url(../img/emptyartist.png);
+  background-image: url(../img/Codexaureus.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalogue__article--fourth::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 750px;
+  height: 100%;
+  background-image: url(../img/HansBurgkmair.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalogue__article--fifth::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 750px;
+  height: 100%;
+  background-image: url(../img/SemeonCherniy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalogue__article--six::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 750px;
+  height: 100%;
+  background-image: url(../img/HieronymusBosch.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -211,8 +255,24 @@
 }
 
 .catalogue__item {
+  position: relative;
+  border-top: 1px solid #cacaca;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  transition: all .3s ease-in-out;
+}
+
+.catalogue__item:hover .catalogue__accordion-header {
+  border-color: var(--add-color);
+}
+
+.catalogue__item:hover + .catalogue__item .catalogue__accordion-header {
+  border-color: var(--add-color);
+}
+
+.catalogue__item:last-child:hover {
+  border-top: 1px solid var(--add-color);
 }
 
 .catalogue__accordion-header {
@@ -231,6 +291,7 @@
   font-size: 24px;
   line-height: 32px;
   color: var(--text-color);
+  /* border-top: 1px solid #cacaca; */
   transition: all 200ms ease-in-out;
 }
 
@@ -314,10 +375,13 @@
 
 .catalogue__item:hover {
   cursor: pointer;
-  border-top: 1px solid var(--add-color);
-  border-bottom: 1px solid var(--add-color);
+  border-color: var(--add-color);
   color: var(--add-color);
   background-color: transparent;
+}
+
+.catalogue__item:focus-visible { 
+  border-color: var(--add-color);
 }
 
 .catalogue__item:hover .catalogue__accordion-button {
@@ -347,10 +411,24 @@
   color: #7943A4;
 }
 
+.catalogue__item:hover + .catalogue__item {
+  border-color: var(--add-color);
+}
+
+.catalogue__item:focus {
+  border: 1px solid transparent;
+}
+
+.catalogue__item:hover > .ui-accordion-header-active {
+  border-color: var(--add-color);
+}
+
+
 .ui-accordion-header-active.catalogue__accordion-header {
   border-top: 1px solid var(--add-color);
   border-bottom: 1px solid var(--add-color);
 }
+
 
 .ui-accordion-header-active.catalogue__accordion-header span {
   background-image: url(../img/ui-is-active.svg);
@@ -364,19 +442,15 @@
   cursor: pointer;
 }
 
-.catalogue__accordion-header:hover {
-  background-color: none;
-}
-
-.catalogue__accordion-header:hover .catalogue__header-text {
+.catalogue__accordion-header:hover:not(focus-visible) {
   color: var(--add-color);
 }
 
-.catalogue__accordion-header:focus-visible {
+.catalogue__accordion-header:focus-visible:not(hover) {
   color: var(--main-color);
 }
 
-.catalogue__accordion-header:focus-visible .catalogue__header-text {
+.catalogue__accordion-header:focus-visible:not(hover) {
   background-color: var(--add-color);
 }
 
@@ -410,4 +484,102 @@
 .catalogue__fl-btn:active::before {
   border: 2px solid #7943A4;
   box-shadow: none;
+}
+
+.catalogue__block {
+  display: flex;
+  padding-left: 800px;
+  max-width: 800px;
+}
+
+@media (max-width: 1740px) {
+  .catalogue__description {
+    margin-bottom: 32px;
+  }
+
+  .catalogue__accordion {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 1620px) {
+  .catalogue__accordion {
+    min-width: 650px;
+  }
+}
+
+@media (max-width: 1590px) {
+  .catalogue__accordion {
+    min-width: 550px;
+  }
+}
+
+@media (max-width: 1470px) {
+  .catalogue__container {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  .catalogue__description {
+    margin-bottom: 32px;
+  }
+
+  .catalogue__accordion {
+    min-width: 650px;
+  }
+
+  .catalogue__article {
+    padding-top: 305px;
+    left: -550px;
+    width: 437px;
+  }
+
+  .catalogue__article-first::before {
+    height: 274px;
+    background-image: url(../img/acc-img-dominico-1024.jpg);
+  }
+
+  .catalogue__article-second::before {
+    top: 0;
+    left: 0;
+    width: 437px;
+    height: 274px;
+    background-image: url(../img/emptyartist1024.jpg);
+  }
+
+  .catalogue__date {
+    margin-bottom: 5px;
+  }
+
+  .catalogue__artists-list {
+    align-content: space-between;
+    max-width: 507px;
+    max-height: 420px;
+  }
+
+  .ui-accordion-content {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+
+  .catalogue__persons-item {
+    max-height: 33px;
+  }
+
+  .catalogue__persons-btn {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1324px) {
+  .catalogue__accordion {
+    min-width: 437px;
+  }
+
+  .catalogue__article {
+    padding-top: 305px;
+    left: -487px;
+    width: 437px;
+  }
+
 }

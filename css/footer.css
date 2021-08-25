@@ -1,9 +1,12 @@
+.footer {
+  background-color: #000000;
+}
+
 .footer__container {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #000000;
 }
 
 .footer__vk,
@@ -69,4 +72,25 @@
 
 .footer__facebook:active {
   background-image: url(../img/fb-active.svg);
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer__social-media-list {
+    justify-content: space-between;
+    min-width: 240px;
+  }
+
+  .footer__vk,
+  .footer__inst,
+  .footer__facebook {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
 }

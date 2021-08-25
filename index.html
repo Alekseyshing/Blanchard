@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/customselect.css">
   <link rel="stylesheet" href="css/customcheckbox.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/dropdown.css">
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/about.css">
@@ -57,12 +58,12 @@
         <div id="burger" class="header__burger">
           <span class="header__burger-span"></span>
         </div>
-        <div id="header-logo" class="header__logo">
+        <a id="header-logo" class="header__logo">
           <img src="img/logo.png" alt="blanchard-logo" class="header__img">
-        </div>
+        </a>
         <div class="header__navigation-area">
-          <nav class="header__nav">
-            <ul id="menu" class="header__nav-list">
+          <nav class="header__nav" id="menu">
+            <ul class="header__nav-list">
               <li class="header__nav-list-item">
                 <a href="" class="header__nav-link header__nav-link-about" onclick="event.preventDefault()">О нас</a>
               </li>
@@ -89,88 +90,131 @@
                   onclick="event.preventDefault()">Контакты</a>
               </li>
             </ul>
-            <div class="header__enter" tabindex="0">
+            <button type="button" class="header__enter-btn" onclick="event.preventDefault()">
               <span class="header__enter-span"></span>
-              <a href="" class="header__enter-link" onclick="event.preventDefault()" tabindex="-1">Войти</a>
-            </div>
+              <p class="header__enter-btn-text">Войти</p>
+            </button>
           </nav>
+          <button type="button" id="search-btn" class="header__search-menu">
+            <span class="header__search-menu-span"></span>
+          </button>
+          <form class="header__form" id="search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <button type="submit" class="header__search-btn"></button>
+            <label>
+              <span class="visually-hidden">
+                Введите текст для поиска
+              </span>
+              <input id="input-search-name" type="text" placeholder="Поиск по сайту" name="input-search-name"
+                class="header__input">
+            </label>
+          </form>
         </div>
       </div>
       <div class="header__navigation-area-buttom">
         <nav class="header__nav-buttom">
           <ul class="header__nav-buttom-list">
             <li class="header__nav-buttom-item">
-              <button id="select-1" type="button" class="header__select">
+              <button class="header__select" data-path="eight">
                 <p class="header__select-text">Реализм</p>
                 <span class="header__select-arrow"></span>
               </button>
-              <div class="header__scroll-1" id="scroll-bar-1" data-simplebar>
-                <button class="header__scroll-list-item header__scroll-list-item-1">Тинторетто</button>
-                <button class="header__scroll-list-item header__scroll-list-item-2">Фридрих</button>
-                <button class="header__scroll-list-item header__scroll-list-item-3">Леонардо</button>
-                <button class="header__scroll-list-item header__scroll-list-item-4">Верроккьо</button>
+              <div class="header__dropdown" data-target="eight">
+                <div class="header__dropdown-wrap" data-simplebar>
+                  <ul class="header__drop-list">
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--1">Тинторрето</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--2">Фридрих</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--3">Леонардо</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--4">Верроккьо</a></li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="header__nav-buttom-item">
-              <button id="select-2" type="button" class="header__select">
+              <button class="header__select" data-path="nine">
                 <p class="header__select-text">Импрессионизм</p>
                 <span class="header__select-arrow"></span>
               </button>
-              <div class="header__scroll-2" id="scroll-bar-2" data-simplebar>
-                <button class="header__scroll-list-item header__scroll-list-item-5">Моне</button>
-                <button class="header__scroll-list-item header__scroll-list-item-6">Сислей</button>
-                <button class="header__scroll-list-item header__scroll-list-item-7">Мане</button>
-                <button class="header__scroll-list-item header__scroll-list-item-8">Ренуар</button>
+              <div class="header__dropdown" data-target="nine">
+                <div class="header__dropdown-wrap" data-simplebar>
+                  <ul class="header__drop-list">
+                    <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--5">Моне</a>
+                    </li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--6">Сислей</a></li>
+                    <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--7">Мане</a>
+                    </li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--8">Ренуар</a></li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="header__nav-buttom-item">
-              <button id="select-3" type="button" class="header__select">
+              <button class="header__select" data-path="ten">
                 <p class="header__select-text">Постимпрессионизм</p>
                 <span class="header__select-arrow"></span>
               </button>
-              <div class="header__scroll-3" id="scroll-bar-3" data-simplebar>
-                <button class="header__scroll-list-item header__scroll-list-item-9">Ван Гог</button>
-                <button class="header__scroll-list-item header__scroll-list-item-10">Сезанн</button>
-                <button class="header__scroll-list-item header__scroll-list-item-11">Гоген</button>
-                <button class="header__scroll-list-item header__scroll-list-item-12">Сёра</button>
+              <div class="header__dropdown" data-target="ten">
+                <div class="header__dropdown-wrap" data-simplebar>
+                  <ul class="header__drop-list">
+                    <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--9">Ван
+                        Гог</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--10">Сезанн</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--11">Гоген</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--12">Сёра</a></li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="header__nav-buttom-item">
-              <button id="select-4" type="button" class="header__select">
+              <button class="header__select" data-path="eleven">
                 <p class="header__select-text">Авангард</p>
                 <span class="header__select-arrow"></span>
               </button>
-              <div class="header__scroll-4" id="scroll-bar-4" data-simplebar>
-                <button class="header__scroll-list-item header__scroll-list-item-13">Кандинский</button>
-                <button class="header__scroll-list-item header__scroll-list-item-14">Маринетти</button>
-                <button class="header__scroll-list-item header__scroll-list-item-15">Малевич</button>
-                <button class="header__scroll-list-item header__scroll-list-item-16">Пикассо</button>
+              <div class="header__dropdown" data-target="eleven">
+                <div class="header__dropdown-wrap" data-simplebar>
+                  <ul class="header__drop-list">
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--13">Кандинский</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--14">Маринетти</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--15">Малевич</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--16">Пикассо</a></li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="header__nav-buttom-item">
-              <button id="select-5" type="button" class="header__select">
+              <button class="header__select" data-path="twelve">
                 <p class="header__select-text">Футуризм</p>
                 <span class="header__select-arrow"></span>
               </button>
-              <div class="header__scroll-5" id="scroll-bar-5" data-simplebar>
-                <button class="header__scroll-list-item header__scroll-list-item-17">Кандинский</button>
-                <button class="header__scroll-list-item header__scroll-list-item-18">Маринетти</button>
-                <button class="header__scroll-list-item header__scroll-list-item-19">Малевич</button>
-                <button class="header__scroll-list-item header__scroll-list-item-20">Пикассо</button>
+              <div class="header__dropdown" data-target="twelve">
+                <div class="header__dropdown-wrap" data-simplebar>
+                  <ul class="header__drop-list">
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--17">Карра</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--18">Прателла</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--19">Северини</a></li>
+                    <li class="header__dropdown-item"><a href=""
+                        class="header__item-link header__item-link--20">Балла</a></li>
+                  </ul>
+                </div>
               </div>
             </li>
           </ul>
         </nav>
-        <form class="header__form" id="search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <button type="submit" class="header__search-btn"></button>
-          <label>
-            <span class="visually-hidden">
-              Введите текст для поиска
-            </span>
-            <input id="input-search-name" type="text" placeholder="Поиск по сайту" name="input-search-name"
-              class="header__input">
-          </label>
-        </form>
       </div>
       <h1 class="visually-hidden">Blanchard - художественная галерея</h1>
     </div>
@@ -180,9 +224,9 @@
       <div class="container hero__container ">
         <div id="swiper-1" class="hero__swiper-container swiper-container">
           <div class="swiper-wrapper hero__swiper-wrapper">
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url(img/hero-bckgrnd-1.jpg);"></div>
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url(img/hero-bckgrnd-2.jpg);"></div>
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url(img/hero-bckgrnd-3.jpg);"></div>
+            <div class="swiper-slide hero__swiper-slide hero__swiper-slide-1"></div>
+            <div class="swiper-slide hero__swiper-slide hero__swiper-slide-2"></div>
+            <div class="swiper-slide hero__swiper-slide hero__swiper-slide-3"></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -236,51 +280,27 @@
               <button type="button" class="galery__button-prev"></button>
               <div
                 class="galery__swiper-pagination swiper-pagination swiper-pagination-fraction galery__swiper-pagination-fraction">
-                <span class="swiper-pagination-current galery__swiper-pagination-current">1</span>
+                <span class="swiper-pagination-current galery__swiper-pagination-current"></span>
                 "/"
-                <span class="swiper-pagination-total galery__swiper-pagination-total">2</span>
+                <span class="swiper-pagination-total galery__swiper-pagination-total"></span>
               </div>
               <button type="button" class="galery__button-next"></button>
             </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper swiper-slider galery__swiper-slider">
               <!-- Slides -->
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle1.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle2.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle3.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle4.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle5.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle6.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle7.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle8.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle9.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle10.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle11.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
-              <div class="swiper-slide galery__image-slider swiper-zoom-container">
-                <img src="img/Rectangle12.jpg" class="galery__slyder-img" alt="Картина">
-              </div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-1 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-2 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-3 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-4 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-5 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-6 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-7 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-8 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-9 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-10 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-11 swiper-zoom-container"></div>
+              <div class="swiper-slide galery__image-slider galery__image-slider-12 swiper-zoom-container"></div>
             </div>
           </div>
         </div>
@@ -309,26 +329,9 @@
             </li>
           </ul>
         </div>
-        <p class="catalogue__description catalogue__description-active" data-target="one">Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Sapiente sequi earum deleniti fuga possimus excepturi qui eaque veniam tempore,
-          similique quaerat, sint corporis error, quis at quo placeat ducimus? Eligendi.</p>
-        <p class="catalogue__description" data-target="two">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Eligendi illo, mollitia nam veniam dolores quo quam obcaecati minus eius magni atque dolor perferendis dicta
-          distinctio temporibus, molestiae magnam voluptas accusamus.</p>
-        <p class="catalogue__description" data-target="three">Акционеры крупнейших компаний, которые представляют собой
-          яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
-          общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить
-          традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
-          функционально разнесены на независимые элементы.</p>
-        <p class="catalogue__description" data-target="four">За словесными горами в стране гласных и
-          согласных живут рыбные тексты. Переписывается безорфографичный ему свой несколько текст проектах над выйти, он
-          языком, необходимыми реторический однажды курсивных даль буквоград имеет дороге. Точках?</p>
-        <p class="catalogue__description" data-target="five">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Itaque quidem, eligendi soluta, nisi libero totam eos voluptatem veniam sit tempore aspernatur cupiditate
-          perferendis dignissimos corporis doloribus alias, ipsum assumenda! Eligendi.</p>
-        <div class="catalogue__information">
-          <div></div>
-          <div id="accordion">
+        <div class="catalogue__description" data-target="one">
+          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Lorem, семь? Знаках парадигматическая вопрос путь семантика жаренные собрал они гор мир, маленький моей, заманивший раз языком предупреждал что? Грустный.</p>
+          <div id="accordion-1" class="catalogue__block catalogue__block--france">
             <ul class="catalogue__accordion">
               <li class="catalogue__item">
                 <button class="catalogue__accordion-header">
@@ -336,7 +339,254 @@
                   <span class="catalogue__accordion-button"></span>
                 </button>
                 <div>
-                  <article class="catalogue__article catalogue__article-active catalogue__article-first" id="tabs-1"
+                  <article class="catalogue__article catalogue__article-active catalogue__article--third" id="Anastaise"
+                    data-target="20">
+                    <h3 class="catalogue__artist-name">Anastaise</h3>
+                    <p class="catalogue__date">c 1400 года — 	XV век.</p>
+                    <p class="catalogue__artist-description">Французская художница, специализировалась на иллюминировании рукописей. Создавала сложные декоративные обрамления (поля рукописей) и пейзажи. В её времена большинство рукописей создавалось в коммерческих мастерских, и многие художники были женщинами, вероятно, в первую очередь те, кто специализировался на оформлении окантовок, часто создававшихся не автором самой миниатюры, а другими художниками. Парижская школа все ещё была ведущим центром иллюминирования в этот период, и парижские работы были широко распространены по всей Европе.</p>
+                  </article>
+                  <article class="catalogue__article catalogue__article--second" id="tabs-3" data-target="19">
+                    <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
+                    <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!</p>
+                    <a href="#" class="catalogue__article-ref">В галерею</a>
+                  </article>
+                  <ul class="catalogue__artists-list">
+                    <li class="catalogue__persons-item" tabindex="-1">
+                      <button class="catalogue__persons-btn" data-path="19">Бартелеми д’Эйк</button>
+                    </li>
+                    <li class="catalogue__persons-item" tabindex="-1">
+                      <button class="catalogue__persons-btn catalogue__persons-btn-active" data-path="20"
+                        tabindex="-1">Anastaise</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header" tabindex="0">
+                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 2000 г.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalogue__description" data-target="two">
+          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего, решила скатился! Грамматики запятых о букв журчит одна вскоре безорфографичный своих, обеспечивает над которой, правилами предупредила себя назад однажды.</p>
+          <div id="accordion-2" class="catalogue__block catalogue__block--germany">
+            <ul class="catalogue__accordion">
+              <li class="catalogue__item">
+                <button class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div>
+                  <article class="catalogue__article catalogue__article-active catalogue__article--fourth" id=""
+                    data-target="22">
+                    <h3 class="catalogue__artist-name">Ханс Бургкмайр</h3>
+                    <p class="catalogue__date">1473, Аугсбург — 1531, там же</p>
+                    <p class="catalogue__artist-description">Ханс Бургкмайр родился в 1473 году в городе Аугсбурге; происходил из семьи художников. Первоначальное обучение он прошёл у своего отца, художника Томана Бургкмайра (1444—1523).
+                      С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе у Мартина Шонгауэра. Не исключено, что в годы странствий он доехал из Аугсбурга до Кёльна.
+                      Около 1507 года художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе Карпаччо.
+                      Наряду с живописью Бургкмайр занимался ксилографией.</p>
+                  </article>
+                  <article class="catalogue__article catalogue__article--second" id="tabs-4" data-target="21">
+                    <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
+                    <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!</p>
+                    <a href="#" class="catalogue__article-ref">В галерею</a>
+                  </article>
+                  <ul class="catalogue__artists-list">
+                    <li class="catalogue__persons-item" tabindex="-1">
+                      <button class="catalogue__persons-btn" data-path="21">Виц, Конрад</button>
+                    </li>
+                    <li class="catalogue__persons-item" tabindex="-1">
+                      <button class="catalogue__persons-btn catalogue__persons-btn-active" data-path="22"
+                        tabindex="-1">Ханс Бургкмайр</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header" tabindex="0">
+                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 2000 г.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalogue__description catalogue__description-active" data-target="three">
+          <p>Акционеры крупнейших компаний, которые представляют собой
+            яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
+            общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить
+            традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
+            функционально разнесены на независимые элементы.</p>
+          <div id="accordion" class="catalogue__block catalogue__block--italian">
+            <ul class="catalogue__accordion">
+              <li class="catalogue__item">
+                <button class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div>
+                  <article class="catalogue__article catalogue__article-active catalogue__article--first" id="tabs-1"
                     data-target="6">
                     <h3 class="catalogue__artist-name">Доменико Гирландайо</h3>
                     <p class="catalogue__date">2 июня 1448 — 11 января 1494.</p>
@@ -347,7 +597,7 @@
                       домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах
                       того времени).</p>
                   </article>
-                  <article class="catalogue__article catalogue__article-second" id="tabs-2" data-target="7">
+                  <article class="catalogue__article catalogue__article--second" id="tabs-2" data-target="7">
                     <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
                     <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
                       что посмотреть!</p>
@@ -517,13 +767,245 @@
             </ul>
           </div>
         </div>
+        <div class="catalogue__description" data-target="four">
+          <p>За словесными горами в стране гласных и
+            согласных живут рыбные тексты. Переписывается безорфографичный ему свой несколько текст проектах над выйти, он
+            языком, необходимыми реторический однажды курсивных даль буквоград имеет дороге. Точках?</p>
+          <div id="accordion-3" class="catalogue__block catalogue__block--rus">
+            <ul class="catalogue__accordion">
+              <li class="catalogue__item">
+                <button class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div>
+                  <article class="catalogue__article catalogue__article-active catalogue__article--fifth" id="tabs-7" data-target="25">
+                    <h3 class="catalogue__artist-name">Симеон Чёрный</h3>
+                    <p class="catalogue__date">(упомин. в 1395) — иконописец конца XIV века.</p>
+                    <p class="catalogue__artist-description">Исследователям не известно ни одно произведение Симеона Чёрного. По мнению Д. А. Ровинского, творчество этого художника должно было развиваться под влиянием Феофана Грека.</p>
+                  </article>
+                  <article class="catalogue__article catalogue__article--second" id="tabs-8" data-target="26">
+                    <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
+                    <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
+                      что посмотреть!</p>
+                    <a href="#" class="catalogue__article-ref">В галерею</a>
+                  </article>
+                  <ul class="catalogue__artists-list">
+                    <li class="catalogue__persons-item" tabindex="-1">
+                      <button class="catalogue__persons-btn catalogue__persons-btn-active" data-path="25" tabindex="-1">Симеон Чёрный</button>
+                    </li>
+                    <li class="catalogue__persons-item" tabindex="-1">
+                      <button class="catalogue__persons-btn" data-path="26" tabindex="-1">Феофан Грек</button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header" tabindex="0">
+                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalogue__item">
+                <button type="button" class="catalogue__accordion-header">
+                  <h3 class="catalogue__header-text">C 2000 г.</h3>
+                  <span class="catalogue__accordion-button"></span>
+                </button>
+                <div class="catalogue__text-empty">
+                  <span class="catalogue__empty-img"></span>
+                  <div class="catalogue__empty-content">
+                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalogue__description" data-target="five">
+          <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Все назад снова но даже взгляд осталось алфавит маленькая если своего вскоре послушавшись, строчка деревни наш имеет свой запятой текстами!</p>
+            <div id="accordion-4" class="catalogue__block catalogue__block--belgium">
+              <ul class="catalogue__accordion">
+                <li class="catalogue__item">
+                  <button class="catalogue__accordion-header">
+                    <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div>
+                    <article class="catalogue__article catalogue__article-active catalogue__article--six" id=""
+                      data-target="30">
+                      <h3 class="catalogue__artist-name">Босх, Иероним</h3>
+                      <p class="catalogue__date">около 1450—1516.</p>
+                      <p class="catalogue__artist-description">нидерландский потомственный художник, один из крупнейших мастеров периода Северного Возрождения. Из творчества художника сохранилось около десяти картин и двенадцати рисунков[3]. Был посвящён в члены Братства Богоматери (нидерл. Illustre Lieve Vrouwe Broederschap; 1486); считается одним из самых загадочных живописцев в истории западного искусства. В родном городе Босха, голландском Хертогенбосе, открыт центр творчества Босха, в котором представлены копии всех его произведений.</p>
+                    </article>
+                    <ul class="catalogue__artists-list">
+                      <li class="catalogue__persons-item" tabindex="-1">
+                        <button class="catalogue__persons-btn catalogue__persons-btn-active" data-path="30"
+                          tabindex="-1">Босх, Иероним</button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalogue__item">
+                  <button type="button" class="catalogue__accordion-header" tabindex="0">
+                    <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div class="catalogue__text-empty">
+                    <span class="catalogue__empty-img"></span>
+                    <div class="catalogue__empty-content">
+                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalogue__item">
+                  <button type="button" class="catalogue__accordion-header">
+                    <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div class="catalogue__text-empty">
+                    <span class="catalogue__empty-img"></span>
+                    <div class="catalogue__empty-content">
+                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalogue__item">
+                  <button type="button" class="catalogue__accordion-header">
+                    <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div class="catalogue__text-empty">
+                    <span class="catalogue__empty-img"></span>
+                    <div class="catalogue__empty-content">
+                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalogue__item">
+                  <button type="button" class="catalogue__accordion-header">
+                    <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div class="catalogue__text-empty">
+                    <span class="catalogue__empty-img"></span>
+                    <div class="catalogue__empty-content">
+                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalogue__item">
+                  <button type="button" class="catalogue__accordion-header">
+                    <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div class="catalogue__text-empty">
+                    <span class="catalogue__empty-img"></span>
+                    <div class="catalogue__empty-content">
+                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalogue__item">
+                  <button type="button" class="catalogue__accordion-header">
+                    <h3 class="catalogue__header-text">C 2000 г.</h3>
+                    <span class="catalogue__accordion-button"></span>
+                  </button>
+                  <div class="catalogue__text-empty">
+                    <span class="catalogue__empty-img"></span>
+                    <div class="catalogue__empty-content">
+                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
+      
     </section>
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="events__header">События</h2>
         <div class="events__articles">
-          <article class="events__articles-content events__articles-content-active events__articles-content-first">
+          <article class="events__articles-content events__articles-content-active events__articles-content--first">
             <p class="events__articles-museum">Музей им. Щусева </p>
             <p class="events__articles-date">с 20 марта по 30 апреля</p>
             <div class="events__main-block">
@@ -535,7 +1017,7 @@
               <a href="#" class="events__articles-ref">Подробнее</a>
             </div>
           </article>
-          <article class="events__articles-content events__articles-content-active events__articles-content-second">
+          <article class="events__articles-content events__articles-content-active events__articles-content--second">
             <p class="events__articles-museum">ММОМА</p>
             <p class="events__articles-date">24 марта 19:00</p>
             <div class="events__main-block">
@@ -547,7 +1029,7 @@
               <a href="#" class="events__articles-ref">Подробнее</a>
             </div>
           </article>
-          <article class="events__articles-content events__articles-content-active events__articles-content-third">
+          <article class="events__articles-content events__articles-content-active events__articles-content--third">
             <p class="events__articles-museum">Еврейский музей</p>
             <p class="events__articles-date">с 31 марта по 21 апреля</p>
             <div class="events__main-block">
@@ -559,7 +1041,7 @@
               <a href="#" class="events__articles-ref">Подробнее</a>
             </div>
           </article>
-          <article class="events__articles-content events__articles-content-four">
+          <article class="events__articles-content events__articles-content--four">
             <p class="events__articles-museum">Третьяковка на Крымском валу</p>
             <p class="events__articles-date">с 30 марта по 30 апреля</p>
             <div class="events__main-block">
@@ -571,7 +1053,7 @@
               <a href="#" class="events__articles-ref">Подробнее</a>
             </div>
           </article>
-          <article class="events__articles-content events__articles-content-five">
+          <article class="events__articles-content events__articles-content--five">
             <p class="events__articles-museum">ММАМ</p>
             <p class="events__articles-date">с 8 апреля по 20 мая</p>
             <div class="events__main-block">
@@ -584,7 +1066,8 @@
             </div>
           </article>
         </div>
-        <button type="button" class="events__all-events-btn" id="events-btn" onclick="event.preventDefault()">Все&nbsp;события</button>
+        <button type="button" class="events__all-events-btn" id="events-btn"
+          onclick="event.preventDefault()">Все&nbsp;события</button>
       </div>
     </section>
     <section class="editions" id="editions">
@@ -594,77 +1077,88 @@
             <h2 class="editions__header">Издания</h2>
             <h3 class="editions__categories-header">Категории</h3>
             <ul class="editions__categories">
-              <li class="editions__item" tabindex="0">
-                <label for="check-1" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-1" name="check-1">
-                  <span class="editions__span">Бестселлеры</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1">
+                  <span class="ckeckbox__text">Бестселлеры</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-2" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-2" name="check-2">
-                  <span class="editions__span">Искусство</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2">
+                  <span class="ckeckbox__text">Искусство</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-3" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-3" name="check-3">
-                  <span class="editions__span">Архитектура</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3">
+                  <span class="ckeckbox__text">Архитектура</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-4" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-4" checked aria-checked="true"
-                    name="check-4">
-                  <span class="editions__span">Дизайн</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked aria-checked="true">
+                  <span class="ckeckbox__text">Дизайн</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-5" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-5" name="check-5">
-                  <span class="editions__span">Мода</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5">
+                  <span class="ckeckbox__text">Мода</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-6" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-6" name="check-6">
-                  <span class="editions__span">Детям</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6">
+                  <span class="ckeckbox__text">Детям</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-7" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-7" name="check-7">
-                  <span class="editions__span">Художественная&nbsp;литература</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7">
+                  <span class="ckeckbox__text">Художественная&nbsp;литература</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-8" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-8" name="check-8">
-                  <span class="editions__span">Публицистика</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8">
+                  <span class="ckeckbox__text">Публицистика</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-9" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-9" name="check-9">
-                  <span class="editions__span">Путеводители</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9">
+                  <span class="ckeckbox__text">Путеводители</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-10" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-10" name="check-10">
-                  <span class="editions__span">Философия</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10" name="check-10">
+                  <span class="ckeckbox__text">Философия</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-11" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-11" name="check-11">
-                  <span class="editions__span">Учебная&nbsp;литература</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11" name="check-11">
+                  <span class="ckeckbox__text">Учебная&nbsp;литература</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
-              <li class="editions__item" tabindex="0">
-                <label for="check-12" class="editions__label">
-                  <input type="checkbox" class="editions__checkbox" id="check-12" name="check-12">
-                  <span class="editions__span">Журналы&nbsp;и&nbsp;газеты</span>
+              <li class="editions__item">
+                <label class="editions__label">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12" name="check-12">
+                  <span class="ckeckbox__text">Журналы&nbsp;и&nbsp;газеты</span>
+                  <span class="editions__span"></span>
                 </label>
               </li>
             </ul>
@@ -683,76 +1177,76 @@
                 <button type="button" class="editions__button-prev"></button>
                 <div
                   class="editions__swiper-pagination swiper-pagination swiper-pagination-fraction editions__swiper-pagination-fraction">
-                  <span class="swiper-pagination-current editions__swiper-pagination-current">1</span>
+                  <span class="swiper-pagination-current editions__swiper-pagination-current"></span>
                   "/"
-                  <span class="swiper-pagination-total editions__swiper-pagination-total">2</span>
+                  <span class="swiper-pagination-total editions__swiper-pagination-total"></span>
                 </div>
                 <button type="button" class="editions__button-next"></button>
               </div>
               <div class="swiper-wrapper editions__swiper-slider">
-                <div class="swiper-slide editions__image-slide">
-                  <img src="img/swim31.jpg" class="editions__slyder-img" alt="Картина">
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-1"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Искусство цвета</p>
                     <p class="editions__block-price">620 руб</p>
                   </div>
                   <p class="editions__article-text">Иттен, Иоханнес</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
-                <div class="swiper-slide editions__image-slide">
-                  <img src="img/swim32.jpg" class="editions__slyder-img" alt="Картина">
+                </article>
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-2"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Типографика</p>
                     <p class="editions__block-price">2 450 руб</p>
                   </div>
                   <p class="editions__article-text">Рудер, Эмиль</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
-                <div class="swiper-slide editions__image-slide">
-                  <img src="img/swim33.jpg" class="editions__slyder-img" alt="Картина">
+                </article>
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-3"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Книга про буквы</p>
                     <p class="editions__block-price">2 200 руб</p>
                   </div>
                   <p class="editions__article-text">Гордон, Юрий </p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
-                <div class="swiper-slide editions__image-slide">
-                  <img src="img/swim34.jpg" class="editions__slyder-img" alt="Картина">
+                </article>
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-4"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Николай Ильин</p>
                     <p class="editions__block-price">1 100 руб</p>
                   </div>
                   <p class="editions__article-text">Кричевский, Владимир</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/swim35.jpg" class="editions__slyder-img" alt="Картина">
+                </article>
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-5"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Модульные сетки в граф...</p>
                     <p class="editions__block-price">1 450 руб</p>
                   </div>
                   <p class="editions__article-text">Мюллер-Брокманн, Йозеф</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
-                <div class="swiper-slide editions__image-slide">
-                  <img src="img/swim36.jpg" class="editions__slyder-img" alt="Картина">
+                </article>
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-6"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Эволюция графических ст...</p>
                     <p class="editions__block-price">3 200 руб</p>
                   </div>
                   <p class="editions__article-text"> Хеллер, Чваст</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
-                <div class="swiper-slide editions__image-slide">
-                  <img src="img/swim37.jpg" class="editions__slyder-img" alt="Картина">
+                </article>
+                <article class="swiper-slide editions__article">
+                  <div class="editions__image-slide editions__image-slide-7"></div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Искусство и визуальное в...</p>
                     <p class="editions__block-price">2 200 руб</p>
                   </div>
                   <p class="editions__article-text">Арнхейм, Рудольф</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -779,7 +1273,7 @@
               предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов
               призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до
               степени совершенной неузнаваемости. Подробнее:
-              <a href="" class="projects__description-ref">blanchard-art.ru/projects/about</a>
+              <a href="" class="projects__description-ref">blanchard-&nbsp;art.ru/projects/about</a>
             </p>
           </div>
         </div>
@@ -790,34 +1284,15 @@
           <div class="swiper-container projects__swiper-container" id="swiper-4">
             <div class="swiper-wrapper projects__swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide projects__sw-slide swiper-slide-visible projects__swiper-slide-visible"
-                tabindex="0">
-                <img src="img/proim1.png" class="projects__sw-img" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim2.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim3.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim4.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim5.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim6.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim7.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim8.png" alt="партнер проекта">
-              </div>
-              <div class="swiper-slide projects__sw-slide" tabindex="0">
-                <img src="img/proim9.png" alt="партнер проекта">
-              </div>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-1" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-2" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-3" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-4" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-5" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-6" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-7" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-8" tabindex="0"></a>
+              <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-9" tabindex="0"></a>
             </div>
           </div>
           <div class="projects__button-next"></div>
@@ -847,14 +1322,14 @@
               </label>
               <button type="submit" class="contacts__form-btn">Заказать</button>
             </form>
-            <div class="contaccts__messengers">
+            <div class="contacts__messengers">
               <h4 class="contacts__messangers-header">Связаться в один клик</h4>
               <ul class="contacts__messangers-list">
                 <li class="contacts__messangers-item">
-                  <button class="contacts__whatsapp-logo"></button>
+                  <a href="" class="contacts__whatsapp-logo"></a>
                 </li>
-                <li class="ccontacts__messangers-item">
-                  <button class="contacts__telegram-logo"></button>
+                <li class="contacts__messangers-item">
+                  <a href="" class="contacts__telegram-logo"></a>
                 </li>
               </ul>
             </div>
@@ -866,18 +1341,18 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__logo">
+      <a class="footer__logo">
         <img src="img/logo.png" alt="blanchard-logo" class="footer__img">
-      </div>
+      </a>
       <ul class="footer__social-media-list">
         <li class="footer__social-media-item">
-          <button type="button" class="footer__vk" aria-label="vkontakte"></button>
+          <a href="" class="footer__vk" aria-label="vkontakte"></a>
         </li>
         <li class="footer__social-media-item">
-          <button type="button" class="footer__inst" aria-label="instagram"></button>
+          <a href="" class="footer__inst" aria-label="instagram"></a>
         </li>
         <li class="footer__social-media-item">
-          <button type="button" class="footer__facebook" aria-label="facebook"></button>
+          <a href="" class="footer__facebook" aria-label="facebook"></a>
         </li>
       </ul>
     </div>

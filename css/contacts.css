@@ -17,7 +17,7 @@
 
 .contacts__left {
   padding-top: 124px;
-  padding-left: 160px;
+  padding-left: 50px;
   min-width: 682px;
   border: 1px solid #cacaca;
 }
@@ -63,7 +63,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 .contacts__form-tel {
   cursor: pointer;
@@ -215,4 +214,31 @@
 
 .contacts__form-btn:active::before { 
   border: 3px solid #D1A9F0;
+}
+
+@media (max-width: 1024px) {
+  .contacts__left {
+    padding-top: 124px;
+    padding-left: 50px;
+    min-width: 487px;
+    border: 1px solid #cacaca;
+  }
+
+  .contacts__form-name,
+  .contacts__form-tel {
+    padding: 4px 0 4px 24px;
+    min-width: 335px;
+    min-height: 40px;
+    border: 1px solid var(--text-color);
+    border-radius: 100px;
+  }
+
+  .contacts__whatsapp-logo,
+  .contacts__telegram-logo {
+    display: block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+  }
 }

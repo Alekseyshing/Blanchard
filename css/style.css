@@ -49,15 +49,18 @@ h1, h2, h3, p, ul, ol {
 /* container */
 
 .container {
-  max-width: 1920px;   
+  max-width: 1700px;   
   margin: 0 auto;
-  padding: 0 160px;  
+  padding: 0 50px;  
 }
 
 :root {
   --main-color: rgba(255, 255, 255, 1);
   --add-color: #9D5CD0;
   --text-color: rgba(51, 51, 51, 1);
+  --main: #9d5cd0;
+  --two: #7943a4;
+  --outline: 2px solid var(--main);
 }
 
 .visually-hidden {
@@ -68,6 +71,7 @@ h1, h2, h3, p, ul, ol {
   border: 0 !important;
   height: 1px !important; 
   width: 1px !important; 
+  clip: rect(0, 0, 0, 0);  
   overflow: hidden;
 }
 
@@ -77,4 +81,13 @@ h1, h2, h3, p, ul, ol {
   content: "";
   display: table;
   clear: both;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;   
+    margin: 0 auto;
+    padding: 0 50px;  
+  }
+  
 }

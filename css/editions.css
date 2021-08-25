@@ -1,10 +1,13 @@
-.editions__container {
-  padding-top: 80px;
-  padding-bottom: 60px;
+.editions {
   background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+}
+
+.editions__container {
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .editions__header {
@@ -40,10 +43,6 @@
   font-weight: 400;
   width: 350px;
   transition: all .3s ease-in-out;
-}
-
-.editions__item:focus {
-  color: #C283F3;
 }
 
 .editions__price-form {
@@ -136,11 +135,6 @@
   background-color: transparent;
 }
 
-.editions__image-slide {
-  min-width: 350px !important; 
-  cursor: pointer;
-}
-
 .editions__button-prev {
   background-image: url(../img/btn-prev.svg);
 }
@@ -149,12 +143,44 @@
   background-image: url(../img/btn-next.svg);
 }
 
-.editions__image-slide {
-  color: #fff;
+.editions__article {
+  color: var(--main-color);
 }
 
-.editions__slyder-img {
+.editions__image-slide {
+  display: inline-block;
+  width: 350px;
+  height: 390px;
+  background-size: cover;
   margin-bottom: 15px;
+}
+
+.editions__image-slide-1 {
+  background-image: url(../img/swim31.jpg);
+}
+
+.editions__image-slide-2 {
+  background-image: url(../img/swim32.jpg);
+}
+
+.editions__image-slide-3 {
+  background-image: url(../img/swim33.jpg);
+}
+
+.editions__image-slide-4 {
+  background-image: url(../img/swim34.jpg);
+}
+
+.editions__image-slide-5 {
+  background-image: url(../img/swim35.jpg);
+}
+
+.editions__image-slide-6 {
+  background-image: url(../img/swim36.jpg);
+}
+
+.editions__image-slide-7 {
+  background-image: url(../img/swim37.jpg);
 }
 
 .editions__article-text-block {
@@ -194,10 +220,6 @@
   transition: all .3s ease-in-out;
 }
 
-.editions__label:hover {
-  color: #C283F3;
-}
-
 .editions__min-price:hover,
 .editions__max-price:hover {
   background-color: var(--add-color);
@@ -226,3 +248,66 @@
   border: 2px solid #7943A4;
 }
 
+@media (max-width: 1700px) {
+  .editions__container {
+    padding-bottom: 70px;
+  }
+
+  .editions__left {
+    max-width: 292px;
+  }
+
+  .editions__article {
+    max-width: 290px;
+  }
+
+  .editions__swiper-slider {
+    max-width: 900px;
+  }
+
+  .editions__image-slide {
+    display: inline-block;
+    width: 290px;
+    height: 320px;
+  }
+
+  .editions__image-slide-1 {
+    background-image: url(../img/edim1024-1.jpg);
+  }
+  
+  .editions__image-slide-2 {
+    background-image: url(../img/edim1024-2.jpg);
+  }
+  
+  .editions__image-slide-3 {
+    background-image: url(../img/edim1024-3.jpg);
+  }
+  
+  .editions__image-slide-4 {
+    background-image: url(../img/edim1024-4.jpg);
+  }
+  
+  .editions__image-slide-5 {
+    background-image: url(../img/edim1024-5.jpg);
+  }
+  
+  .editions__image-slide-6 {
+    background-image: url(../img/edim1024-6.jpg);
+  }
+  
+  .editions__image-slide-7 {
+    background-image: url(../img/edim1024-7.jpg);
+  }
+}
+
+@media (max-width: 1400px) {
+  .editions__swiper-slider {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .editions__swiper-slider {
+    max-width: 650px;
+  }
+}

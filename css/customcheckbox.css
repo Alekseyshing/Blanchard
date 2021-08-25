@@ -2,48 +2,39 @@
   position: relative;
   cursor: pointer;
   padding-left: 20px;
-  text-align: center;
+}
+
+.editions__item,
+.ckeckbox__text,
+.editions__label  {
   transition: all .3s ease-in-out;
 }
 
-#check-1,
-#check-2,
-#check-3,
-#check-4,
-#check-5,
-#check-6,
-#check-7,
-#check-8,
-#check-9,
-#check-10,
-#check-11,
-#check-12 {
-  display: none;
-}
 
-#check-1+span,
-#check-2+span,
-#check-3+span,
-#check-4+span,
-#check-5+span,
-#check-6+span,
-#check-7+span,
-#check-8+span,
-#check-9+span,
-#check-10+span,
-#check-11+span,
-#check-12+span {
+#check-1+.editions__span,
+#check-2+.editions__span,
+#check-3+.editions__span,
+#check-4+.editions__span,
+#check-5+.editions__span,
+#check-6+.editions__span,
+#check-7+.editions__span,
+#check-8+.editions__span,
+#check-9+.editions__span,
+#check-10+.editions__span,
+#check-11+.editions__span,
+#check-12+.editions__span {
   position: absolute;
   display: inline-block;
   cursor: pointer;
-  top: 0;
-  left: 20px;
-  bottom: 10px;
+  top: 0px;
+  left: 0;
+  bottom: 0px;
   right: 0;
   background-color: transparent;
   display: inline-block;
   width: 12px;
   height: 12px;
+  transition: all .3s ease-in-out;
 }
 
 #check-1+span::before,
@@ -64,8 +55,8 @@
   content: '\2022';
   width: 4px;
   height: 4px;
-  top: -5%;
-  left: -145%;
+  top: -5px;
+  left: 3px;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -104,12 +95,13 @@
   position: absolute;
   display: inline-block;
   border: 1px solid #ffffff;
-  top: 9px;
-  left:-20px;
+  top: 5px;
+  left: 0px;
   right:0;
   bottom:0;
   width: 12px;
   height: 12px;
+  transition: all .3s ease-in-out;
 }
 
 #check-1:checked+span::after,
@@ -127,21 +119,10 @@
   border: 1px solid #C283F3;
 }
 
-#check-1:checked+.editions__span, 
-#check-2:checked+.editions__span, 
-#check-3:checked+.editions__span, 
-#check-4:checked+.editions__span,
-#check-5:checked+.editions__span,
-#check-6:checked+.editions__span,
-#check-7:checked+.editions__span,
-#check-8:checked+.editions__span,
-#check-9:checked+.editions__span,
-#check-10:checked+.editions__span,
-#check-11:checked+.editions__span,
-#check-12:checked+.editions__span {
+.editions__label:hover,
+.editions__label:focus {
   color: #C283F3;
 }
-
 
 .editions__label:hover #check-1+span::after,
 .editions__label:hover #check-2+span::after,
@@ -158,20 +139,69 @@
   border: 1px solid #C283F3;
 }
 
-.editions__item:focus #check-1+span::after,
-.editions__item:focus #check-2+span::after,
-.editions__item:focus #check-3+span::after,
-.editions__item:focus #check-4+span::after,
-.editions__item:focus #check-5+span::after,
-.editions__item:focus #check-6+span::after,
-.editions__item:focus #check-7+span::after,
-.editions__item:focus #check-8+span::after,
-.editions__item:focus #check-9+span::after,
-.editions__item:focus #check-10+span::after,
-.editions__item:focus #check-11+span::after,
-.editions__item:focus #check-12+span::after {
+.editions__item:focus-within #check-1+span::after,
+.editions__item:focus-within #check-2+span::after,
+.editions__item:focus-within #check-3+span::after,
+.editions__item:focus-within #check-4+span::after,
+.editions__item:focus-within #check-5+span::after,
+.editions__item:focus-within #check-6+span::after,
+.editions__item:focus-within #check-7+span::after,
+.editions__item:focus-within #check-8+span::after,
+.editions__item:focus-within #check-9+span::after,
+.editions__item:focus-within #check-10+span::after,
+.editions__item:focus-within #check-11+span::after,
+.editions__item:focus-within #check-12+span::after {
   border: 1px solid #C283F3;
 }
 
+.editions__label:focus-within #check-1+span::after,
+.editions__label:focus-within #check-2+span::after,
+.editions__label:focus-within #check-3+span::after,
+.editions__label:focus-within #check-4+span::after,
+.editions__label:focus-within #check-5+span::after,
+.editions__label:focus-within #check-6+span::after,
+.editions__label:focus-within #check-7+span::after,
+.editions__label:focus-within #check-8+span::after,
+.editions__label:focus-within #check-9+span::after,
+.editions__label:focus-within #check-10+span::after,
+.editions__label:focus-within #check-11+span::after,
+.editions__label:focus-within #check-12+span::after  {
+  border: 1px solid #C283F3;
+}
+
+.editions__item:focus {
+  color: #C283F3;
+}
+
+.editions__checkbox {
+  color: #C283F3 !important;
+}
+
+
+.editions__item #check-1:checked+span,
+.editions__item #check-2:checked+span,
+.editions__item #check-3:checked+span,
+.editions__item #check-4:checked+span,
+.editions__item #check-5:checked+span,
+.editions__item #check-6:checked+span,
+.editions__item #check-7:checked+span,
+.editions__item #check-8:checked+span,
+.editions__item #check-9:checked+span,
+.editions__item #check-11:checked+span,
+.editions__item #check-12:checked+span,
+.editions__label:focus-within #check-1+span,
+.editions__label:focus-within #check-2+span,
+.editions__label:focus-within #check-3+span,
+.editions__label:focus-within #check-4+span,
+.editions__label:focus-within #check-5+span,
+.editions__label:focus-within #check-6+span,
+.editions__label:focus-within #check-7+span,
+.editions__label:focus-within #check-8+span,
+.editions__label:focus-within #check-9+span,
+.editions__label:focus-within #check-10+span,
+.editions__label:focus-within #check-11+span,
+.editions__label:focus-within #check-12+span  {
+  color: #C283F3;
+}
 
 

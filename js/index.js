@@ -1,4 +1,60 @@
 window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#burger').addEventListener('click', function() {
+    document.querySelector('#menu').classList.toggle('header__nav-is-active')
+    document.querySelector('.header__burger').classList.toggle('burger-active')
+  })
+
+  const params = {
+    btnClassName: "header__select",
+    activeClassName: "header__drop-is-active",
+    disabledClassName: "header__drop-is-disabled"
+  }
+  
+  function onDisable(evt) {
+    if (evt.target.classList.contains(params.disabledClassName)) {
+      evt.target.classList.remove(params.disabledClassName, params.activeClassName);
+      evt.target.removeEventListener("animationend", onDisable);
+    }
+  }
+  
+  function setMenuListener() {
+    document.body.addEventListener("click", (evt) => {
+      const activeElements = document.querySelectorAll(`.${params.activeClassName}`);
+  
+      if (activeElements.length && !evt.target.closest(`.${params.activeClassName}`)) {
+        activeElements.forEach((current) => {
+          if (current.classList.contains(params.btnClassName)) {
+            current.classList.remove(params.activeClassName);
+          } else {
+            current.classList.add(params.disabledClassName);
+          }
+        });
+      }
+  
+      if (evt.target.closest(`.${params.btnClassName}`)) {
+        const btn = evt.target.closest(`.${params.btnClassName}`);
+        const path = btn.dataset.path;
+        const drop = document.querySelector(`[data-target="${path}"]`);
+  
+        btn.classList.toggle(params.activeClassName);
+  
+        if (!drop.classList.contains(params.activeClassName)) {
+          drop.classList.add(params.activeClassName);
+          drop.addEventListener("animationend", onDisable);
+        } else {
+          drop.classList.add(params.disabledClassName);
+        }
+      }
+    });
+  }
+  
+  setMenuListener();
+
+  document.querySelector('#search-btn').addEventListener('click', function() {
+    document.querySelector('#search-form').classList.toggle('header__search-menu-active')
+    document.querySelector('#search-btn').classList.toggle('header__search-btn-epsent')
+  })
+
   document.querySelectorAll('.catalogue__fl-btn').forEach(function(tabsBtn1){
     tabsBtn1.addEventListener('click', function(event) {
       const path = event.currentTarget.dataset.path
@@ -6,9 +62,11 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.catalogue__description').forEach(function(catalogueDescription) {
         catalogueDescription.classList.remove('catalogue__description-active')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description-active')
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description-active');
     })
   })
+
+  
 
   document.querySelectorAll('.catalogue__persons-btn').forEach(function(tabsBtn2){
     console.log(tabsBtn2);
@@ -44,11 +102,6 @@ window.addEventListener('DOMContentLoaded', function() {
       })
     });
 
-    document.querySelector('#select-1').addEventListener('click', function() {
-      document.querySelector('#scroll-bar-1').classList.add('header__scroll-1-inactive')
-    })
-
-
     document.querySelectorAll('.catalogue__persons-btn').forEach(function(descriptionStep) {
       descriptionStep.addEventListener('click',  function (event) {
         const path = event.currentTarget.dataset.path
@@ -63,69 +116,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   })
 
-      const nav1 = document.querySelector('.header__scroll-1') // находим окно навигации
-        
-      window.addEventListener('click', e => { // при клике в любом месте окна браузера
-        const target = e.target // находим элемент, на котором был клик
-        if (!target.closest('header__scroll-1') && !target.closest('#select-1')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-          nav1.classList.remove('header__scroll-1-inactive') // то закрываем окно навигации, удаляя активный класс
-        }
-      })
-
-      document.querySelector('#select-2').addEventListener('click', function() {
-        document.querySelector('#scroll-bar-2').classList.add('header__scroll-1-inactive')
-      })
-  
-        const nav2 = document.querySelector('.header__scroll-2') // находим окно навигации
-          
-        window.addEventListener('click', e => { // при клике в любом месте окна браузера
-          const target = e.target // находим элемент, на котором был клик
-          if (!target.closest('header__scroll-2') && !target.closest('#select-2')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-            nav2.classList.remove('header__scroll-1-inactive') // то закрываем окно навигации, удаляя активный класс
-          }
-        })
-
-        document.querySelector('#select-3').addEventListener('click', function() {
-          document.querySelector('#scroll-bar-3').classList.add('header__scroll-1-inactive')
-        })
-    
-          const nav3 = document.querySelector('.header__scroll-3') // находим окно навигации
-            
-          window.addEventListener('click', e => { // при клике в любом месте окна браузера
-            const target = e.target // находим элемент, на котором был клик
-            if (!target.closest('header__scroll-3') && !target.closest('#select-3')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-              nav3.classList.remove('header__scroll-1-inactive') // то закрываем окно навигации, удаляя активный класс
-            }
-          })
-        
-          document.querySelector('#select-4').addEventListener('click', function() {
-            document.querySelector('#scroll-bar-4').classList.add('header__scroll-1-inactive')
-          })
-      
-            const nav4 = document.querySelector('.header__scroll-4') // находим окно навигации
-              
-            window.addEventListener('click', e => { // при клике в любом месте окна браузера
-              const target = e.target // находим элемент, на котором был клик
-              if (!target.closest('header__scroll-4') && !target.closest('#select-4')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-                nav4.classList.remove('header__scroll-1-inactive') // то закрываем окно навигации, удаляя активный класс
-              }
-            })
-
-            document.querySelector('#select-5').addEventListener('click', function() {
-              document.querySelector('#scroll-bar-5').classList.add('header__scroll-1-inactive')
-            })
-        
-              const nav5 = document.querySelector('.header__scroll-5') // находим окно навигации
-                
-              window.addEventListener('click', e => { // при клике в любом месте окна браузера
-                const target = e.target // находим элемент, на котором был клик
-                if (!target.closest('header__scroll-5') && !target.closest('#select-5')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-                  nav5.classList.remove('header__scroll-1-inactive') // то закрываем окно навигации, удаляя активный класс
-                }
-              })
-
-
-    tippy.setDefaultProps({
+      tippy.setDefaultProps({
       duration: 400,
       delay: 80,
       arrow:  true,
@@ -239,13 +230,12 @@ window.addEventListener('DOMContentLoaded', function() {
     loop: false,
     loopedSlides: 12,
     autoheight: false,
+    zoom: true,
     slidesPerView: 3,
     spaceBetween: 50,
-    slidesPerGroup: 6,
     slidesPerColumn: 2,
-    zoom: true,
+    slidesPerGroup: 6,
 
-  
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',
@@ -271,16 +261,73 @@ window.addEventListener('DOMContentLoaded', function() {
       el: '.swiper-scrollbar',
       allowTouchMove: true,
     },
-  });
+
+    // breakpoints: {
+    //   1024: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 34,
+    //     slidesPerGroup: 3,
+    //     slidesPerColumn: 2,
+    //   },
+
+    //   1480: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 34,
+    //     slidesPerGroup: 3,
+    //     slidesPerColumn: 2,
+    //   },
+
+    //   1600: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30,
+    //     slidesPerGroup: 3,
+    //     slidesPerColumn: 2,
+    //     },
+
+    //   1700: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 50,
+    //     slidesPerGroup: 6,
+    //     slidesPerColumn: 2,
+    //     }
+    //   },
+    });
 
    const swiper3 = new Swiper('#swiper-3', {
-    loop: true,
-    loopedSlides: 3,
+    loop: false,
     autoheight: false,
-    slidesPerView: 3,
-    spaceBetween: 50,
-    slidesPerGroup: 3,
     zoom: true,
+
+    breakpoints: {
+      1024: {
+        loopedSlides: 2,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 49,
+      },
+
+      1290: {
+        loopedSlides: 3,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 20,
+      },
+
+      1620: {
+        loopedSlides: 3,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+      },
+
+      1700: {
+        loopedSlides: 3,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+      },
+
+    },
 
     pagination: {
       el: '.swiper-pagination',
@@ -303,11 +350,22 @@ window.addEventListener('DOMContentLoaded', function() {
    const swiper4 = new Swiper('#swiper-4', {
     // Optional parameters
     autoheight: false,
-    slidesPerView: 3,
-    spaceBetween: 50,
-    slidesPerGroup: 3,
     zoom: true,
     slideToClickedSlide: true,
+    
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+        slidesPerGroup: 2,
+      },
+
+      1700: {
+        slidesPerView: 3,
+        spaceBetween: 45,
+        slidesPerGroup: 3,
+      },
+    },
 
     navigation: {
       nextEl: '.projects__button-next',
@@ -342,6 +400,7 @@ window.addEventListener('DOMContentLoaded', function() {
       heightStyle: 'content', 
     });
   });
+
   const element = document.querySelector('select');
    const choices = new Choices(element, {
     searchEnabled: false,

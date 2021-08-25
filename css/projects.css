@@ -49,26 +49,74 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 180px;
+}
+
+.projects__main-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-height: 160px;
 }
 
 .projects__swiper-container {
   width: 1450px;
-  height: 160px;
+  height: 200px;
+}
+
+.projects__swiper-wrapper {
+  width: 840px;
+  padding-top: 20px;
+  padding-left: 5px;
 }
 
 .projects__sw-slide {
   cursor: pointer;
   display: block;
+  max-width: 450px;
   max-height: 150px;
   border: none;
   filter: grayscale(100%);
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 0.4;
   transition: all 200ms ease-in-out;
 }
 
-.projects__sw-img {
-  display: block;
+.projects__sw-slide-1 {
+  background-image: url(../img/proim1.png);
+}
+
+.projects__sw-slide-2 {
+  background-image: url(../img/proim2.png);
+}
+
+.projects__sw-slide-3 {
+  background-image: url(../img/proim3.png);
+}
+
+.projects__sw-slide-4 {
+  background-image: url(../img/proim4.png);
+}
+
+.projects__sw-slide-5 {
+  background-image: url(../img/proim5.png);
+}
+
+.projects__sw-slide-6 {
+  background-image: url(../img/proim6.png);
+}
+
+.projects__sw-slide-7 {
+  background-image: url(../img/proim7.png);
+}
+
+.projects__sw-slide-8 {
+  background-image: url(../img/proim8.png);
+}
+
+.projects__sw-slide-9 {
+  background-image: url(../img/proim9.png);
 }
 
 .projects__sw-slide:focus {
@@ -199,4 +247,57 @@
 
 .projects__button-next .swiper-button-disabled {
   background-image: url(../img/btn-4-next-disable.svg);
+}
+
+@media (max-width: 1024px) {
+  .projects__container {
+    padding-bottom: 80px;
+  }
+
+  .projects__description {
+    max-width: 925px;
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .projects__swiper-container {
+    width: 100%;
+    height: 130px;
+  }
+
+  .projects__main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 130px;
+  }
+  
+  .projects__sw-slide {
+    cursor: pointer;
+    display: block;
+    width: 384px !important;
+    height: 130px;
+    background-size: contain;
+  }
+
+  .projects__partners-header {
+    margin-bottom: 23px;
+  }
+
+  .projects__main-block {
+    align-items: center;
+    max-height: 130px;
+  }
+
+  .projects__swiper-wrapper {
+    min-width: 840px;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+
+  .projects__button-prev,
+  .projects__button-next {
+    width: 50px;
+    height: 50px;
+  }
 }

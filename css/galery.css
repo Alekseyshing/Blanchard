@@ -1,33 +1,39 @@
-.galery__container {
-  display: flex;
-  flex-direction: row;
+.galery {
   padding-top: 80px;
   padding-right: 15px;
   padding-bottom: 80px;
   background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.jpg);
-  background-repeat: no-repeat;
 }
 
-.galery__swiper-slider{
-  max-width: 100%;
-  max-height: 1200px;
+.galery__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.galery__swiper {
+  max-width: 1050px;
+  height: 1050px;
+  padding-top: 27px;
+  padding-left: 22px;
 }
 
 .galery__swiper-container{
-  max-width: 100%;
+  position: absolute;
+  width: 1100px;
+  height: 1050px;
   padding-top: 27px;
   padding-left: 22px;
+}
+
+.galery__swiper-slider{
+  width: 1050px;
+  height: 1050px;
+
 }
 
 .galery__left {
   margin-right: 30px;
   max-width: 400px;
-}
-
-.galery__swiper {
-  padding: 0;
-  max-width: 1200px;
-  max-height: 800px;
 }
 
 .galery__header {
@@ -89,21 +95,66 @@
   max-width: 130px;
 }
 
-.galery__swiper-slider {
-max-height: 1090px;
+.galery__image-slider {
+  display: block;
+  height: 350px;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.galery__image-slider {
-  height: 350px;
-  overflow-y: hidden;
-  cursor: pointer;
+.galery__image-slider-1 {
+  background-image: url(../img/Rectangle1.jpg);
+}
+
+.galery__image-slider-2 {
+  background-image: url(/img/Rectangle2.jpg);
+}
+
+.galery__image-slider-3 {
+  background-image: url(../img/Rectangle3.jpg);
+}
+
+.galery__image-slider-4 {
+  background-image: url(../img/Rectangle4.jpg);
+}
+
+.galery__image-slider-5 {
+  background-image: url(../img/Rectangle5.jpg);
+}
+
+.galery__image-slider-6 {
+  background-image: url(../img/Rectangle6.jpg);
+}
+
+.galery__image-slider-7 {
+  background-image: url(../img/Rectangle7.jpg);
+}
+
+.galery__image-slider-8 {
+  background-image: url(../img/Rectangle8.jpg);
+}
+
+.galery__image-slider-9 {
+  background-image: url(../img/Rectangle9.jpg);
+}
+
+.galery__image-slider-10 {
+  background-image: url(../img/Rectangle10.jpg);
+}
+
+.galery__image-slider-11 {
+  background-image: url(../img/Rectangle11.jpg);
+}
+
+.galery__image-slider-12 {
+  background-image: url(../img/Rectangle12.jpg);
 }
 
 .galery__swiper-pagination {
   display: flex;
   align-items: center;
   top: 32px;
-  left: 75px;
+  left: 72px;
   max-width: 40px;
   max-height: 23px;
 }
@@ -180,4 +231,119 @@ max-height: 1090px;
   color: var(--main-color);
 }
 
+/* @media (max-width: 1700px) {
+  .galery__container {
+    padding-bottom: 70px;
+  }
 
+  .galery__header {
+    margin-bottom: 15px;
+  }
+
+  .galery__left {
+    width: 320px;
+  }
+
+  .galery__filter {
+    max-width: 280px;
+  }
+
+  .galery__description {
+    min-height: 610px;
+  }
+
+  .galery__swiper-container{
+    padding-top: 25px;
+    padding-left: 15px;
+    max-width: 950px;
+    max-height: 750px;
+  }
+
+  .galery__swiper-slider{
+    max-width: 950px;
+    max-height: 594px;
+  }
+
+  .galery__swiper-pagination {
+    top: 28px;
+    left: 65px;
+    max-width: 50px;
+  }
+
+  .galery__image-slider {
+    width: 280px;
+    height: 280px;
+  }
+
+  .galery__image-slider-1 {
+    background-image: url(../img/sw-2-1024-1.jpg);
+  }
+
+  .galery__image-slider-2 {
+    background-image: url(../img/sw-2-1024-2.jpg);
+  }
+
+  .galery__image-slider-3 {
+    background-image: url(../img/sw-2-1024-3.jpg);
+  }
+
+  .galery__image-slider-4 {
+    background-image: url(../img/sw-2-1024-4.jpg);
+  }
+
+  .galery__image-slider-5 {
+    background-image: url(../img/sw-2-1024-5.jpg);
+  }
+
+  .galery__image-slider-6 {
+    background-image: url(../img/sw-2-1024-6.jpg);
+  }
+
+  .galery__image-slider-7 {
+    background-image: url(../img/sw-2-1024-7.jpg);
+  }
+
+  .galery__image-slider-8 {
+    background-image: url(../img/sw-2-1024-8.jpg);
+  }
+
+  .galery__image-slider-9 {
+    background-image: url(../img/sw-2-1024-9.jpg);
+  }
+
+  .galery__image-slider-10 {
+    background-image: url(../img/sw-2-1024-10.jpg);
+  }
+
+  .galery__image-slider-11 {
+    background-image: url(../img/sw-2-1024-11.jpg);
+  }
+
+  .galery__image-slider-12 {
+    background-image: url(../img/sw-2-1024-12.jpg);
+  }
+} */
+
+@media (max-width: 1480px) {
+  .galery__swiper-container{
+    padding-top: 25px;
+    padding-left: 15px;
+    max-width: 750px;
+    max-height: 750px;
+  }
+
+  .galery__swiper-slider{
+    max-width: 750px;
+    max-height: 594px;
+  }
+}
+
+@media (max-width: 1024px) {
+   .galery__swiper-container{
+    max-width: 594px;
+  }
+
+  .galery__swiper-slider{
+    max-width: 594px;
+  }
+}
