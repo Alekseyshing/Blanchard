@@ -11,13 +11,18 @@
 
 .header__main-block {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.header__logo {
+  margin-right: 11%;
 }
 
 .header__navigation-area {
   position: relative;
-  max-width: 70%;
+  display: flex;
+  min-width: 1200px;
 }
 
 .header__search-menu {
@@ -28,12 +33,14 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-width: 1250px;
 }
 
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
+  max-width: 100%;
 }
 
 .header__nav-list-item {
@@ -61,8 +68,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  top: 42px;
-  left: 0;
+  top: 50px;
+  left: -7px;
   z-index: 2;
 }
 
@@ -73,6 +80,8 @@
 .header__nav-buttom-list {
   position: relative;
   display: flex;
+  flex-direction: wrap;
+  max-width: 100%;
 }
 
 .header__nav-buttom-item:last-child {
@@ -85,8 +94,8 @@
   display: flex;
   width: 250px;
   height: 30px;
-  top: 76px;
-  right: 0;
+  top: 97px;
+  right: -5px;
   z-index: 5;
 }
 
@@ -112,6 +121,7 @@
 }
 
 .header__input {
+  padding: 0;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--main-color);
@@ -143,9 +153,10 @@
   align-items: bottom;
   align-self: bottom;
   padding-bottom: 0;
-  width: 85px;
+  width: 90px;
   height: 20px;
   padding-left: 0;
+  color: var(--main-color);
   background-color: transparent;
   border: none;
   transition: all .3s ease-in-out;
@@ -167,7 +178,7 @@
 
 .header__search-btn:hover:not(:focus) {
   cursor: pointer;
-  background-image: url(../img/Search-menu-btn-sm-hover.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='%239D5CD0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='%239D5CD0'/%3E%3C/svg%3E%0A");
 }
 
 .header__search-btn:focus-visible:not(:hover) { 
@@ -175,7 +186,7 @@
 }
 
 .header__search-btn:active {
-  background-image: url(../img/Search-menu-btn-sm-active.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='6.8678' height='1.71695' transform='matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)' fill='%23D1A9F0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z' fill='%23D1A9F0'/%3E%3C/svg%3E%0A");
 }
 
 .header__nav-link:focus-visible,
@@ -184,7 +195,7 @@
 }
 
 .header__nav-link:hover,
-.header__enter-btn:hover .header__enter-btn-text {
+.header__enter-btn:hover {
   cursor: pointer;
   color: #C283F3;
 }
@@ -205,10 +216,7 @@
   background-image: url(../img/Vector-active.svg);
 }
 
-@media (max-width: 1800px) {
-  .header__nav-list {
-    margin-right: 50px;
-  } 
+@media (max-width: 1600px) {
 
   .header__nav-buttom-item {
     max-width: 185px;
@@ -256,7 +264,6 @@
          -o-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
   }
- 
 
   .header__burger-span {
     position: absolute;
@@ -344,7 +351,7 @@
     z-index: 10;
   }
 
-  .header__enter-btn-text {
+  .header__enter-btn {
     color: var(--main-color);
   }
 
@@ -360,6 +367,8 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 51px;
+    animation-name: fade-in;
+    animation-duration: 1s;
     width: 1024px;
     height: 768px; 
     overflow: auto;
@@ -367,6 +376,15 @@
     box-shadow: 0px 4px 4px 0px #00000040;
     transition: all .3s ease-in-out;
     z-index: 5;
+  } 
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .header__nav-list {
@@ -433,6 +451,17 @@
     display: flex;
     background-color: transparent;
     border-radius: 16px;
+    animation-name: fade-in;
+    animation-duration: .5s;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   .header__form-inactive {

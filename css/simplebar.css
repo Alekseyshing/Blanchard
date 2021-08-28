@@ -34,22 +34,6 @@
   visibility: hidden;
 }
 
-.header__item-link::before {
-
-  top:0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: 2px solid transparent;
-}
-
-
-.header__item-link:hover,
-.header__item-link:focus-visible {
-  border: 2px solid var(--add-color);
-  cursor: pointer;
-}
-
 .header__scroll-list-item:active {
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
   outline: 2px solid #D1A9F0;

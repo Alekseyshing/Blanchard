@@ -73,7 +73,6 @@
 .projects__sw-slide {
   cursor: pointer;
   display: block;
-  max-width: 450px;
   max-height: 150px;
   border: none;
   filter: grayscale(100%);
@@ -218,35 +217,35 @@
 }
 
 .projects__button-prev:hover {
-  background-image: url(../img/btn-4-prev-hover.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z' fill='%23D1A9F0'/%3E%3Cpath d='M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z' stroke='none'/%3E%3Cpath d='M16 20L11 15L16 10' stroke='black'/%3E%3C/svg%3E ");
 }
 
 .projects__button-next:hover {
-  background-image: url(../img/btn-4-next-hover.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='15' cy='15' rx='15' ry='15' transform='rotate(-90 15 15)' fill='%23D1A9F0'/%3E%3Cpath d='M14 10L19 15L14 20' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
-.projects__button-prev:focus {
-  background-image: url(../img/btn-4-prev-focus.svg);
+.projects__button-prev:focus-visible {
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z' fill='%23ECECEC' /%3E%3Cpath d='M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M16 20L11 15L16 10' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
 .projects__button-next:focus {
-  background-image: url(../img/btn-4-next-focus.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 1C22.732 1 29 7.26801 29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26802 0.999999 15 1Z' fill='%23ECECEC' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M14 10L19 15L14 20' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
 .projects__button-prev:active {
-  background-image: url(../img/btn-4-prev-active.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z' fill='%23D1A9F0' /%3E%3Cpath d='M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M16 20L11 15L16 10' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
 .projects__button-next:active {
-  background-image: url(../img/btn-4-next-active.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 1C22.732 1 29 7.26801 29 15C29 22.732 22.732 29 15 29C7.26801 29 1 22.732 1 15C1 7.26801 7.26802 0.999999 15 1Z' fill='%23D1A9F0' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M14 10L19 15L14 20' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
 .projects__button-prev .swiper-button-disabled {
-  background-image: url(../img/btn-4-prev-disable.svg);
+  opacity: .1;
 }
 
 .projects__button-next .swiper-button-disabled {
-  background-image: url(../img/btn-4-next-disable.svg);
+  opacity: .1;
 }
 
 @media (max-width: 1024px) {
@@ -275,7 +274,6 @@
   .projects__sw-slide {
     cursor: pointer;
     display: block;
-    width: 384px !important;
     height: 130px;
     background-size: contain;
   }

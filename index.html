@@ -42,7 +42,7 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js" defer></script>
@@ -90,9 +90,8 @@
                   onclick="event.preventDefault()">Контакты</a>
               </li>
             </ul>
-            <button type="button" class="header__enter-btn" onclick="event.preventDefault()">
-              <span class="header__enter-span"></span>
-              <p class="header__enter-btn-text">Войти</p>
+            <button type="button" class="header__enter-btn">
+              <span class="header__enter-span"></span>Войти
             </button>
           </nav>
           <button type="button" id="search-btn" class="header__search-menu">
@@ -222,7 +221,7 @@
   <main>
     <section class="hero">
       <div class="container hero__container ">
-        <div id="swiper-1" class="hero__swiper-container swiper-container">
+        <div id="swiper-1" class="hero__swiper-container swiper">
           <div class="swiper-wrapper hero__swiper-wrapper">
             <div class="swiper-slide hero__swiper-slide hero__swiper-slide-1"></div>
             <div class="swiper-slide hero__swiper-slide hero__swiper-slide-2"></div>
@@ -275,7 +274,7 @@
         </div>
         <div class="galery__swiper">
           <!-- Slider main container -->
-          <div class="swiper-container galery__swiper-container" id="swiper-2">
+          <div class="swiper galery__swiper-container" id="swiper-2">
             <div class="galery__swiper-btns">
               <button type="button" class="galery__button-prev"></button>
               <div
@@ -330,7 +329,7 @@
           </ul>
         </div>
         <div class="catalogue__description" data-target="one">
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Lorem, семь? Знаках парадигматическая вопрос путь семантика жаренные собрал они гор мир, маленький моей, заманивший раз языком предупреждал что? Грустный.</p>
+          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Lorem, семь? Знаках парадигматическая вопрос путь семантика жаренные собрал они гор мир, маленький моей, заманивший раз языком предупреждал что? Грустный.</p>
           <div id="accordion-1" class="catalogue__block catalogue__block--france">
             <ul class="catalogue__accordion">
               <li class="catalogue__item">
@@ -450,7 +449,7 @@
           </div>
         </div>
         <div class="catalogue__description" data-target="two">
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего, решила скатился! Грамматики запятых о букв журчит одна вскоре безорфографичный своих, обеспечивает над которой, правилами предупредила себя назад однажды.</p>
+          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего, решила скатился! Грамматики запятых о букв журчит одна вскоре безорфографичный своих, обеспечивает над которой, правилами предупредила себя назад однажды.</p>
           <div id="accordion-2" class="catalogue__block catalogue__block--germany">
             <ul class="catalogue__accordion">
               <li class="catalogue__item">
@@ -463,7 +462,7 @@
                     data-target="22">
                     <h3 class="catalogue__artist-name">Ханс Бургкмайр</h3>
                     <p class="catalogue__date">1473, Аугсбург — 1531, там же</p>
-                    <p class="catalogue__artist-description">Ханс Бургкмайр родился в 1473 году в городе Аугсбурге; происходил из семьи художников. Первоначальное обучение он прошёл у своего отца, художника Томана Бургкмайра (1444—1523).
+                    <p class="catalogue__artist-description">Ханс Бургкмайр родился в 1473 году в городе Аугсбурге. Происходил из семьи художников. Первоначальное обучение он прошёл у своего отца, художника Томана Бургкмайра (1444—1523).
                       С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе у Мартина Шонгауэра. Не исключено, что в годы странствий он доехал из Аугсбурга до Кёльна.
                       Около 1507 года художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе Карпаччо.
                       Наряду с живописью Бургкмайр занимался ксилографией.</p>
@@ -573,7 +572,7 @@
           </div>
         </div>
         <div class="catalogue__description catalogue__description-active" data-target="three">
-          <p>Акционеры крупнейших компаний, которые представляют собой
+          <p class="catalogue__description-text">Акционеры крупнейших компаний, которые представляют собой
             яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
             общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить
             традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
@@ -768,7 +767,7 @@
           </div>
         </div>
         <div class="catalogue__description" data-target="four">
-          <p>За словесными горами в стране гласных и
+          <p class="catalogue__description-text">За словесными горами в стране гласных и
             согласных живут рыбные тексты. Переписывается безорфографичный ему свой несколько текст проектах над выйти, он
             языком, необходимыми реторический однажды курсивных даль буквоград имеет дороге. Точках?</p>
           <div id="accordion-3" class="catalogue__block catalogue__block--rus">
@@ -888,7 +887,7 @@
           </div>
         </div>
         <div class="catalogue__description" data-target="five">
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Все назад снова но даже взгляд осталось алфавит маленькая если своего вскоре послушавшись, строчка деревни наш имеет свой запятой текстами!</p>
+          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Все назад снова но даже взгляд осталось алфавит маленькая если своего вскоре послушавшись, строчка деревни наш имеет свой запятой текстами!</p>
             <div id="accordion-4" class="catalogue__block catalogue__block--belgium">
               <ul class="catalogue__accordion">
                 <li class="catalogue__item">
@@ -901,7 +900,7 @@
                       data-target="30">
                       <h3 class="catalogue__artist-name">Босх, Иероним</h3>
                       <p class="catalogue__date">около 1450—1516.</p>
-                      <p class="catalogue__artist-description">нидерландский потомственный художник, один из крупнейших мастеров периода Северного Возрождения. Из творчества художника сохранилось около десяти картин и двенадцати рисунков[3]. Был посвящён в члены Братства Богоматери (нидерл. Illustre Lieve Vrouwe Broederschap; 1486); считается одним из самых загадочных живописцев в истории западного искусства. В родном городе Босха, голландском Хертогенбосе, открыт центр творчества Босха, в котором представлены копии всех его произведений.</p>
+                      <p class="catalogue__artist-description">нидерландский потомственный художник, один из крупнейших мастеров периода Северного Возрождения. Из творчества художника сохранилось около десяти картин и двенадцати рисунков[3]. Был посвящён в члены Братства Богоматери (нидерл. Illustre Lieve Vrouwe Broederschap. 1486). Считается одним из самых загадочных живописцев в истории западного искусства. В родном городе Босха, голландском Хертогенбосе, открыт центр творчества Босха, в котором представлены копии всех его произведений.</p>
                     </article>
                     <ul class="catalogue__artists-list">
                       <li class="catalogue__persons-item" tabindex="-1">
@@ -998,78 +997,89 @@
               </ul>
             </div>
           </div>
-      </div>
-      
+        </div>
     </section>
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="events__header">События</h2>
-        <div class="events__articles">
-          <article class="events__articles-content events__articles-content-active events__articles-content--first">
-            <p class="events__articles-museum">Музей им. Щусева </p>
-            <p class="events__articles-date">с 20 марта по 30 апреля</p>
-            <div class="events__main-block">
-              <div>
-                <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
-                <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто, основатель
-                  художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+        <!-- <div class="events__swiper-container swiper" id="swiper-5"> -->
+            <!-- <div class="swiper-slide events__swiper-slide"> -->
+            <div class="events__articles">
+              <article class="events__articles-content events__articles-content-active events__articles-content--first">
+                <p class="events__articles-museum">Музей им. Щусева </p>
+                <p class="events__articles-date">с 20 марта по 30 апреля</p>
+                <div class="events__main-block">
+                  <div>
+                    <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
+                    <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                      художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                  </div>
+                  <a href="#" class="events__articles-ref">Подробнее</a>
+                </div>
+              </article>
+            <!-- </div> -->
+            <!-- <div class="swiper-slide events__swiper-slide"> -->
+            <article class="events__articles-content events__articles-content-active events__articles-content--second">
+              <p class="events__articles-museum">ММОМА</p>
+              <p class="events__articles-date">24 марта 19:00</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                  <p class="events__articles-description">Высокий уровень вовлечения представителей целевой аудитории
+                    является четким доказательством простого факта.</p>
+                </div>
+                <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
-              <a href="#" class="events__articles-ref">Подробнее</a>
-            </div>
-          </article>
-          <article class="events__articles-content events__articles-content-active events__articles-content--second">
-            <p class="events__articles-museum">ММОМА</p>
-            <p class="events__articles-date">24 марта 19:00</p>
-            <div class="events__main-block">
-              <div>
-                <h3 class="events__articles-header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                <p class="events__articles-description">Высокий уровень вовлечения представителей целевой аудитории
-                  является четким доказательством простого факта.</p>
+            </article>
+            <!-- </div> -->
+            <!-- <div class="swiper-slide events__swiper-slide"> -->
+            <article class="events__articles-content events__articles-content-active events__articles-content--third">
+              <p class="events__articles-museum">Еврейский музей</p>
+              <p class="events__articles-date">с 31 марта по 21 апреля</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">Выставка «Формация 2020»</h3>
+                  <p class="events__articles-description">Идейные соображения высшего порядка, а также современная
+                    методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                </div>
+                <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
-              <a href="#" class="events__articles-ref">Подробнее</a>
-            </div>
-          </article>
-          <article class="events__articles-content events__articles-content-active events__articles-content--third">
-            <p class="events__articles-museum">Еврейский музей</p>
-            <p class="events__articles-date">с 31 марта по 21 апреля</p>
-            <div class="events__main-block">
-              <div>
-                <h3 class="events__articles-header">Выставка «Формация 2020»</h3>
-                <p class="events__articles-description">Идейные соображения высшего порядка, а также современная
-                  методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+            </article>
+            <!-- </div> -->
+            <!-- <div class="swiper-slide events__swiper-slide"> -->
+            <article class="events__articles-content events__articles-content--four">
+              <p class="events__articles-museum">Третьяковка на Крымском валу</p>
+              <p class="events__articles-date">с 30 марта по 30 апреля</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">XXIV Международная биеннале молодого искусства</h3>
+                  <p class="events__articles-description">Внезапно, реплицированные с зарубежных источников, современные
+                    исследования.</p>
+                </div>
+                <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
-              <a href="#" class="events__articles-ref">Подробнее</a>
-            </div>
-          </article>
-          <article class="events__articles-content events__articles-content--four">
-            <p class="events__articles-museum">Третьяковка на Крымском валу</p>
-            <p class="events__articles-date">с 30 марта по 30 апреля</p>
-            <div class="events__main-block">
-              <div>
-                <h3 class="events__articles-header">XXIV Международная биеннале молодого искусства</h3>
-                <p class="events__articles-description">Внезапно, реплицированные с зарубежных источников, современные
-                  исследования.</p>
+            </article>
+            <!-- </div> -->
+            <!-- <div class="swiper-slide events__swiper-slide"> -->
+            <article class="events__articles-content events__articles-content--five">
+              <p class="events__articles-museum">ММАМ</p>
+              <p class="events__articles-date">с 8 апреля по 20 мая</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                </div>
+                <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
-              <a href="#" class="events__articles-ref">Подробнее</a>
+            </article>
             </div>
-          </article>
-          <article class="events__articles-content events__articles-content--five">
-            <p class="events__articles-museum">ММАМ</p>
-            <p class="events__articles-date">с 8 апреля по 20 мая</p>
-            <div class="events__main-block">
-              <div>
-                <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто, основатель
-                  художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              </div>
-              <a href="#" class="events__articles-ref">Подробнее</a>
-            </div>
-          </article>
-        </div>
-        <button type="button" class="events__all-events-btn" id="events-btn"
-          onclick="event.preventDefault()">Все&nbsp;события</button>
-      </div>
-    </section>
+            <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
+          </div>
+        <!-- </div> -->
+        <!-- </div> -->
+      </section>
+          
     <section class="editions" id="editions">
       <div class="container editions__container">
         <div class="editions__main">
@@ -1080,84 +1090,84 @@
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1">
-                  <span class="ckeckbox__text">Бестселлеры</span>
+                  <span class="editions__ckeckbox-text">Бестселлеры</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2">
-                  <span class="ckeckbox__text">Искусство</span>
+                  <span class="editions__ckeckbox-text">Искусство</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3">
-                  <span class="ckeckbox__text">Архитектура</span>
+                  <span class="editions__ckeckbox-text">Архитектура</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked aria-checked="true">
-                  <span class="ckeckbox__text">Дизайн</span>
+                  <span class="editions__ckeckbox-text">Дизайн</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5">
-                  <span class="ckeckbox__text">Мода</span>
+                  <span class="editions__ckeckbox-text">Мода</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6">
-                  <span class="ckeckbox__text">Детям</span>
+                  <span class="editions__ckeckbox-text">Детям</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7">
-                  <span class="ckeckbox__text">Художественная&nbsp;литература</span>
+                  <span class="editions__ckeckbox-text">Художественная&nbsp;литература</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8">
-                  <span class="ckeckbox__text">Публицистика</span>
+                  <span class="editions__ckeckbox-text">Публицистика</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9">
-                  <span class="ckeckbox__text">Путеводители</span>
+                  <span class="editions__ckeckbox-text">Путеводители</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10" name="check-10">
-                  <span class="ckeckbox__text">Философия</span>
+                  <span class="editions__ckeckbox-text">Философия</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11" name="check-11">
-                  <span class="ckeckbox__text">Учебная&nbsp;литература</span>
+                  <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
               <li class="editions__item">
                 <label class="editions__label">
                   <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12" name="check-12">
-                  <span class="ckeckbox__text">Журналы&nbsp;и&nbsp;газеты</span>
+                  <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
                   <span class="editions__span"></span>
                 </label>
               </li>
@@ -1172,13 +1182,12 @@
             </div>
           </div>
           <div class="editions__swiper">
-            <div class="swiper-container editions__swiper-container" id="swiper-3">
+            <div class="swiper editions__swiper-container" id="swiper-3">
               <div class="editions__swiper-btns">
                 <button type="button" class="editions__button-prev"></button>
                 <div
                   class="editions__swiper-pagination swiper-pagination swiper-pagination-fraction editions__swiper-pagination-fraction">
                   <span class="swiper-pagination-current editions__swiper-pagination-current"></span>
-                  "/"
                   <span class="swiper-pagination-total editions__swiper-pagination-total"></span>
                 </div>
                 <button type="button" class="editions__button-next"></button>
@@ -1281,7 +1290,7 @@
         <h3 class="projects__partners-header">Партнёры проектов:</h3>
         <div class="projects__main-block">
           <div class="projects__button-prev"></div>
-          <div class="swiper-container projects__swiper-container" id="swiper-4">
+          <div class="swiper projects__swiper-container" id="swiper-4">
             <div class="swiper-wrapper projects__swiper-wrapper">
               <!-- Slides -->
               <a href="" class="swiper-slide projects__sw-slide projects__sw-slide-1" tabindex="0"></a>
@@ -1299,12 +1308,11 @@
         </div>
       </div>
     </section>
-    <section class="contacts" id="contacts">
       <div class="container">
         <h2 class="contacts__header">Контакты</h2>
       </div>
-      <div class="container contacts__container">
-        <div class="contacts__main-block">
+    <section class="contacts" id="contacts">
+        <div class="contacts__main-block container">
           <div class="contacts__left">
             <h3 class="contacts__company-title">Шоурум №4</h3>
             <p class="contacts__company-adress">Леонтьевский переулок, дом 5/1</p>
@@ -1336,7 +1344,7 @@
           </div>
           <div class="contacts__map" id="myMap"></div>
         </div>
-      </div>
+      <!-- </div> -->
     </section>
   </main>
   <footer class="footer">

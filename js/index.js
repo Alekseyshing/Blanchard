@@ -63,10 +63,14 @@ window.addEventListener('DOMContentLoaded', function() {
         catalogueDescription.classList.remove('catalogue__description-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description-active');
+            // Обновляем аккордионы
+            $('.catalogue__accordion').accordion("refresh");
     })
+    $( ".catalogue__accordion" ).accordion();
   })
 
-  
+ 
+
 
   document.querySelectorAll('.catalogue__persons-btn').forEach(function(tabsBtn2){
     console.log(tabsBtn2);
@@ -92,7 +96,8 @@ window.addEventListener('DOMContentLoaded', function() {
      })
     });
 
-    document.querySelector('#events-btn').addEventListener('click', function() {
+      // Открыть оставшиеся карточки в секции События
+    document.querySelector('.events__all-events-btn').addEventListener('click', function() {
       document.querySelectorAll('.events__articles-content').forEach(function(articlesContent) {
         articlesContent.classList.add('events__articles-content-active')
       })
@@ -102,6 +107,38 @@ window.addEventListener('DOMContentLoaded', function() {
       })
     });
 
+const fadeIn = (el, timeout, display) => {
+      el.style.opacity = 0;
+      el.style.display = display || 'block';
+      el.style.transition = `opacity ${timeout}ms`;
+      setTimeout(() => {
+        el.style.opacity = 1;
+      }, 10);
+    };
+
+    const fadeOut = () => {
+      
+    };
+
+    const block = document.querySelector('.events__articles-content--four');
+    const block1 = document.querySelector('.events__articles-content--five');
+    // const block2 = document.querySelector('.events__articles-content--third');
+    const btn = document.querySelector('.events__all-events-btn');
+
+    btn.addEventListener('click', (event) => {
+      let display = event.currentTarget.style.display
+      if (display = 'none') {
+        fadeIn(block, 1000, 'flex');
+      } else {
+        fadeOut();
+      }
+      if (display = 'none') {
+        fadeIn(block1, 1000, 'flex');
+      } else {
+        fadeOut();
+      }
+    })
+
     document.querySelectorAll('.catalogue__persons-btn').forEach(function(descriptionStep) {
       descriptionStep.addEventListener('click',  function (event) {
         const path = event.currentTarget.dataset.path
@@ -109,11 +146,9 @@ window.addEventListener('DOMContentLoaded', function() {
           descriptionStep.classList.remove('catalogue__persons-btn-active')
       })
     })
-    
        descriptionStep.addEventListener('click',  function (event) {
         event.currentTarget.classList.add('catalogue__persons-btn-active')
        })
-
   })
 
       tippy.setDefaultProps({
@@ -232,9 +267,14 @@ window.addEventListener('DOMContentLoaded', function() {
     autoheight: false,
     zoom: true,
     slidesPerView: 3,
-    spaceBetween: 50,
+    spaceBetween: 48,
     slidesPerColumn: 2,
     slidesPerGroup: 6,
+
+    grid: {
+      rows: 2,
+      fill: 'column',
+    },
 
     pagination: {
       el: '.swiper-pagination',
@@ -374,11 +414,63 @@ window.addEventListener('DOMContentLoaded', function() {
    });
   });
 
+  // // мобильный свайпер в событиях
+
+  // const slider = document.querySelector('.events__swiper');
+
+  // let mySwiper;
+
+  // function mobileSlider() {
+  //   if (window.innerWidth <= 740 && slider.dataset.mobile == "false") {
+  //     mySwiper = new Swiper(slider, {
+  //       containerModifierClass: '.events__swiper',
+  //       wrapperClass: 'events__swiper-wrapper',
+  //       slideClass: 'events__swiper-slide',
+  //       speed: 400,
+  //       slidesPerView: 1,
+  //       slidesPerColumn: 1,
+  //       spaceBetween: 20,
+  //       pagination: {
+  //         el: '.swiper-pagination',
+  //         clickable: true,
+  //       },
+  //       scrollbar: {
+  //         el: '.swiper-scrollbar',
+  //       },
+  //     });
+
+  //     slider.dataset.mobile = "true";
+  //   }
+
+  //   if (window.innerWidth > 740) {
+  //     slider.dataset.mobile = "false";
+  //     if (slider.classList.contains('swiper-container--eventsinitialized')) {
+  //       mySwiper.destroy();
+  //     }
+  //   }
+  // }
+
+  // mobileSlider();
+
+  // window.addEventListener('resize', () => {
+  //   mobileSlider();
+  // })
+
   ymaps.ready(init);
   function init() {
     var myMap = new ymaps.Map("myMap", {
       center: [55.758,37.62],
-      zoom: 15
+      zoom: 15,
+      controls: ['geolocationControl', 'zoomControl'],
+    },
+    { 
+      suppressMapOpenBlock: true,
+      geolocationControlSize: "large",
+      geolocationControlPosition:  { top: "200px", right: "20px" },
+      geolocationControlFloat: 'none',
+      zoomControlSize: "small",
+      zoomControlFloat: "none",
+      zoomControlPosition: { top: "120px", right: "20px" }
     });
 
       var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, { 
@@ -394,10 +486,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
   $( function() {
     $( ".catalogue__accordion" ).accordion({
-      animate: true,
-      active: 0,
-      collapsible: true,
-      heightStyle: 'content', 
+      // animate: true,
+      // active: false,
+      // collapsible: true,
+      icons: false,
+      // heightStyle: 'content', 
     });
   });
 

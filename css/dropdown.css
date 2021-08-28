@@ -26,7 +26,7 @@ a {
   position: relative;
   color: var(--main-color);
   height: 26px;
-  margin-right: 100px;
+  margin-right: 11%;
 }
 
 .header__nav-buttom-item:last-child {
@@ -110,6 +110,7 @@ a {
 }
 
 .header__item-link {
+  position: relative;
   display: block;
   width: 220px;
   height: 40px;
@@ -123,6 +124,33 @@ a {
   background-color: rgba(216, 143, 153, 1);
   text-align: start;
   transition: all .3s ease-in-out;
+}
+
+
+.header__item-link::before {
+  position: absolute;
+  content: '';
+  padding: 0;
+  display: block;
+  width: 220px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0px;
+  border: 2px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+
+.header__item-link:hover::before,
+.header__item-link:focus-visible::before {
+  border: 2px solid var(--add-color);
+  cursor: pointer;
+}
+
+.header__item-link:active::before {
+  background-color: rgba(194, 131, 243, 0.4);
 }
 
 .header__item-link:last-child {

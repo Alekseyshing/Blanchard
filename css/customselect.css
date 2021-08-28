@@ -1,10 +1,20 @@
+.choices {
+  transform: all .3s ease-in-out;
+}
+
 .choices__inner {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
+  transition: all .3s ease-in-out;
+  padding: 1px 0px 2px 10px;
+  min-height: 35px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .choices__item {
   color: rgba(255, 255, 255, 1);
+  transition: all .3s ease-in-out;
 }
 
 .choices[data-type*=select-one]:after{
@@ -91,5 +101,9 @@
 
 .choices[data-type*=select-one].is-open {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.choices__item--choice {
+  color: rgba(153, 153, 153, 1);
 }

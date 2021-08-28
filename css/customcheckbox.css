@@ -2,10 +2,12 @@
   position: relative;
   cursor: pointer;
   padding-left: 20px;
+  text-align: center;
+  transition: all .3s ease-in-out;
 }
 
 .editions__item,
-.ckeckbox__text,
+.editions__ckeckbox-text,
 .editions__label  {
   transition: all .3s ease-in-out;
 }
