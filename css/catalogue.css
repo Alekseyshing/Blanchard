@@ -85,40 +85,45 @@
   margin-right: 0;
 }
 
-.catalogue__fl-btn-1 {
+.catalogue__fl-btn--1 {
   background-image: url(../img/fl1.svg);
   border: 2px solid transparent;
 }
 
-.catalogue__fl-btn-2 {
+.catalogue__fl-btn--2 {
   background-image: url(../img/fl2.svg);
   border: 2px solid transparent;
 }
 
-.catalogue__fl-btn-3 {
+.catalogue__fl-btn--3 {
   background-image: url(../img/fl3.svg);
   border: 2px solid transparent;
 }
 
-.catalogue__fl-btn-4 {
+.catalogue__fl-btn--4 {
   background-image: url(../img/fl4.svg);
   border: 2px solid transparent;
 }
 
-.catalogue__fl-btn-5 {
+.catalogue__fl-btn--5 {
   background-image: url(../img/fl5.svg);
   border: 2px solid transparent;
 }
 
-.catalogue__fl-btn-active {
+.catalogue__fl-btn--active {
   border: 2px solid #7943A4;
 }
 
-.catalogue__fl-btn:focus-visible {
-  background-color: (0px 0px 20px 0px rgba(157, 92, 208, 0.7));
+.catalogue__fl-btn:focus-visible::before {
+  box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
 }
 
-.catalogue__description-active {
+.catalogue__fl-btn--active .catalogue__fl-btn::before {
+  box-shadow: none;
+}
+
+
+.catalogue__description--active {
   display: block;
   min-height: 130px;
   animation-name: fade-in;
@@ -155,7 +160,7 @@
   height: 470px;
 }
 
-.catalogue__article-active {
+.catalogue__article--active {
   display: block;
   animation-name: fade-in;
   animation-duration: 1s;
@@ -311,7 +316,7 @@
 } */
 
 .catalogue__header-text {
-  color: (var(--main-color));
+  color: var(--main-color);
 }  
 
 .catalogue__persons { 
@@ -387,7 +392,7 @@
   padding-bottom: 27px;
   padding-left: 2px;
   font-weight: 600;
-  font-style: 24px;
+  font-size: 24px;
   line-height: 32px;
   color: var(--text-color);
   font-weight: 600;
@@ -483,7 +488,7 @@
   border-bottom: 1px solid var(--add-color);
 }
 
-.catalogue__persons-btn-active,
+.catalogue__persons-btn--active,
 .catalogue__persons-item:active { 
   color: #7943A4;
 }
@@ -546,7 +551,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: (var(--main-color));
+  color: var(--main-color);
 }  
 
 .catalogue__persons { 

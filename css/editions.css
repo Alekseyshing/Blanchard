@@ -170,31 +170,31 @@
   margin-bottom: 20px;
 }
 
-.editions__image-slide-1 {
+.editions__image-slide--1 {
   background-image: url(../img/swim31.jpg);
 }
 
-.editions__image-slide-2 {
+.editions__image-slide--2 {
   background-image: url(../img/swim32.jpg);
 }
 
-.editions__image-slide-3 {
+.editions__image-slide--3 {
   background-image: url(../img/swim33.jpg);
 }
 
-.editions__image-slide-4 {
+.editions__image-slide--4 {
   background-image: url(../img/swim34.jpg);
 }
 
-.editions__image-slide-5 {
+.editions__image-slide--5 {
   background-image: url(../img/swim35.jpg);
 }
 
-.editions__image-slide-6 {
+.editions__image-slide--6 {
   background-image: url(../img/swim36.jpg);
 }
 
-.editions__image-slide-7 {
+.editions__image-slide--7 {
   background-image: url(../img/swim37.jpg);
 }
 
@@ -206,14 +206,14 @@
 
 .editions__block-left-element {
   font-weight: 700;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 21px;
 }
 
 .editions__block-price {
   font-style: italic;
   font-weight: 400;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 21px;
 }
 
@@ -309,31 +309,31 @@
   height: 390px;
 }
 
-/* .editions__image-slide-1 {
+/* .editions__image-slide--1 {
   background-image: url(../img/edim1024-1.jpg);
 }
 
-.editions__image-slide-2 {
+.editions__image-slide--2 {
   background-image: url(../img/edim1024-2.jpg);
 }
 
-.editions__image-slide-3 {
+.editions__image-slide--3 {
   background-image: url(../img/edim1024-3.jpg);
 }
 
-.editions__image-slide-4 {
+.editions__image-slide--4 {
   background-image: url(../img/edim1024-4.jpg);
 }
 
-.editions__image-slide-5 {
+.editions__image-slide--5 {
   background-image: url(../img/edim1024-5.jpg);
 }
 
-.editions__image-slide-6 {
+.editions__image-slide--6 {
   background-image: url(../img/edim1024-6.jpg);
 }
 
-.editions__image-slide-7 {
+.editions__image-slide--7 {
   background-image: url(../img/edim1024-7.jpg);
 } */
 

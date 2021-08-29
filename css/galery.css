@@ -101,51 +101,51 @@
   transition: all .3s ease-in-out;
 }
 
-.galery__image-slider-1 {
+.galery__image-slider--1 {
   background-image: url(../img/Rectangle1.jpg);
 }
 
-.galery__image-slider-2 {
+.galery__image-slider--2 {
   background-image: url(/img/Rectangle2.jpg);
 }
 
-.galery__image-slider-3 {
+.galery__image-slider--3 {
   background-image: url(../img/Rectangle3.jpg);
 }
 
-.galery__image-slider-4 {
+.galery__image-slider--4 {
   background-image: url(../img/Rectangle4.jpg);
 }
 
-.galery__image-slider-5 {
+.galery__image-slider--5 {
   background-image: url(../img/Rectangle5.jpg);
 }
 
-.galery__image-slider-6 {
+.galery__image-slider--6 {
   background-image: url(../img/Rectangle6.jpg);
 }
 
-.galery__image-slider-7 {
+.galery__image-slider--7 {
   background-image: url(../img/Rectangle7.jpg);
 }
 
-.galery__image-slider-8 {
+.galery__image-slider--8 {
   background-image: url(../img/Rectangle8.jpg);
 }
 
-.galery__image-slider-9 {
+.galery__image-slider--9 {
   background-image: url(../img/Rectangle9.jpg);
 }
 
-.galery__image-slider-10 {
+.galery__image-slider--10 {
   background-image: url(../img/Rectangle10.jpg);
 }
 
-.galery__image-slider-11 {
+.galery__image-slider--11 {
   background-image: url(../img/Rectangle11.jpg);
 }
 
-.galery__image-slider-12 {
+.galery__image-slider--12 {
   background-image: url(../img/Rectangle12.jpg);
 }
 
@@ -333,51 +333,51 @@
     height: 280px;
   }
 
-  .galery__image-slider-1 {
+  .galery__image-slider--1 {
     background-image: url(../img/sw-2-1024-1.jpg);
   }
 
-  .galery__image-slider-2 {
+  .galery__image-slider--2 {
     background-image: url(../img/sw-2-1024-2.jpg);
   }
 
-  .galery__image-slider-3 {
+  .galery__image-slider--3 {
     background-image: url(../img/sw-2-1024-3.jpg);
   }
 
-  .galery__image-slider-4 {
+  .galery__image-slider--4 {
     background-image: url(../img/sw-2-1024-4.jpg);
   }
 
-  .galery__image-slider-5 {
+  .galery__image-slider--5 {
     background-image: url(../img/sw-2-1024-5.jpg);
   }
 
-  .galery__image-slider-6 {
+  .galery__image-slider--6 {
     background-image: url(../img/sw-2-1024-6.jpg);
   }
 
-  .galery__image-slider-7 {
+  .galery__image-slider--7 {
     background-image: url(../img/sw-2-1024-7.jpg);
   }
 
-  .galery__image-slider-8 {
+  .galery__image-slider--8 {
     background-image: url(../img/sw-2-1024-8.jpg);
   }
 
-  .galery__image-slider-9 {
+  .galery__image-slider--9 {
     background-image: url(../img/sw-2-1024-9.jpg);
   }
 
-  .galery__image-slider-10 {
+  .galery__image-slider--10 {
     background-image: url(../img/sw-2-1024-10.jpg);
   }
 
-  .galery__image-slider-11 {
+  .galery__image-slider--11 {
     background-image: url(../img/sw-2-1024-11.jpg);
   }
 
-  .galery__image-slider-12 {
+  .galery__image-slider--12 {
     background-image: url(../img/sw-2-1024-12.jpg);
   }
 } */

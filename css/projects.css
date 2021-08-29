@@ -82,39 +82,39 @@
   transition: all 200ms ease-in-out;
 }
 
-.projects__sw-slide-1 {
+.projects__sw-slide--1 {
   background-image: url(../img/proim1.png);
 }
 
-.projects__sw-slide-2 {
+.projects__sw-slide--2 {
   background-image: url(../img/proim2.png);
 }
 
-.projects__sw-slide-3 {
+.projects__sw-slide--3 {
   background-image: url(../img/proim3.png);
 }
 
-.projects__sw-slide-4 {
+.projects__sw-slide--4 {
   background-image: url(../img/proim4.png);
 }
 
-.projects__sw-slide-5 {
+.projects__sw-slide--5 {
   background-image: url(../img/proim5.png);
 }
 
-.projects__sw-slide-6 {
+.projects__sw-slide--6 {
   background-image: url(../img/proim6.png);
 }
 
-.projects__sw-slide-7 {
+.projects__sw-slide--7 {
   background-image: url(../img/proim7.png);
 }
 
-.projects__sw-slide-8 {
+.projects__sw-slide--8 {
   background-image: url(../img/proim8.png);
 }
 
-.projects__sw-slide-9 {
+.projects__sw-slide--9 {
   background-image: url(../img/proim9.png);
 }
 

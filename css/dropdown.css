@@ -3,7 +3,6 @@ a {
 }
 
 .header__select {
-  height: 26px;
   display: flex;
   align-items: center;
   outline: none;
@@ -12,6 +11,8 @@ a {
   background-color: transparent;
   font-size: 18px;
   font-weight: 400;
+  max-width: 220px;
+  height: 26px;
   color: #ffffff;
   transition: color 0.2s ease-in-out;
   cursor: pointer;
@@ -26,7 +27,7 @@ a {
   position: relative;
   color: var(--main-color);
   height: 26px;
-  margin-right: 11%;
+  margin-right: 7%;
 }
 
 .header__nav-buttom-item:last-child {

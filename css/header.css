@@ -11,8 +11,6 @@
 
 .header__main-block {
   display: flex;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 
 .header__logo {
@@ -75,13 +73,20 @@
 
 .header__nav-buttom {
   display: flex;
+  justify-content: flex-start;
+  min-width: 1300px;
 }
 
 .header__nav-buttom-list {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  flex-direction: wrap;
-  max-width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-width: 90%;
+}
+
+.header__nav-buttom-item {
+  max-width: 210px;
 }
 
 .header__nav-buttom-item:last-child {
@@ -150,8 +155,6 @@
 .header__enter-btn {
   display: flex;
   justify-content: space-between;
-  align-items: bottom;
-  align-self: bottom;
   padding-bottom: 0;
   width: 90px;
   height: 20px;
@@ -217,7 +220,6 @@
 }
 
 @media (max-width: 1600px) {
-
   .header__nav-buttom-item {
     max-width: 185px;
   }
@@ -304,6 +306,7 @@
 
   .header__burger::before {
     top: 0;
+    width: 36px;
   }
 
   .header__burger::after {
@@ -311,7 +314,7 @@
     width: 24px;
   }
 
-  .burger-active {
+  .header__burger--active {
     z-index: 9;
     -webkit-transition-property: all;
     -o-transition-property: all;
@@ -324,7 +327,7 @@
             transition-timing-function: ease-in-out;
   }
 
-  .burger-active span {
+  .header__burger--active span {
     -webkit-transform: scale(0);
         -ms-transform: scale(0);
             transform: scale(0);
@@ -333,7 +336,7 @@
     transition: all .3s ease-in-out;
   }
 
-  .burger-active::before {
+  .header__burger--active::before {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -342,7 +345,7 @@
     z-index: 10;
   }
 
-  .burger-active::after {
+  .header__burger--active::after {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -355,7 +358,7 @@
     color: var(--main-color);
   }
 
-  .header__nav-is-active {
+  .header__nav--is-active {
     position: absolute;
     display: flex;
     align-content: space-around;
@@ -478,7 +481,7 @@
 }
 
 @media (max-width: 1024px) {
-  .header__nav-is-active {
+  .header__nav--is-active {
     right: -50px;
   }
 }

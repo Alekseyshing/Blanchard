@@ -80,15 +80,15 @@
   background-repeat: no-repeat;
 }
 
-.hero__swiper-slide-1 {
+.hero__swiper-slide--1 {
   background-image: url(../img/hero-bckgrnd-1.jpg);
 }
 
-.hero__swiper-slide-2 {
+.hero__swiper-slide--2 {
   background-image: url(../img/hero-bckgrnd-2.jpg);
 }
 
-.hero__swiper-slide-3 {
+.hero__swiper-slide--3 {
   background-image: url(../img/hero-bckgrnd-3.jpg);
 }
 
@@ -170,15 +170,15 @@
     height: 768px;
   }
 
-  .hero__swiper-slide-1 {
+  .hero__swiper-slide--1 {
     background-image: url(../img/hero-bckgrnd-1-1024.jpg);
   }
 
-  .hero__swiper-slide-2 {
+  .hero__swiper-slide--2 {
     background-image: url(../img/hero-bckgrnd-2-1024.jpg);
   }
 
-  .hero__swiper-slide-3 {
+  .hero__swiper-slide--3 {
     background-image: url(../img/hero-bckgrnd-3-1024.jpg);
   }
 }

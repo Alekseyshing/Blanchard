@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#burger').addEventListener('click', function() {
-    document.querySelector('#menu').classList.toggle('header__nav-is-active')
-    document.querySelector('.header__burger').classList.toggle('burger-active')
+    document.querySelector('#menu').classList.toggle('header__nav--is-active')
+    document.querySelector('.header__burger').classList.toggle('header__burger--active')
   })
 
   const params = {
@@ -60,9 +60,9 @@ window.addEventListener('DOMContentLoaded', function() {
       const path = event.currentTarget.dataset.path
 
       document.querySelectorAll('.catalogue__description').forEach(function(catalogueDescription) {
-        catalogueDescription.classList.remove('catalogue__description-active')
+        catalogueDescription.classList.remove('catalogue__description--active')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description-active');
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description--active');
             // Обновляем аккордионы
             $('.catalogue__accordion').accordion("refresh");
     })
@@ -78,21 +78,21 @@ window.addEventListener('DOMContentLoaded', function() {
       const path = event.currentTarget.dataset.path
 
       document.querySelectorAll('.catalogue__article').forEach(function(catalogueArticle) {
-        catalogueArticle.classList.remove('catalogue__article-active')
+        catalogueArticle.classList.remove('catalogue__article--active')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__article-active')
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__article--active')
     })
 
   document.querySelectorAll('.catalogue__fl-btn').forEach(function(catalogueBtn) {
     catalogueBtn.addEventListener('click',  function (event) {
       const path = event.currentTarget.dataset.path
       document.querySelectorAll('.catalogue__fl-btn').forEach(function(catalogueBtn) {
-        catalogueBtn.classList.remove('catalogue__fl-btn-active')
+        catalogueBtn.classList.remove('catalogue__fl-btn--active')
       })
     })
 
     catalogueBtn.addEventListener('click',  function (event) {
-      event.currentTarget.classList.add('catalogue__fl-btn-active')
+      event.currentTarget.classList.add('catalogue__fl-btn--active')
      })
     });
 
@@ -143,11 +143,11 @@ const fadeIn = (el, timeout, display) => {
       descriptionStep.addEventListener('click',  function (event) {
         const path = event.currentTarget.dataset.path
         document.querySelectorAll('.catalogue__persons-btn').forEach(function(descriptionStep) {
-          descriptionStep.classList.remove('catalogue__persons-btn-active')
+          descriptionStep.classList.remove('catalogue__persons-btn--active')
       })
     })
        descriptionStep.addEventListener('click',  function (event) {
-        event.currentTarget.classList.add('catalogue__persons-btn-active')
+        event.currentTarget.classList.add('catalogue__persons-btn--active')
        })
   })
 
