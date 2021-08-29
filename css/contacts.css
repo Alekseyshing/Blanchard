@@ -1,27 +1,24 @@
-.contacts {
-  border-top: 1px solid #cacaca;
-}
-
 .contacts__container {
+  display: flex;
+  justify-content: space-between;
   min-height: 700px;
-  padding: 0;
 }
 
-.container__header {
+.contacts__header {
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
 }
 
-.contacts__main-block {
-  display: flex;
-  justify-content: space-between;
+.contacts__wrap {
+  border-top: 1px solid #cacaca;
 }
 
 .contacts__left {
   padding-top: 124px;
   width: calc(522 / 1600 * 100%);
+  border-right: 1px solid #cacaca;;
 }
 
 .contacts__company-title {
