@@ -54,7 +54,6 @@
 }
 
 .contacts__form-name {
-  cursor: pointer;
   margin-bottom: 23px;
 }
 
@@ -64,7 +63,6 @@
 }
 
 .contacts__form-tel {
-  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -75,6 +73,7 @@
   min-height: 40px;
   border: 1px solid var(--text-color);
   border-radius: 100px;
+  transition: cursor .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .contacts__form-name::placeholder,
@@ -98,7 +97,7 @@
   border-radius: 100px;
   background-color: transparent;
   color: var(--add-color);
-  transition: all .3s ease-in-out;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
   z-index: 4;
 }
 
@@ -115,7 +114,7 @@
   padding: 22px 40px;
   border: 2px solid transparent;
   border-radius: 100px;
-  transition: all .3s ease-in-out;
+  transition: border .3s ease-in-out;
 }
 
 .contacts__form-btn::before { 
@@ -131,7 +130,7 @@
   left: 0px;
   border: 3px solid transparent;
   border-radius: 100px;
-  transition: all .3s ease-in-out;
+  transition: border .3s ease-in-out;
 }
 
 .contacts__messangers-list {
@@ -149,15 +148,13 @@
 .contacts__whatsapp-logo,
 .contacts__telegram-logo {
   display: block;
-  cursor: pointer;
-  width: 39px;
-  height: 39px;
-  border: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  transition: all .3s ease-in-out;
-  transition: all 0s ease-in-out;
+  transition: cursor .3s ease-in-out, opacity .3s ease-in-out, border .3s ease-in-out, border-radius .3s ease-in-out;
 }
 
 .contacts__whatsapp-logo {
@@ -168,6 +165,7 @@
 .contacts__whatsapp-logo:focus,
 .contacts__telegram-logo:hover,
 .contacts__telegram-logo:focus {
+  cursor: pointer;
   opacity: .5;
 }
 
@@ -193,6 +191,7 @@
 .contacts__form-tel:hover,
 .contacts__form-tel:focus   {
   background-color: #eaeaea;
+  cursor: pointer;
 }
 
 .contacts__form-btn:hover {
@@ -205,7 +204,7 @@
 }
 
 .contacts__form-btn:active {
-  border: none;
+  border: 2px solid transparent;
   color: #ffffff;
 }
 

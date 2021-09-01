@@ -1,13 +1,12 @@
 .galery {
-  padding-top: 80px;
-  padding-right: 15px;
-  padding-bottom: 65px;
   background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.jpg);
 }
 
 .galery__container {
   display: flex;
   flex-direction: row;
+  padding-top: 80px;
+  padding-bottom: 65px;
 }
 
 .galery__swiper {
@@ -17,19 +16,17 @@
 
 .galery__swiper-container{
   position: relative;
-  width: 1185px;
-  height: 850px;
-  padding-top: 27px;
-  padding-left: 22px;
+  width: 1150px;
+  height: 100%;
 }
 
 .galery__swiper-slider{
-  width: 1185px;
-  height: 850px;
+  width: 100%;
+  height: 100%;
 }
 
 .galery__left {
-  margin-right: 30px;
+  margin-right: 50px;
   max-width: 400px;
 }
 
@@ -88,16 +85,19 @@
 .galery__swiper-btns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 23px;
-  max-width: 130px;
+  margin: 25px 0 23px 0;
+  max-width: 140px;
 }
 
 .galery__image-slider {
   position: relative;
   display: block;
-  height: 350px;
+  max-height: 350px;
   background-repeat: no-repeat;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
   transition: all .3s ease-in-out;
 }
 
@@ -150,37 +150,35 @@
 }
 
 .galery__image-slider::before {
-  position: absolute;
-  content: '';
+  content: "";
+  position: relative;
+  z-index: 1;
   display: block;
-  height: 100%;
-  top: 0;
-  right: 0px;
-  bottom: 0px;
-  left: 0;
-  background-position: center;
-  transition: all .3s ease-in-out;
-  opacity: 0;
+  padding-top: 100%;
+  border: 3px solid transparent;
+  transition: background-color .3s ease, border-color .3s ease;
 }
 
 .galery__image-slider::after {
   position: absolute;
   content: '';
   display: block;
-  width: 64%;
-  height: 64%;
-  top: 35px;
-  right: 0px;
-  bottom: 0px;
-  left: 35px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   padding: 25px;
+  box-sizing: border-box;
+  background-size: 300px;
+  background-repeat: no-repeat;
   background-position: center;
-  transition: all .3s ease-in-out;
+  background-clip: content-box;
+  transition: opacity .3s ease-in-out;
+  background-image: url(../img/gallery-hover.png);
   opacity: 0;
 }
 
 .galery__image-slider:hover::after {
-  background-image: url(../img/gallery-hover.png);
   opacity: 1;
 }
 
@@ -198,9 +196,9 @@
 .galery__swiper-pagination {
   display: flex;
   align-items: center;
-  top: 32px;
-  left: 72px;
-  max-width: 40px;
+  top: 30px;
+  left: 50px;
+  max-width: 50px;
   max-height: 23px;
 }
 

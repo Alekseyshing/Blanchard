@@ -486,9 +486,9 @@ const fadeIn = (el, timeout, display) => {
 
   $( function() {
     $( ".catalogue__accordion" ).accordion({
-      // animate: true,
-      // active: false,
-      // collapsible: true,
+      animate: true,
+      active: false,
+      collapsible: true,
       icons: false,
       // heightStyle: 'content', 
     });

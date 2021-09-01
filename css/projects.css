@@ -21,7 +21,7 @@
 .projects__description-ref {
   color: var(--add-color);
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .projects__description-ref:hover {
@@ -65,20 +65,21 @@
 }
 
 .projects__swiper-wrapper {
-  width: 840px;
+  width: 850px;
+  height: 100%;
   padding-top: 20px;
 }
 
 .projects__sw-slide {
   cursor: pointer;
   display: block;
-  max-height: 150px;
-  border: none;
   filter: grayscale(100%);
-  background-size: contain;
+  background-size: cover;
+  max-height: 150px;
   background-repeat: no-repeat;
   opacity: 0.4;
-  transition: all 200ms ease-in-out;
+  border: 1px solid transparent;
+  transition: border .3s ease-in-out, opacity .3s ease-in-out, filter .3s ease-in-out;
 }
 
 .projects__sw-slide--1 {
@@ -260,21 +261,21 @@
 
   .projects__swiper-container {
     width: 100%;
-    height: 130px;
+    height: 100%;
   }
 
   .projects__main-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 130px;
+    height: 130px;
   }
   
   .projects__sw-slide {
     cursor: pointer;
     display: block;
-    height: 130px;
-    background-size: contain;
+    background-size: cover;
+    /* border: 1px solid #cacaca; */
   }
 
   .projects__partners-header {

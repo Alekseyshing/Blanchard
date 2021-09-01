@@ -57,7 +57,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
-  transition: all 300ms ease-in-out;
 }
 
 .catalogue__fl-btn::before {
@@ -78,7 +77,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
-  transition: all 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, border 300ms ease-in-out;
 }
 
 .catalogue__fl-btn :last-child {
@@ -407,7 +406,7 @@
 }
 
 .catalogue__header-text {
- transition: all .3s ease-in-out;
+ transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .catalogue__artists-list {
@@ -428,7 +427,7 @@
   outline: none;
   cursor: pointer;
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' fill='%23ECECEC'/%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' stroke='%23ECECEC'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");  background-repeat: no-repeat;
-  transition: all 200ms ease-in-out;
+  transition: background-image .3s ease-in-out;
 }
 
 .catalogue__persons-btn {
@@ -439,7 +438,7 @@
   border: 1px solid transparent;
   background-color: transparent;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .catalogue__text-empty {
@@ -484,17 +483,14 @@
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
-.catalogue__persons-item:hover {
+.catalogue__persons-btn:hover {
   border-bottom: 1px solid var(--add-color);
+  color: var(--add-color);
 }
 
 .catalogue__persons-btn--active,
-.catalogue__persons-item:active { 
+.catalogue__persons-btn:active { 
   color: #7943A4;
-}
-
-.catalogue__persons-btn:hover {
-  color: var(--add-color);
 }
 
 .catalogue__persons-btn:focus-visible {
@@ -551,7 +547,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: var(--main-color);
+  color: rgba(51, 51, 51, 1);
 }  
 
 .catalogue__persons { 
@@ -560,7 +556,6 @@
 
 .catalogue__persons-item {
   border-bottom: 1px solid transparent;
-  transition: all .3s ease-in-out;
 }
 
 .catalogue__fl-btn:hover::before,
