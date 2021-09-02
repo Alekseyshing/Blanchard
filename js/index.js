@@ -64,9 +64,9 @@ window.addEventListener('DOMContentLoaded', function() {
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description--active');
             // Обновляем аккордионы
-            $('.catalogue__accordion').accordion("refresh");
+            // $('.catalogue__accordion').accordion("refresh");
     })
-    $( ".catalogue__accordion" ).accordion();
+    // $( ".catalogue__accordion" ).accordion();
   })
 
  
@@ -264,12 +264,12 @@ const fadeIn = (el, timeout, display) => {
   const swiper2 = new Swiper('#swiper-2', {
     loop: false,
     loopedSlides: 12,
-    autoheight: false,
+    autoheight: true,
     zoom: true,
-    slidesPerView: 3,
-    spaceBetween: 48,
-    slidesPerColumn: 2,
-    slidesPerGroup: 6,
+    // slidesPerView: 3,
+    // spaceBetween: 48,
+    // slidesPerColumn: 2,
+    // slidesPerGroup: 6,
 
     grid: {
       rows: 2,
@@ -302,35 +302,46 @@ const fadeIn = (el, timeout, display) => {
       allowTouchMove: true,
     },
 
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 34,
-    //     slidesPerGroup: 3,
-    //     slidesPerColumn: 2,
-    //   },
+    breakpoints: {
+      441: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2
+        },
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+      },
 
-    //   1480: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 34,
-    //     slidesPerGroup: 3,
-    //     slidesPerColumn: 2,
-    //   },
+      1485: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2
+        },
+        spaceBetween: 50,
+        slidesPerGroup: 6,
+      },
 
-    //   1600: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 30,
-    //     slidesPerGroup: 3,
-    //     slidesPerColumn: 2,
-    //     },
+      // 1480: {
+      //   slidesPerView: 2,
+      //   spaceBetween: 34,
+      //   slidesPerGroup: 3,
+      //   slidesPerColumn: 2,
+      // },
 
-    //   1700: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 50,
-    //     slidesPerGroup: 6,
-    //     slidesPerColumn: 2,
-    //     }
-    //   },
+      // 1600: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 30,
+      //   slidesPerGroup: 3,
+      //   slidesPerColumn: 2,
+      //   },
+
+      // 1680: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 50,
+      //   slidesPerGroup: 6,
+      //   slidesPerColumn: 2,
+      //   }
+      },
     });
 
    const swiper3 = new Swiper('#swiper-3', {
@@ -490,7 +501,8 @@ const fadeIn = (el, timeout, display) => {
       active: false,
       collapsible: true,
       icons: false,
-      // heightStyle: 'content', 
+      heightStyle: 'content', 
+      autoheight: true,
     });
   });
 

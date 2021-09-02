@@ -146,7 +146,6 @@
 
 .ui-accordion-content {
   padding: 25px 0;
-  max-height: 320px;
 }
 
 .catalogue__article {
@@ -155,7 +154,7 @@
   top: 0px;
   left: -800px;
   padding-top: 500px;
-  max-width: 750px;
+  width: 95%;
   height: 470px;
 }
 
@@ -180,11 +179,14 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: 470px;
+  height: 100%;
   background-image: url(../img/catalogue\ img1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalogue__article--second::before {
@@ -193,33 +195,34 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 750px;
-  height: 470px;
+  width: 100%;
+  height: 100%;
   background-image: url(../img/emptyartist.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalogue__article--third::before {
   content: '';
   display: block;
   position: absolute;
-  top: -20px;
+  top:0;
   left: 0;
-  width: 750px;
+  width: 100%;
   height: 100%;
   background-image: url(../img/Codexaureus.jpg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catalogue__article--fourth::before {
   content: '';
   display: block;
   position: absolute;
-  top: -20px;
+  top: 0;
   left: 0;
-  width: 750px;
+  width: 100%;
   height: 100%;
   background-image: url(../img/HansBurgkmair.jpg);
   background-position: center;
@@ -230,9 +233,9 @@
   content: '';
   display: block;
   position: absolute;
-  top: -20px;
+  top: 0;
   right: 0px;
-  width: 750px;
+  width: 100%;
   height: 100%;
   background-image: url(../img/SemeonCherniy.jpg);
   background-position: center;
@@ -243,9 +246,9 @@
   content: '';
   display: block;
   position: absolute;
-  top: -20px;
+  top: 0;
   right: 0px;
-  width: 750px;
+  width: 100%;
   height: 100%;
   background-image: url(../img/HieronymusBosch.jpg);
   background-position: center;
@@ -530,18 +533,9 @@
   color: var(--main-color);
 }
 
-/* .catalogue__accordion-header:focus-visible:not(hover) {
-  background-color: var(--add-color);
-} */
-
 .catalogue__accordion-header:focus-visible span {
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");
 }
-
-/* .ui-accordion-header:focus-visible+.catalogue__header-text {
-  background-color: var(--add-color);
-  color: #ffffff;
-} */
 
 .catalogue__header-text {
   font-weight: 600;
@@ -574,29 +568,147 @@
   max-width: 800px;
 }
 
-/* @media (max-width: 1740px) {
-  .catalogue__description {
-    margin-bottom: 32px;
-  }
-
+@media (max-width: 1695px) {
   .catalogue__accordion {
     min-width: 700px;
   }
-} */
 
-@media (max-width: 1620px) {
-  .catalogue__accordion {
-    min-width: 650px;
+  .catalogue__article,
+  .catalogue__article--first::before,
+  .catalogue__article--second::before,
+  .catalogue__article--third::before,
+  .catalogue__article--fourth::before,
+  .catalogue__article--fifth::before,
+  .catalogue__article--six::before {
+    height: 400px;
   }
 }
 
 @media (max-width: 1590px) {
   .catalogue__accordion {
-    min-width: 550px;
+    min-width: 680px;
+  }
+
+  .catalogue__article {
+    left: -750px;
+   }
+
+   .catalogue__block {
+    padding-left: 750px;
   }
 }
 
-@media (max-width: 1470px) {
+@media (max-width: 1520px) {
+  .catalogue__accordion {
+    min-width: 650px;
+  }
+
+  .catalogue__article {
+    left: -650px;
+   }
+
+   .catalogue__block {
+    padding-left: 650px;
+  }
+
+  .catalogue__artists-list {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .catalogue__accordion {
+    min-width: 600px;
+  }
+
+  .catalogue__article {
+    left: -600px;
+   }
+
+   .catalogue__block {
+    padding-left: 600px;
+  }
+
+  .catalogue__artists-list {
+    min-height: 410px;
+  }
+
+  .catalogue__article {
+    padding-top: 400px;
+  }
+
+  .catalogue__article,
+  .catalogue__article--first::before,
+  .catalogue__article--second::before,
+  .catalogue__article--third::before,
+  .catalogue__article--fourth::before,
+  .catalogue__article--fifth::before,
+  .catalogue__article--six::before {
+    height: 330px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .catalogue__accordion {
+    min-width: 500px;
+  }
+
+  .catalogue__article {
+    left: -500px;
+   }
+
+   .catalogue__block {
+    padding-left: 500px;
+  }
+
+} 
+
+@media (max-width: 1124px) {
+  .catalogue__article--first::before,
+  .catalogue__article--second::before,
+  .catalogue__article--third::before,
+  .catalogue__article--fourth::before,
+  .catalogue__article--fifth::before,
+  .catalogue__article--six::before {
+    height: 274px;
+  }
+
+  .catalogue__article {
+    padding-top: 310px;
+  }
+
+  .catalogue__accordion {
+    min-width: 450px;
+  }
+
+  .catalogue__article {
+    left: -450px;
+   }
+
+   .catalogue__block {
+    padding-left: 450px;
+  }
+
+  .catalogue__artists-list {
+    min-height: 410px;
+  }
+}
+
+/* @media (max-width: 1590px) {
+  .catalogue__accordion {
+    min-width: 680px;
+  }
+
+  .catalogue__block {
+    width: 70px;
+  }
+
+  .catalogue__article {
+    height: 274px;
+  }
+} */
+
+/* @media (max-width: 1450px) {
   .catalogue__container {
     padding-top: 80px;
     padding-bottom: 90px;
@@ -611,14 +723,13 @@
   }
 
   .catalogue__article {
-    padding-top: 305px;
-    left: -550px;
-    width: 437px;
+    left: -490px;
+    padding-top: 500px;
+    height: 274px;
   }
 
   .catalogue__article-first::before {
     height: 274px;
-    background-image: url(../img/acc-img-dominico-1024.jpg);
   }
 
   .catalogue__article-second::before {
@@ -653,15 +764,19 @@
   }
 }
 
+
 @media (max-width: 1324px) {
   .catalogue__accordion {
-    min-width: 437px;
+    min-width: 500px;
   }
 
   .catalogue__article {
-    padding-top: 305px;
-    left: -487px;
-    width: 437px;
-  }
+    padding-top: 405px;
+    top: -85px;
+    left: -500px;
+   }
 
-}
+   .catalogue__block {
+    padding-left: 500px;
+  }
+} */
