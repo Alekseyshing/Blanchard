@@ -288,48 +288,6 @@
 }
 
 @media (max-width: 1680px) {
-  /* .galery__container {
-    padding-bottom: 70px;
-  }
-
-  .galery__header {
-    margin-bottom: 15px;
-  }
-
-  .galery__left {
-    width: 320px;
-  }
-
-  .galery__filter {
-    max-width: 280px;
-  }
-
-  .galery__description {
-    min-height: 610px;
-  }
-
-  .galery__swiper-container{
-    padding-top: 25px;
-    padding-left: 15px;
-    max-width: 950px;
-    max-height: 750px;
-  }
-
-  .galery__swiper-slider{
-    max-width: 950px;
-    max-height: 594px;
-  }
-
-  .galery__swiper-pagination {
-    top: 28px;
-    left: 65px;
-    max-width: 50px;
-  }
-
-  .galery__image-slider {
-    width: 280px;
-    height: 280px;
-  } */
   .galery__image-slider--1 {
     background-image: url(../img/sw-2-1024-1.jpg);
   }
@@ -386,12 +344,31 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
    .galery__swiper-container{
     max-width: 594px;
   }
 
   .galery__swiper-slider{
     max-width: 594px;
+  }
+}
+
+@media (max-width: 1024px) { 
+  .galery__container {
+    padding-bottom: 70px;
+  }
+  .galery__image-slider {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  .galery__swiper {
+    max-width: 1150px;
+    height: 670px;
+  }
+
+  .galery__description {
+    min-height: 610px;
   }
 }

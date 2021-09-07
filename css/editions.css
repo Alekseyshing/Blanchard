@@ -8,10 +8,13 @@
 .editions__container {
   padding-top: 80px;
   padding-bottom: 70px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .editions__left {
-  margin-right: 6%;
+  width: calc(500 / 1600 * 100%);
+  margin-right: 10px;
 }
 
 .editions__header {
@@ -92,24 +95,27 @@
 
 .editions__main {
   display: flex;
+  /* flex-wrap: wrap; */
   /* justify-content: space-between; */
+  align-items: flex-start;
   min-width: 0;
 }
 
 .editions__swiper {
-  max-width: 1160px;
+  min-width: 1150px;
+  height: auto;
 }
 
 .editions__swiper-container {
   position: relative;
-  width: 1150px;
-  min-height: 520px;
+  width: 100%;
+  height: 100%;
   padding-top: 30px;
 }
 
 .editions__swiper-slider{
-  width: 1150px;
-  min-height: 520px;
+  width: 100%;
+  min-height: 100%;
 }
 
 .editions__swiper-pagination {
@@ -165,7 +171,6 @@
 
 .editions__image-slide {
   display: inline-block;
-  height: 390px;
   background-size: cover;
   margin-bottom: 20px;
 }
@@ -309,57 +314,63 @@
   height: 390px;
 }
 
-/* .editions__image-slide--1 {
-  background-image: url(../img/edim1024-1.jpg);
+
+@media (max-width: 1650px) {
+  .editions__swiper {
+    min-width: 1000px;
+  }
 }
 
-.editions__image-slide--2 {
-  background-image: url(../img/edim1024-2.jpg);
+@media (max-width: 1440px) {
+  .editions__swiper {
+    min-width: 900px;
+  }
 }
 
-.editions__image-slide--3 {
-  background-image: url(../img/edim1024-3.jpg);
+@media (max-width: 1310px) {
+  .editions__swiper {
+    min-width: 400px;
+  }
+
+   .editions__image-slide--1 {
+    background-image: url(../img/edim1024-1.jpg);
+  }
+
+  .editions__image-slide--2 {
+    background-image: url(../img/edim1024-2.jpg);
+  }
+
+  .editions__image-slide--3 {
+    background-image: url(../img/edim1024-3.jpg);
+  }
+
+  .editions__image-slide--4 {
+    background-image: url(../img/edim1024-4.jpg);
+  }
+
+  .editions__image-slide--5 {
+    background-image: url(../img/edim1024-5.jpg);
+  }
+
+  .editions__image-slide--6 {
+    background-image: url(../img/edim1024-6.jpg);
+  }
+
+  .editions__image-slide--7 {
+    background-image: url(../img/edim1024-7.jpg);
+  }
 }
 
-.editions__image-slide--4 {
-  background-image: url(../img/edim1024-4.jpg);
-}
-
-.editions__image-slide--5 {
-  background-image: url(../img/edim1024-5.jpg);
-}
-
-.editions__image-slide--6 {
-  background-image: url(../img/edim1024-6.jpg);
-}
-
-.editions__image-slide--7 {
-  background-image: url(../img/edim1024-7.jpg);
-} */
-
-
-/* @media (max-width: 1700px) {
+@media (max-width: 1110px) {
   .editions__container {
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
 
-  .editions__left {
-    max-width: 292px;
+  .editions__image-slide {
+    max-height: 320px;
   }
 
-
-
-
-} */
-
-@media (max-width: 1400px) {
-  .editions__swiper-slider {
-    max-width: 900px;
-  }
-}
-
-@media (max-width: 1290px) {
-  .editions__swiper-slider {
-    max-width: 650px;
+  .editions__max-price {
+    padding-left: 5px;
   }
 }

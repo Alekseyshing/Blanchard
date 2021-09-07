@@ -29,12 +29,12 @@
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/galery.css">
   <link rel="stylesheet" href="css/catalogue.css">
-  <!-- <link rel="stylesheet" href="css/events.css">
+  <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/editions.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="stylesheet" href="css/map.css">
-  <link rel="stylesheet" href="css/footer.css"> -->
+  <link rel="stylesheet" href="css/footer.css">
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
@@ -1006,10 +1006,9 @@
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="events__header">События</h2>
-        <!-- <div class="events__swiper-container swiper" id="swiper-5"> -->
-            <!-- <div class="swiper-slide events__swiper-slide"> -->
-            <div class="events__articles">
-              <article class="events__articles-content events__articles-content-active events__articles-content--first">
+        <div class="events__swiper-container swiper" id="#swiper-5" data-mobile="false">
+          <div class="events__articles swiper-wrapper">
+              <article class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
                 <p class="events__articles-museum">Музей им. Щусева </p>
                 <p class="events__articles-date">с 20 марта по 30 апреля</p>
                 <div class="events__main-block">
@@ -1021,9 +1020,7 @@
                   <a href="#" class="events__articles-ref">Подробнее</a>
                 </div>
               </article>
-            <!-- </div> -->
-            <!-- <div class="swiper-slide events__swiper-slide"> -->
-            <article class="events__articles-content events__articles-content-active events__articles-content--second">
+            <article class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
               <p class="events__articles-museum">ММОМА</p>
               <p class="events__articles-date">24 марта 19:00</p>
               <div class="events__main-block">
@@ -1034,10 +1031,8 @@
                 </div>
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
-            </article>
-            <!-- </div> -->
-            <!-- <div class="swiper-slide events__swiper-slide"> -->
-            <article class="events__articles-content events__articles-content-active events__articles-content--third">
+            </article> 
+            <article class="events__articles-content events__articles-content-active events__articles-content--third swiper-slide events__swiper-slide">
               <p class="events__articles-museum">Еврейский музей</p>
               <p class="events__articles-date">с 31 марта по 21 апреля</p>
               <div class="events__main-block">
@@ -1049,9 +1044,7 @@
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
             </article>
-            <!-- </div> -->
-            <!-- <div class="swiper-slide events__swiper-slide"> -->
-            <article class="events__articles-content events__articles-content--four">
+           <article class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
               <p class="events__articles-museum">Третьяковка на Крымском валу</p>
               <p class="events__articles-date">с 30 марта по 30 апреля</p>
               <div class="events__main-block">
@@ -1063,9 +1056,7 @@
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
             </article>
-            <!-- </div> -->
-            <!-- <div class="swiper-slide events__swiper-slide"> -->
-            <article class="events__articles-content events__articles-content--five">
+            <article class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
               <p class="events__articles-museum">ММАМ</p>
               <p class="events__articles-date">с 8 апреля по 20 мая</p>
               <div class="events__main-block">
@@ -1077,13 +1068,11 @@
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
             </article>
-            </div>
-            <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
           </div>
-        <!-- </div> -->
-        <!-- </div> -->
+          <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
+          </div>
+        </div>
       </section>
-          
     <section class="editions" id="editions">
       <div class="container editions__container">
         <div class="editions__main">
@@ -1273,8 +1262,7 @@
           <div class="projects__marker">
             <p class="projects__description">Предварительные выводы: постоянное информационно-пропагандистское
               обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А
-              ещё
-              независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего
+              ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего
               возрастает
               их статус бесполезности. Прежде всего, постоянное информационно-&nbsp;пропагандистское
               <span id="myButton-1" class="projects__tooltip__span"></span>
@@ -1319,7 +1307,7 @@
       <div class="contacts__wrap">
         <div class="contacts__container container">
           <div class="contacts__left">
-            <h3 class="contacts__company-title">Шоурум №4</h3>
+            <h3 class="contacts__company-title">Шоурум №2</h3>
             <p class="contacts__company-adress">Леонтьевский переулок, дом 5/1</p>
             <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="contacts__form">
               <h4 class="contacts__form-header">Заказать обратный звонок</h4>

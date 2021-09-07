@@ -50,7 +50,9 @@ h1, h2, h3, p, ul, ol {
 
 .container {
   max-width: 1700px;   
-  margin: 0 auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 50px;  
 }
 

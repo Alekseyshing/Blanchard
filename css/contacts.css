@@ -1,7 +1,10 @@
+.contacts {
+  overflow-x: hidden;
+}
+
 .contacts__container {
   display: flex;
   justify-content: space-between;
-  min-height: 700px;
 }
 
 .contacts__header {
@@ -17,8 +20,22 @@
 
 .contacts__left {
   padding-top: 124px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  padding-left: 0;
   width: calc(522 / 1600 * 100%);
   border-right: 1px solid #cacaca;;
+}
+
+.contacts__map {
+  margin-top: -1px;
+  min-height: 700px;
+  width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); 
+  margin-right: calc((-100vw + 100%) / 2);
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
 }
 
 .contacts__company-title {
@@ -179,13 +196,6 @@
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z' fill='url(%23paint0_linear)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='20' y1='0' x2='20' y2='39.7033' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232AABEE'/%3E%3Cstop offset='1' stop-color='%23229ED9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E ");
 }
 
-.contacts__map {
-  width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); /* 1078 */
-  margin-right: calc((-100vw + 100%) / 2);
-  margin-top: -1px;
-  min-height: 700px;
-}
-
 .contacts__form-name:hover,
 .contacts__form-name:focus,
 .contacts__form-tel:hover,
@@ -216,12 +226,15 @@
   border: 3px solid #D1A9F0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1360px) {
   .contacts__left {
     padding-top: 124px;
-    padding-left: 50px;
-    min-width: 487px;
-    border: 1px solid #cacaca;
+    width: calc(437 / 924 * 100%);
+    border-right: 1px solid #cacaca;
+  }
+
+  .contacts__map {
+    width: calc(487 / 924 * 100% + ((100vw - 100%) / 2));
   }
 
   .contacts__form-name,

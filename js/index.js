@@ -64,9 +64,9 @@ window.addEventListener('DOMContentLoaded', function() {
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('catalogue__description--active');
             // Обновляем аккордионы
-            // $('.catalogue__accordion').accordion("refresh");
+            $('.catalogue__accordion').accordion("refresh");
     })
-    // $( ".catalogue__accordion" ).accordion();
+    $( ".catalogue__accordion" ).accordion();
   })
 
  
@@ -266,10 +266,6 @@ const fadeIn = (el, timeout, display) => {
     loopedSlides: 12,
     autoheight: true,
     zoom: true,
-    // slidesPerView: 3,
-    // spaceBetween: 48,
-    // slidesPerColumn: 2,
-    // slidesPerGroup: 6,
 
     grid: {
       rows: 2,
@@ -320,27 +316,6 @@ const fadeIn = (el, timeout, display) => {
         spaceBetween: 50,
         slidesPerGroup: 6,
       },
-
-      // 1480: {
-      //   slidesPerView: 2,
-      //   spaceBetween: 34,
-      //   slidesPerGroup: 3,
-      //   slidesPerColumn: 2,
-      // },
-
-      // 1600: {
-      //   slidesPerView: 3,
-      //   spaceBetween: 30,
-      //   slidesPerGroup: 3,
-      //   slidesPerColumn: 2,
-      //   },
-
-      // 1680: {
-      //   slidesPerView: 3,
-      //   spaceBetween: 50,
-      //   slidesPerGroup: 6,
-      //   slidesPerColumn: 2,
-      //   }
       },
     });
 
@@ -354,30 +329,16 @@ const fadeIn = (el, timeout, display) => {
         loopedSlides: 2,
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 49,
+        spaceBetween: 30,
       },
 
-      1290: {
-        loopedSlides: 3,
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 20,
-      },
 
-      1620: {
+      1310: {
         loopedSlides: 3,
         slidesPerView: 3,
         slidesPerGroup: 3,
         spaceBetween: 50,
       },
-
-      1700: {
-        loopedSlides: 3,
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50,
-      },
-
     },
 
     pagination: {
@@ -407,7 +368,7 @@ const fadeIn = (el, timeout, display) => {
     breakpoints: {
       1024: {
         slidesPerView: 2,
-        spaceBetween: 50,
+        spaceBetween: 15,
         slidesPerGroup: 2,
       },
 
@@ -425,52 +386,62 @@ const fadeIn = (el, timeout, display) => {
    });
   });
 
-  // // мобильный свайпер в событиях
+  // const swiper5 = new Swiper('#swiper-5', {
+  //   // Optional parameters
+  //   loop: true,
+  //   slidesPerView: 2,
+  //   spaceBetween: 50,
+  //   slidesPerGroup: 3,
 
-  // const slider = document.querySelector('.events__swiper');
+  //   grid: {
+  //     rows: 2,
+  //     fill: 'column',
+  //   },
+    
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //   },
 
-  // let mySwiper;
+  //   navigation: {
+  //     nextEl: '.events__button-next',
+  //     prevEl: '.events__button-prev',
+  //   },
+  //  });
 
-  // function mobileSlider() {
-  //   if (window.innerWidth <= 740 && slider.dataset.mobile == "false") {
-  //     mySwiper = new Swiper(slider, {
-  //       containerModifierClass: '.events__swiper',
-  //       wrapperClass: 'events__swiper-wrapper',
-  //       slideClass: 'events__swiper-slide',
-  //       speed: 400,
-  //       slidesPerView: 1,
-  //       slidesPerColumn: 1,
-  //       spaceBetween: 20,
-  //       pagination: {
-  //         el: '.swiper-pagination',
-  //         clickable: true,
-  //       },
-  //       scrollbar: {
-  //         el: '.swiper-scrollbar',
-  //       },
-  //     });
+   function mobileSlider() {
+    if (window.innerWidth <= 740 && slider.dataset.mobile == "false") {
+      mySwiper = new Swiper(slider, {
+        containerModifierClass: '#swiper-5',
+        wrapperClass: 'events__articles',
+        slideClass: 'events__articles-content',
+        speed: 400,
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
 
-  //     slider.dataset.mobile = "true";
-  //   }
+      slider.dataset.mobile = "true";
+    }
 
-  //   if (window.innerWidth > 740) {
-  //     slider.dataset.mobile = "false";
-  //     if (slider.classList.contains('swiper-container--eventsinitialized')) {
-  //       mySwiper.destroy();
-  //     }
-  //   }
-  // }
-
-  // mobileSlider();
-
-  // window.addEventListener('resize', () => {
-  //   mobileSlider();
-  // })
+    if (window.innerWidth > 740) {
+      slider.dataset.mobile = "false";
+      if (slider.classList.contains('swiper-container--eventsinitialized')) {
+        mySwiper.destroy();
+      }
+    }
+  }
 
   ymaps.ready(init);
   function init() {
     var myMap = new ymaps.Map("myMap", {
-      center: [55.758,37.62],
+      center: [55.75846806898367, 37.60108849999989], 
       zoom: 15,
       controls: ['geolocationControl', 'zoomControl'],
     },
@@ -481,14 +452,14 @@ const fadeIn = (el, timeout, display) => {
       geolocationControlFloat: 'none',
       zoomControlSize: "small",
       zoomControlFloat: "none",
-      zoomControlPosition: { top: "120px", right: "20px" }
-    });
+      zoomControlPosition: { top: "100px", right: "20px" },
+   });
 
       var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, { 
         iconLayout: 'default#image',
         iconImageHref: 'map-point.svg',
         iconImageSize: [20,20],
-        iconImageOffset: [0,0],
+        iconImageOffset: [-10, -20],
         arrow: true,
       });
 

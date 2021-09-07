@@ -567,4 +567,13 @@
   .header__nav--is-active {
     right: -50px;
   }
+
+  .header__container {
+    padding-top: 24px;
+    padding-bottom: 27px;
+  }
+
+  .header__navigation-area {
+    min-width: 3%;
+  }
 }

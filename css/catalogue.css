@@ -184,7 +184,7 @@
   width: 100%;
   height: 100%;
   background-image: url(../img/catalogue\ img1.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -213,6 +213,7 @@
   height: 100%;
   background-image: url(../img/Codexaureus.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -226,6 +227,7 @@
   height: 100%;
   background-image: url(../img/HansBurgkmair.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -239,6 +241,7 @@
   height: 100%;
   background-image: url(../img/SemeonCherniy.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -253,6 +256,7 @@
   background-image: url(../img/HieronymusBosch.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .catalogue__article-ref {
@@ -616,7 +620,7 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1410px) {
   .catalogue__accordion {
     min-width: 600px;
   }
@@ -664,6 +668,10 @@
 } 
 
 @media (max-width: 1124px) {
+  .catalogue__container {
+    padding-bottom: 30px;
+  }
+
   .catalogue__article--first::before,
   .catalogue__article--second::before,
   .catalogue__article--third::before,
@@ -678,105 +686,24 @@
   }
 
   .catalogue__accordion {
-    min-width: 450px;
+    min-width: 470px;
   }
 
   .catalogue__article {
-    left: -450px;
+    left: -470px;
    }
 
    .catalogue__block {
-    padding-left: 450px;
+    padding-left: 470px;
   }
 
   .catalogue__artists-list {
     min-height: 410px;
   }
-}
 
-/* @media (max-width: 1590px) {
-  .catalogue__accordion {
-    min-width: 680px;
-  }
-
-  .catalogue__block {
-    width: 70px;
-  }
-
-  .catalogue__article {
-    height: 274px;
-  }
-} */
-
-/* @media (max-width: 1450px) {
-  .catalogue__container {
-    padding-top: 80px;
-    padding-bottom: 90px;
-  }
-
-  .catalogue__description {
-    margin-bottom: 32px;
-  }
-
-  .catalogue__accordion {
-    min-width: 650px;
-  }
-
-  .catalogue__article {
-    left: -490px;
-    padding-top: 500px;
-    height: 274px;
-  }
-
-  .catalogue__article-first::before {
-    height: 274px;
-  }
-
-  .catalogue__article-second::before {
-    top: 0;
-    left: 0;
-    width: 437px;
-    height: 274px;
-    background-image: url(../img/emptyartist1024.jpg);
-  }
-
-  .catalogue__date {
-    margin-bottom: 5px;
-  }
-
-  .catalogue__artists-list {
-    align-content: space-between;
-    max-width: 507px;
-    max-height: 420px;
-  }
-
-  .ui-accordion-content {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-
-  .catalogue__persons-item {
-    max-height: 33px;
-  }
-
-  .catalogue__persons-btn {
-    padding: 0;
+  .catalogue__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
-
-@media (max-width: 1324px) {
-  .catalogue__accordion {
-    min-width: 500px;
-  }
-
-  .catalogue__article {
-    padding-top: 405px;
-    top: -85px;
-    left: -500px;
-   }
-
-   .catalogue__block {
-    padding-left: 500px;
-  }
-} */

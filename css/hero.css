@@ -166,10 +166,6 @@
     margin-bottom: 131px;
   }
 
-  .hero__swiper-slide {
-    /* height: 768px; */
-  }
-
   .hero__swiper-slide--1 {
     background-image: url(../img/hero-bckgrnd-1-1024.jpg);
   }
@@ -182,4 +178,11 @@
     background-image: url(../img/hero-bckgrnd-3-1024.jpg);
   }
 }
+
+  @media (max-width: 1024px) {
+  .hero {
+    padding-bottom: 73px;
+  }
+}
+
 
