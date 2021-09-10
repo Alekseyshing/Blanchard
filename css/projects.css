@@ -1,6 +1,6 @@
 .projects__container {
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 .projects__header {
@@ -48,14 +48,16 @@
 .projects__main-block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
   width: 100%;
-  height: 200px;
+  height: 150px;
+}
+
+.projects__button-prev,
+.projects__button-next  {
+  align-self: center;
 }
 
 .projects__swiper-container {
-  padding-top: 15px;
   width: 100%;
   height: 100%;
 }

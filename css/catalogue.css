@@ -1,6 +1,6 @@
 .catalogue__container {
   padding-top: 80px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 .catalogue__head {
@@ -23,7 +23,7 @@
 .catalogue__description {
   display: none;
   margin-bottom: 35px;
-  max-width: 1080px;
+  width: 100%;
   font-size: 16px;
   line-height: 32px;
   color: var(--text-color);
@@ -31,6 +31,8 @@
 
 .catalogue__description-text {
   margin-bottom: 40px;
+  max-width: 1080px;
+  min-height: 117px;
 }
 
 .catalogue__flags {
@@ -144,16 +146,20 @@
   justify-content: space-between;
 }
 
+.catalogue__main--1,
+.catalogue__main--2  {
+  width: 50%;
+}
+
 .ui-accordion-content {
+  min-height: 250px;
   padding: 25px 0;
 }
 
 .catalogue__article {
   display: none;
-  position: absolute;
+  
   top: 0px;
-  left: -800px;
-  padding-top: 500px;
   width: 95%;
   height: 470px;
 }
@@ -173,90 +179,9 @@
   }
 }
 
-.catalogue__article--first::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.catalogue__main {
+  display: flex;
   width: 100%;
-  height: 100%;
-  background-image: url(../img/catalogue\ img1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.catalogue__article--second::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/emptyartist.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.catalogue__article--third::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/Codexaureus.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.catalogue__article--fourth::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/HansBurgkmair.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.catalogue__article--fifth::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/SemeonCherniy.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.catalogue__article--six::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/HieronymusBosch.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .catalogue__article-ref {
@@ -346,8 +271,6 @@
 
 .catalogue__block {
   display: flex;
-  padding-left: 800px;
-  max-width: 800px;
 }
 
 .catalogue__item:first-child {
@@ -356,8 +279,6 @@
 
 .catalogue__item {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 10px;
   margin-top: -1px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #cacaca;
@@ -394,8 +315,8 @@
   align-items: center;
   border: none;
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 27px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   padding-left: 2px;
   font-weight: 600;
   font-size: 24px;
@@ -406,6 +327,10 @@
   line-height: 32px;
   color: var(--text-color);
   transition: all .3s ease-in-out;
+}
+
+.ui-accordion-header-active {
+  padding-bottom: 30px;
 }
 
 .ui-accordion-header-icon {
@@ -452,16 +377,8 @@
   display: flex;
 }
 
-.catalogue__empty-img {
-  display: block;
-  margin-right: 24px;
-  padding: 12px;
-  width: 275px;
-  height: 190px;
-  border: 2px solid rgba(183, 183, 183, 1);
-  background-image: url(../img/empty.png);
-  background-position: center;
-  background-repeat: no-repeat;
+.catalogue__left-img {
+  margin-bottom: 25px;
 }
 
 .catalogue__empty-header {
@@ -568,10 +485,8 @@
 
 .catalogue__block {
   display: flex;
-  padding-left: 800px;
-  max-width: 800px;
 }
-
+/* 
 @media (max-width: 1695px) {
   .catalogue__accordion {
     min-width: 700px;
@@ -706,4 +621,4 @@
     padding-bottom: 10px;
   }
 }
-
+ */

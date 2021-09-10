@@ -7,7 +7,7 @@
 
 .editions__container {
   padding-top: 80px;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -172,6 +172,7 @@
 .editions__image-slide {
   display: inline-block;
   background-size: cover;
+  background-position: center;
   margin-bottom: 20px;
 }
 

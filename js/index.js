@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function() {
             // Обновляем аккордионы
             $('.catalogue__accordion').accordion("refresh");
     })
-    $( ".catalogue__accordion" ).accordion();
+    // $( ".catalogue__accordion" ).accordion();
   })
 
  
@@ -122,7 +122,7 @@ const fadeIn = (el, timeout, display) => {
 
     const block = document.querySelector('.events__articles-content--four');
     const block1 = document.querySelector('.events__articles-content--five');
-    // const block2 = document.querySelector('.events__articles-content--third');
+    const block2 = document.querySelector('.events__articles-content--third');
     const btn = document.querySelector('.events__all-events-btn');
 
     btn.addEventListener('click', (event) => {
@@ -134,6 +134,11 @@ const fadeIn = (el, timeout, display) => {
       }
       if (display = 'none') {
         fadeIn(block1, 1000, 'flex');
+      } else {
+        fadeOut();
+      }
+      if (display = 'none') {
+        fadeIn(block2, 1000, 'flex');
       } else {
         fadeOut();
       }
@@ -302,11 +307,21 @@ const fadeIn = (el, timeout, display) => {
       441: {
         slidesPerView: 2,
         grid: {
-          rows: 2
+          rows: 2,
         },
-        spaceBetween: 30,
+        spaceBetween: 34,
+        slidesPerGroup: 4,
+      },
+
+      769: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 34,
         slidesPerGroup: 3,
       },
+      
 
       1485: {
         slidesPerView: 3,
@@ -441,7 +456,7 @@ const fadeIn = (el, timeout, display) => {
   ymaps.ready(init);
   function init() {
     var myMap = new ymaps.Map("myMap", {
-      center: [55.75846806898367, 37.60108849999989], 
+      center: [55.76, 37.6235], 
       zoom: 15,
       controls: ['geolocationControl', 'zoomControl'],
     },
@@ -469,10 +484,10 @@ const fadeIn = (el, timeout, display) => {
   $( function() {
     $( ".catalogue__accordion" ).accordion({
       animate: true,
-      active: false,
+      active: 0,
       collapsible: true,
       icons: false,
-      heightStyle: 'content', 
+      heightStyle: "content",
       autoheight: true,
     });
   });

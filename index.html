@@ -56,171 +56,176 @@
     <header class="header">
       <div class="header__main-block">
         <div class="container header__container">
-        <div id="burger" class="header__burger">
-          <span class="header__burger-span"></span>
-        </div>
-        <a id="header-logo" class="header__logo">
-          <img src="img/logo.png" alt="blanchard-logo" class="header__img">
-        </a>
-        <div class="header__navigation-area">
-          <nav class="header__nav" id="menu">
-            <ul class="header__nav-list">
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-about" onclick="event.preventDefault()">О нас</a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-galery" onclick="event.preventDefault()">Галерея</a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-catalogue"
-                  onclick="event.preventDefault()">Каталог</a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-events" onclick="event.preventDefault()">События</a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-editions"
-                  onclick="event.preventDefault()">Издания</a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-projects"
-                  onclick="event.preventDefault()">Проекты</a>
-              </li>
-              <li class="header__nav-list-item">
-                <a href="" class="header__nav-link header__nav-link-contacts"
-                  onclick="event.preventDefault()">Контакты</a>
-              </li>
-            </ul>
-            <button type="button" class="header__enter-btn">
-              <span class="header__enter-span"></span>Войти
+          <div id="burger" class="header__burger">
+            <span class="header__burger-span"></span>
+          </div>
+          <a id="header-logo" class="header__logo">
+            <img src="img/logo.png" alt="blanchard-logo" class="header__img">
+          </a>
+          <div class="header__navigation-area">
+            <nav class="header__nav" id="menu">
+              <ul class="header__nav-list">
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-about" onclick="event.preventDefault()">О нас</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-galery"
+                    onclick="event.preventDefault()">Галерея</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-catalogue"
+                    onclick="event.preventDefault()">Каталог</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-events"
+                    onclick="event.preventDefault()">События</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-editions"
+                    onclick="event.preventDefault()">Издания</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-projects"
+                    onclick="event.preventDefault()">Проекты</a>
+                </li>
+                <li class="header__nav-list-item">
+                  <a href="" class="header__nav-link header__nav-link-contacts"
+                    onclick="event.preventDefault()">Контакты</a>
+                </li>
+              </ul>
+              <button type="button" class="header__enter-btn">
+                <span class="header__enter-span"></span>Войти
+              </button>
+            </nav>
+            <button type="button" id="search-btn" class="header__search-menu">
+              <span class="header__search-menu-span"></span>
             </button>
-          </nav>
-          <button type="button" id="search-btn" class="header__search-menu">
-            <span class="header__search-menu-span"></span>
-          </button>
-          <form class="header__form" id="search-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <button type="submit" class="header__search-btn"></button>
-            <label>
-              <span class="visually-hidden">
-                Введите текст для поиска
-              </span>
-              <input id="input-search-name" type="text" placeholder="Поиск по сайту" name="input-search-name"
-                class="header__input">
-            </label>
-          </form>
+            <form class="header__form" id="search-form" action="https://jsonplaceholder.typicode.com/posts"
+              method="POST">
+              <button type="submit" class="header__search-btn"></button>
+              <label>
+                <span class="visually-hidden">
+                  Введите текст для поиска
+                </span>
+                <input id="input-search-name" type="text" placeholder="Поиск по сайту" name="input-search-name"
+                  class="header__input">
+              </label>
+            </form>
+          </div>
         </div>
       </div>
-</div>
-<div class="header__navigation-area-buttom">
-  <div class="container header__bottom-container">
-  <nav class="header__nav-buttom">
-    <ul class="header__nav-buttom-list">
-      <li class="header__nav-buttom-item">
-        <button class="header__select" data-path="eight">
-          <p class="header__select-text">Реализм</p>
-          <span class="header__select-arrow"></span>
-        </button>
-        <div class="header__dropdown" data-target="eight">
-          <div class="header__dropdown-wrap" data-simplebar>
-            <ul class="header__drop-list">
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--1">Тинторрето</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--2">Фридрих</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--3">Леонардо</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--4">Верроккьо</a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="header__nav-buttom-item">
-        <button class="header__select" data-path="nine">
-          <p class="header__select-text">Импрессионизм</p>
-          <span class="header__select-arrow"></span>
-        </button>
-        <div class="header__dropdown" data-target="nine">
-          <div class="header__dropdown-wrap" data-simplebar>
-            <ul class="header__drop-list">
-              <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--5">Моне</a>
+      <div class="header__navigation-area-buttom">
+        <div class="container header__bottom-container">
+          <nav class="header__nav-buttom">
+            <ul class="header__nav-buttom-list">
+              <li class="header__nav-buttom-item">
+                <button class="header__select" data-path="eight">
+                  <p class="header__select-text">Реализм</p>
+                  <span class="header__select-arrow"></span>
+                </button>
+                <div class="header__dropdown" data-target="eight">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--1">Тинторрето</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--2">Фридрих</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--3">Леонардо</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--4">Верроккьо</a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--6">Сислей</a></li>
-              <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--7">Мане</a>
+              <li class="header__nav-buttom-item">
+                <button class="header__select" data-path="nine">
+                  <p class="header__select-text">Импрессионизм</p>
+                  <span class="header__select-arrow"></span>
+                </button>
+                <div class="header__dropdown" data-target="nine">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--5">Моне</a>
+                      </li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--6">Сислей</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--7">Мане</a>
+                      </li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--8">Ренуар</a></li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--8">Ренуар</a></li>
+              <li class="header__nav-buttom-item">
+                <button class="header__select" data-path="ten">
+                  <p class="header__select-text">Постимпрессионизм</p>
+                  <span class="header__select-arrow"></span>
+                </button>
+                <div class="header__dropdown" data-target="ten">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--9">Ван
+                          Гог</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--10">Сезанн</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--11">Гоген</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--12">Сёра</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-buttom-item">
+                <button class="header__select" data-path="eleven">
+                  <p class="header__select-text">Авангард</p>
+                  <span class="header__select-arrow"></span>
+                </button>
+                <div class="header__dropdown" data-target="eleven">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--13">Кандинский</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--14">Маринетти</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--15">Малевич</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--16">Пикассо</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="header__nav-buttom-item">
+                <button class="header__select" data-path="twelve">
+                  <p class="header__select-text">Футуризм</p>
+                  <span class="header__select-arrow"></span>
+                </button>
+                <div class="header__dropdown" data-target="twelve">
+                  <div class="header__dropdown-wrap" data-simplebar>
+                    <ul class="header__drop-list">
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--17">Карра</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--18">Прателла</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--19">Северини</a></li>
+                      <li class="header__dropdown-item"><a href=""
+                          class="header__item-link header__item-link--20">Балла</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </li>
-      <li class="header__nav-buttom-item">
-        <button class="header__select" data-path="ten">
-          <p class="header__select-text">Постимпрессионизм</p>
-          <span class="header__select-arrow"></span>
-        </button>
-        <div class="header__dropdown" data-target="ten">
-          <div class="header__dropdown-wrap" data-simplebar>
-            <ul class="header__drop-list">
-              <li class="header__dropdown-item"><a href="" class="header__item-link header__item-link--9">Ван
-                  Гог</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--10">Сезанн</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--11">Гоген</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--12">Сёра</a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="header__nav-buttom-item">
-        <button class="header__select" data-path="eleven">
-          <p class="header__select-text">Авангард</p>
-          <span class="header__select-arrow"></span>
-        </button>
-        <div class="header__dropdown" data-target="eleven">
-          <div class="header__dropdown-wrap" data-simplebar>
-            <ul class="header__drop-list">
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--13">Кандинский</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--14">Маринетти</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--15">Малевич</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--16">Пикассо</a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="header__nav-buttom-item">
-        <button class="header__select" data-path="twelve">
-          <p class="header__select-text">Футуризм</p>
-          <span class="header__select-arrow"></span>
-        </button>
-        <div class="header__dropdown" data-target="twelve">
-          <div class="header__dropdown-wrap" data-simplebar>
-            <ul class="header__drop-list">
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--17">Карра</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--18">Прателла</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--19">Северини</a></li>
-              <li class="header__dropdown-item"><a href=""
-                  class="header__item-link header__item-link--20">Балла</a></li>
-            </ul>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</div>
-<h1 class="visually-hidden">Blanchard - художественная галерея</h1>
-</div>
-  </header>
+        <h1 class="visually-hidden">Blanchard - художественная галерея</h1>
+      </div>
+    </header>
     <section class="hero">
       <div id="swiper-1" class="hero__swiper-container swiper">
         <div class="swiper-wrapper hero__swiper-wrapper">
@@ -269,12 +274,12 @@
                 <option>Скульптура</option>
               </select>
             </div>
-            <p class="galery__text">
-              Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-              <a href="" class="galery__text-authorize">авторизуйтесь</a>
-              , либо воспользуйтесь лицензией.
-            </p>
           </div>
+        </div>
+        <div class="galery__text">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+          <a href="" class="galery__text-authorize">авторизуйтесь</a>
+          , либо воспользуйтесь лицензией.
         </div>
         <div class="galery__swiper">
           <!-- Slider main container -->
@@ -333,247 +338,286 @@
           </ul>
         </div>
         <div class="catalogue__description" data-target="one">
-          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Lorem, семь? Знаках парадигматическая вопрос путь семантика жаренные собрал они гор мир, маленький моей, заманивший раз языком предупреждал что? Грустный.</p>
-          <div id="accordion-1" class="catalogue__block catalogue__block--france">
-            <ul class="catalogue__accordion">
-              <li class="catalogue__item">
-                <button class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div>
-                  <article class="catalogue__article catalogue__article--active catalogue__article--third" id="Anastaise"
-                    data-target="20">
-                    <h3 class="catalogue__artist-name">Anastaise</h3>
-                    <p class="catalogue__date">c 1400 года — 	XV век.</p>
-                    <p class="catalogue__artist-description">Французская художница, специализировалась на иллюминировании рукописей. Создавала сложные декоративные обрамления (поля рукописей) и пейзажи. В её времена большинство рукописей создавалось в коммерческих мастерских, и многие художники были женщинами, вероятно, в первую очередь те, кто специализировался на оформлении окантовок, часто создававшихся не автором самой миниатюры, а другими художниками. Парижская школа все ещё была ведущим центром иллюминирования в этот период, и парижские работы были широко распространены по всей Европе.</p>
-                  </article>
-                  <article class="catalogue__article catalogue__article--second" id="tabs-3" data-target="19">
-                    <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
-                    <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
-                      что посмотреть!</p>
-                    <a href="#" class="catalogue__article-ref">В галерею</a>
-                  </article>
-                  <ul class="catalogue__artists-list">
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="19">Бартелеми д’Эйк</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="20"
-                        tabindex="-1">Anastaise</button>
-                    </li>
-                  </ul>
+          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+            рыбные тексты. Lorem, семь? Знаках парадигматическая вопрос путь семантика жаренные собрал они гор мир,
+            маленький моей, заманивший раз языком предупреждал что? Грустный.</p>
+          <div class="catalogue__main">
+            <div class="catalogue__main--1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--third" id="Anastaise"
+                data-target="20">
+                <div class="catalogue__left-img">
+                  <img src="img/Codexaureus.jpg" alt="Anastaise">
                 </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header" tabindex="0">
-                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
+                <h3 class="catalogue__artist-name">Anastaise</h3>
+                <p class="catalogue__date">c 1400 года — XV век.</p>
+                <p class="catalogue__artist-description">Французская художница, специализировалась на иллюминировании
+                  рукописей. Создавала сложные декоративные обрамления (поля рукописей) и пейзажи. В её времена
+                  большинство
+                  рукописей создавалось в коммерческих мастерских, и многие художники были женщинами, вероятно, в первую
+                  очередь те, кто специализировался на оформлении окантовок, часто создававшихся не автором самой
+                  миниатюры,
+                  а другими художниками. Парижская школа все ещё была ведущим центром иллюминирования в этот период, и
+                  парижские работы были широко распространены по всей Европе.</p>
+              </article>
+              <article class="catalogue__article catalogue__article--second" id="tabs-3" data-target="19">
+                <div class="catalogue__left-img">
+                  <img src="img/emptyartist.png" alt="Anastaise">
                 </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 2000 г.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
+                <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
+                  что посмотреть!</p>
+                <a href="#" class="catalogue__article-ref">В галерею</a>
+              </article>
+            </div>
+            <div class="catalogue__main--2">
+              <div id="accordion-1" class="catalogue__block catalogue__block--france">
+                <ul class="catalogue__accordion">
+                  <li class="catalogue__item">
+                    <button class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <ul class="catalogue__artists-list">
+                      <li class="catalogue__persons-item" tabindex="-1">
+                        <button class="catalogue__persons-btn" data-path="19">Бартелеми д’Эйк</button>
+                      </li>
+                      <li class="catalogue__persons-item" tabindex="-1">
+                        <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="20"
+                          tabindex="-1">Anastaise</button>
+                      </li>
+                    </ul>
+                    <div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header" tabindex="0">
+                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="catalogue__description" data-target="two">
-          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего, решила скатился! Грамматики запятых о букв журчит одна вскоре безорфографичный своих, обеспечивает над которой, правилами предупредила себя назад однажды.</p>
-          <div id="accordion-2" class="catalogue__block catalogue__block--germany">
-            <ul class="catalogue__accordion">
-              <li class="catalogue__item">
-                <button class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div>
-                  <article class="catalogue__article catalogue__article--active catalogue__article--fourth" id=""
+          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+            рыбные тексты. Своего, решила скатился! Грамматики запятых о букв журчит одна вскоре безорфографичный своих,
+            обеспечивает над которой, правилами предупредила себя назад однажды.</p>
+          <div class="catalogue__main">
+            <div class="catalogue__main--1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--fourth" id=""
                     data-target="22">
+                    <div class="catalogue__left-img">
+                      <img src="img/HansBurgkmair.jpg" alt="HansBurgkmair">
+                    </div>
                     <h3 class="catalogue__artist-name">Ханс Бургкмайр</h3>
                     <p class="catalogue__date">1473, Аугсбург — 1531, там же</p>
-                    <p class="catalogue__artist-description">Ханс Бургкмайр родился в 1473 году в городе Аугсбурге. Происходил из семьи художников. Первоначальное обучение он прошёл у своего отца, художника Томана Бургкмайра (1444—1523).
-                      С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе у Мартина Шонгауэра. Не исключено, что в годы странствий он доехал из Аугсбурга до Кёльна.
-                      Около 1507 года художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе Карпаччо.
+                    <p class="catalogue__artist-description">Ханс Бургкмайр родился в 1473 году в городе Аугсбурге.
+                      Происходил из семьи художников. Первоначальное обучение он прошёл у своего отца, художника Томана
+                      Бургкмайра (1444—1523).
+                      С 1488 по 1490 год Бургкмайр проходил обучение в Кольмаре в Эльзасе у Мартина Шонгауэра. Не
+                      исключено, что в годы странствий он доехал из Аугсбурга до Кёльна.
+                      Около 1507 года художник побывал в Италии, где его привлекло творчество Карло Кривелли и Витторе
+                      Карпаччо.
                       Наряду с живописью Бургкмайр занимался ксилографией.</p>
                   </article>
                   <article class="catalogue__article catalogue__article--second" id="tabs-4" data-target="21">
+                    <div class="catalogue__left-img">
+                      <img src="img/emptyartist.png" alt="emptyimg">
+                    </div>
                     <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
                     <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
                       что посмотреть!</p>
                     <a href="#" class="catalogue__article-ref">В галерею</a>
                   </article>
-                  <ul class="catalogue__artists-list">
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="21">Виц, Конрад</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="22"
-                        tabindex="-1">Ханс Бургкмайр</button>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header" tabindex="0">
-                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 2000 г.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+            </div>
+            <div class="catalogue__main--2">
+              <div id="accordion-2" class="catalogue__block catalogue__block--germany">
+                <ul class="catalogue__accordion">
+                  <li class="catalogue__item">
+                    <button class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div>
+                      <ul class="catalogue__artists-list">
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="21">Виц, Конрад</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="22"
+                            tabindex="-1">Ханс Бургкмайр</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header" tabindex="0">
+                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>     
         </div>
         <div class="catalogue__description catalogue__description--active" data-target="three">
           <p class="catalogue__description-text">Акционеры крупнейших компаний, которые представляют собой
@@ -581,16 +625,13 @@
             общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить
             традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
             функционально разнесены на независимые элементы.</p>
-          <div id="accordion" class="catalogue__block catalogue__block--italian">
-            <ul class="catalogue__accordion">
-              <li class="catalogue__item">
-                <button class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div>
-                  <article class="catalogue__article catalogue__article--active catalogue__article--first" id="tabs-1"
+          <div class="catalogue__main">
+            <div class="catalogue__main--1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--first" id="tabs-1"
                     data-target="6">
+                    <div class="catalogue__left-img">
+                      <img src="img/catalogue img1.jpg" alt="Доменико Гирландайо">
+                    </div>
                     <h3 class="catalogue__artist-name">Доменико Гирландайо</h3>
                     <p class="catalogue__date">2 июня 1448 — 11 января 1494.</p>
                     <p class="catalogue__artist-description">Один из ведущих флорентийских художников Кватроченто,
@@ -601,426 +642,479 @@
                       того времени).</p>
                   </article>
                   <article class="catalogue__article catalogue__article--second" id="tabs-2" data-target="7">
+                    <div class="catalogue__left-img">
+                      <img src="img/emptyartist.png" alt="emptyimg">
+                    </div>
                     <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
                     <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
                       что посмотреть!</p>
                     <a href="#" class="catalogue__article-ref">В галерею</a>
                   </article>
-                  <ul class="catalogue__artists-list">
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Бенедетто ди Биндо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Бергоньоне, Амброджо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Биссоло, Франческо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Больтраффио, Джованни</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Бонсиньори, Франческо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Боттичини, Рафаэлло</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Брамантино</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Бреа, Людовико</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Бьяджо д’Антонио Туччи</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Веккьетта</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Андреа Верроккьо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="6"
-                        tabindex="-1">Доменико Гирландайо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Беноццо Гоццоли</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Граначчи, Франческо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Грегорио ди Чекко</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Джованни да Удине</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Джованни ди Паоло</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Джорджоне</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Парентино, Бернардо</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Пезеллино</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Пьетро Перуджино</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Перуцци, Бальдассаре</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Пизанелло</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="7">Пинтуриккьо</button>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header" tabindex="0">
-                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 2000 г.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
+            </div>
+            <div class="catalogue__main--2">
+              <div id="accordion" class="catalogue__block catalogue__block--italian">
+                <ul class="catalogue__accordion">
+                  <li class="catalogue__item">
+                    <button class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div>
+                      <ul class="catalogue__artists-list">
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Бенедетто ди Биндо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Бергоньоне, Амброджо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Биссоло, Франческо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Больтраффио, Джованни</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Бонсиньори, Франческо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Боттичини, Рафаэлло</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Брамантино</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Бреа, Людовико</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Бьяджо д’Антонио Туччи</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Веккьетта</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Андреа Верроккьо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="6"
+                            tabindex="-1">Доменико Гирландайо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Беноццо Гоццоли</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Граначчи, Франческо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Грегорио ди Чекко</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Джованни да Удине</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Джованни ди Паоло</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Джорджоне</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Парентино, Бернардо</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Пезеллино</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Пьетро Перуджино</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Перуцци, Бальдассаре</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Пизанелло</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="7">Пинтуриккьо</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header" tabindex="0">
+                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="catalogue__description" data-target="four">
           <p class="catalogue__description-text">За словесными горами в стране гласных и
-            согласных живут рыбные тексты. Переписывается безорфографичный ему свой несколько текст проектах над выйти, он
+            согласных живут рыбные тексты. Переписывается безорфографичный ему свой несколько текст проектах над выйти,
+            он
             языком, необходимыми реторический однажды курсивных даль буквоград имеет дороге. Точках?</p>
-          <div id="accordion-3" class="catalogue__block catalogue__block--rus">
-            <ul class="catalogue__accordion">
-              <li class="catalogue__item">
-                <button class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div>
-                  <article class="catalogue__article catalogue__article--active catalogue__article--fifth" id="tabs-7" data-target="25">
+          <div class="catalogue__main">
+            <div class="catalogue__main--1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--fifth" id="tabs-7"
+                    data-target="25">
+                    <div class="catalogue__left-img">
+                      <img src="img/SemeonCherniy.jpg" alt="SemeonCherniy">
+                    </div>
                     <h3 class="catalogue__artist-name">Симеон Чёрный</h3>
                     <p class="catalogue__date">(упомин. в 1395) — иконописец конца XIV века.</p>
-                    <p class="catalogue__artist-description">Исследователям не известно ни одно произведение Симеона Чёрного. По мнению Д. А. Ровинского, творчество этого художника должно было развиваться под влиянием Феофана Грека.</p>
+                    <p class="catalogue__artist-description">Исследователям не известно ни одно произведение Симеона
+                      Чёрного. По мнению Д. А. Ровинского, творчество этого художника должно было развиваться под
+                      влиянием Феофана Грека.</p>
                   </article>
                   <article class="catalogue__article catalogue__article--second" id="tabs-8" data-target="26">
+                    <div class="catalogue__left-img">
+                      <img src="img/emptyartist.png" alt="emptyimg">
+                    </div>
                     <h3 class="catalogue__artist-name">Что мы о нём знаем?</h3>
                     <p class="catalogue__artist-description">Пока ничего... Зато мы точно знаем, что в галерее есть на
                       что посмотреть!</p>
                     <a href="#" class="catalogue__article-ref">В галерею</a>
                   </article>
-                  <ul class="catalogue__artists-list">
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="25" tabindex="-1">Симеон Чёрный</button>
-                    </li>
-                    <li class="catalogue__persons-item" tabindex="-1">
-                      <button class="catalogue__persons-btn" data-path="26" tabindex="-1">Феофан Грек</button>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header" tabindex="0">
-                  <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-              <li class="catalogue__item">
-                <button type="button" class="catalogue__accordion-header">
-                  <h3 class="catalogue__header-text">C 2000 г.</h3>
-                  <span class="catalogue__accordion-button"></span>
-                </button>
-                <div class="catalogue__text-empty">
-                  <span class="catalogue__empty-img"></span>
-                  <div class="catalogue__empty-content">
-                    <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                    <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                    <a href="#" class="catalogue__gallery-ref">В галерею</a>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="catalogue__description" data-target="five">
-          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Все назад снова но даже взгляд осталось алфавит маленькая если своего вскоре послушавшись, строчка деревни наш имеет свой запятой текстами!</p>
-            <div id="accordion-4" class="catalogue__block catalogue__block--belgium">
-              <ul class="catalogue__accordion">
-                <li class="catalogue__item">
-                  <button class="catalogue__accordion-header">
-                    <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div>
-                    <article class="catalogue__article catalogue__article--active catalogue__article--six" id=""
-                      data-target="30">
-                      <h3 class="catalogue__artist-name">Босх, Иероним</h3>
-                      <p class="catalogue__date">около 1450—1516.</p>
-                      <p class="catalogue__artist-description">нидерландский потомственный художник, один из крупнейших мастеров периода Северного Возрождения. Из творчества художника сохранилось около десяти картин и двенадцати рисунков[3]. Был посвящён в члены Братства Богоматери (нидерл. Illustre Lieve Vrouwe Broederschap. 1486). Считается одним из самых загадочных живописцев в истории западного искусства. В родном городе Босха, голландском Хертогенбосе, открыт центр творчества Босха, в котором представлены копии всех его произведений.</p>
-                    </article>
-                    <ul class="catalogue__artists-list">
-                      <li class="catalogue__persons-item" tabindex="-1">
-                        <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="30"
-                          tabindex="-1">Босх, Иероним</button>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="catalogue__item">
-                  <button type="button" class="catalogue__accordion-header" tabindex="0">
-                    <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div class="catalogue__text-empty">
-                    <span class="catalogue__empty-img"></span>
-                    <div class="catalogue__empty-content">
-                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+            </div>
+            <div class="catalogue__main--2">
+              <div id="accordion-3" class="catalogue__block catalogue__block--rus">
+                <ul class="catalogue__accordion">
+                  <li class="catalogue__item">
+                    <button class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div>
+                      <ul class="catalogue__artists-list">
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="25"
+                            tabindex="-1">Симеон Чёрный</button>
+                        </li>
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn" data-path="26" tabindex="-1">Феофан Грек</button>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                </li>
-                <li class="catalogue__item">
-                  <button type="button" class="catalogue__accordion-header">
-                    <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div class="catalogue__text-empty">
-                    <span class="catalogue__empty-img"></span>
-                    <div class="catalogue__empty-content">
-                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header" tabindex="0">
+                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="catalogue__item">
-                  <button type="button" class="catalogue__accordion-header">
-                    <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div class="catalogue__text-empty">
-                    <span class="catalogue__empty-img"></span>
-                    <div class="catalogue__empty-content">
-                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="catalogue__item">
-                  <button type="button" class="catalogue__accordion-header">
-                    <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div class="catalogue__text-empty">
-                    <span class="catalogue__empty-img"></span>
-                    <div class="catalogue__empty-content">
-                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="catalogue__item">
-                  <button type="button" class="catalogue__accordion-header">
-                    <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div class="catalogue__text-empty">
-                    <span class="catalogue__empty-img"></span>
-                    <div class="catalogue__empty-content">
-                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li class="catalogue__item">
-                  <button type="button" class="catalogue__accordion-header">
-                    <h3 class="catalogue__header-text">C 2000 г.</h3>
-                    <span class="catalogue__accordion-button"></span>
-                  </button>
-                  <div class="catalogue__text-empty">
-                    <span class="catalogue__empty-img"></span>
-                    <div class="catalogue__empty-content">
-                      <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
-                      <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
-                      <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <div class="catalogue__description" data-target="five">
+          <p class="catalogue__description-text">Далеко-далеко за словесными горами в стране гласных и согласных, живут
+            рыбные тексты. Все назад снова но даже взгляд осталось алфавит маленькая если своего вскоре послушавшись,
+            строчка деревни наш имеет свой запятой текстами!</p>
+          <div class="catalogue__main">
+            <div class="catalogue__main--1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--six" id=""
+                    data-target="30">
+                    <div class="catalogue__left-img">
+                      <img src="img/HieronymusBosch.jpg" alt="HieronymusBosch">
+                    </div>
+                    <h3 class="catalogue__artist-name">Босх, Иероним</h3>
+                    <p class="catalogue__date">около 1450—1516.</p>
+                    <p class="catalogue__artist-description">нидерландский потомственный художник, один из крупнейших
+                      мастеров периода Северного Возрождения. Из творчества художника сохранилось около десяти картин и
+                      двенадцати рисунков[3]. Был посвящён в члены Братства Богоматери (нидерл. Illustre Lieve Vrouwe
+                      Broederschap. 1486). Считается одним из самых загадочных живописцев в истории западного искусства.
+                      В родном городе Босха, голландском Хертогенбосе, открыт центр творчества Босха, в котором
+                      представлены копии всех его произведений.</p>
+                  </article>
+            </div>
+            <div class="catalogue__main--2">
+              <div id="accordion-4" class="catalogue__block catalogue__block--belgium">
+                <ul class="catalogue__accordion">
+                  <li class="catalogue__item">
+                    <button class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div>
+                      <ul class="catalogue__artists-list">
+                        <li class="catalogue__persons-item" tabindex="-1">
+                          <button class="catalogue__persons-btn catalogue__persons-btn--active" data-path="30"
+                            tabindex="-1">Босх, Иероним</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header" tabindex="0">
+                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalogue__item">
+                    <button type="button" class="catalogue__accordion-header">
+                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__accordion-button"></span>
+                    </button>
+                    <div class="catalogue__text-empty">
+                      <span class="catalogue__empty-img"></span>
+                      <div class="catalogue__empty-content">
+                        <h4 class="catalogue__empty-header">Здесь пока пусто</h4>
+                        <p class="catalogue__empty-go-to">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                        <a href="#" class="catalogue__gallery-ref">В галерею</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>   
+      </div>
     </section>
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="events__header">События</h2>
         <div class="events__swiper-container swiper" id="#swiper-5" data-mobile="false">
           <div class="events__articles swiper-wrapper">
-              <article class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
-                <p class="events__articles-museum">Музей им. Щусева </p>
-                <p class="events__articles-date">с 20 марта по 30 апреля</p>
-                <div class="events__main-block">
-                  <div>
-                    <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
-                    <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто, основатель
-                      художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                  </div>
-                  <a href="#" class="events__articles-ref">Подробнее</a>
+            <article
+              class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--first"></div>
+              <p class="events__articles-museum">Музей им. Щусева </p>
+              <p class="events__articles-date">с 20 марта по 30 апреля</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
+                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
+                    основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                 </div>
-              </article>
-            <article class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
+                <a href="#" class="events__articles-ref">Подробнее</a>
+              </div>
+            </article>
+            <article
+              class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--second"></div>
               <p class="events__articles-museum">ММОМА</p>
               <p class="events__articles-date">24 марта 19:00</p>
               <div class="events__main-block">
@@ -1031,8 +1125,9 @@
                 </div>
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
-            </article> 
-            <article class="events__articles-content events__articles-content-active events__articles-content--third swiper-slide events__swiper-slide">
+            </article>
+            <article class="events__articles-content events__articles-content--third swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--third"></div>
               <p class="events__articles-museum">Еврейский музей</p>
               <p class="events__articles-date">с 31 марта по 21 апреля</p>
               <div class="events__main-block">
@@ -1044,7 +1139,8 @@
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
             </article>
-           <article class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
+            <article class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--four"></div>
               <p class="events__articles-museum">Третьяковка на Крымском валу</p>
               <p class="events__articles-date">с 30 марта по 30 апреля</p>
               <div class="events__main-block">
@@ -1057,12 +1153,14 @@
               </div>
             </article>
             <article class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--five"></div>
               <p class="events__articles-museum">ММАМ</p>
               <p class="events__articles-date">с 8 апреля по 20 мая</p>
               <div class="events__main-block">
                 <div>
                   <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
+                    основатель
                     художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                 </div>
                 <a href="#" class="events__articles-ref">Подробнее</a>
@@ -1070,9 +1168,9 @@
             </article>
           </div>
           <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
     <section class="editions" id="editions">
       <div class="container editions__container">
         <div class="editions__main">
@@ -1103,7 +1201,8 @@
               </li>
               <li class="editions__item">
                 <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked aria-checked="true">
+                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked
+                    aria-checked="true">
                   <span class="editions__ckeckbox-text">Дизайн</span>
                   <span class="editions__span"></span>
                 </label>
@@ -1262,7 +1361,8 @@
           <div class="projects__marker">
             <p class="projects__description">Предварительные выводы: постоянное информационно-пропагандистское
               обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А
-              ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего
+              ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за
+              чего
               возрастает
               их статус бесполезности. Прежде всего, постоянное информационно-&nbsp;пропагандистское
               <span id="myButton-1" class="projects__tooltip__span"></span>

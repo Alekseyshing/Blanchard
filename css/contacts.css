@@ -29,7 +29,7 @@
 
 .contacts__map {
   margin-top: -1px;
-  min-height: 700px;
+  min-height: 703px;
   width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); 
   margin-right: calc((-100vw + 100%) / 2);
 }
@@ -67,7 +67,7 @@
 }
 
 .contacts__form {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .contacts__form-name {
