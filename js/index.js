@@ -317,9 +317,12 @@ const fadeIn = (el, timeout, display) => {
         slidesPerView: 2,
         grid: {
           rows: 2,
+          columns: 2,
+          fill: 'column',
         },
+        loopedSlides: 4,
         spaceBetween: 34,
-        slidesPerGroup: 3,
+        slidesPerGroup: 4,
       },
       
 
@@ -456,7 +459,7 @@ const fadeIn = (el, timeout, display) => {
   ymaps.ready(init);
   function init() {
     var myMap = new ymaps.Map("myMap", {
-      center: [55.76, 37.6235], 
+      center: [55.75846806898367, 37.60108849999989], 
       zoom: 15,
       controls: ['geolocationControl', 'zoomControl'],
     },
@@ -470,7 +473,7 @@ const fadeIn = (el, timeout, display) => {
       zoomControlPosition: { top: "100px", right: "20px" },
    });
 
-      var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, { 
+      var myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, { 
         iconLayout: 'default#image',
         iconImageHref: 'map-point.svg',
         iconImageSize: [20,20],

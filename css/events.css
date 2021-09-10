@@ -208,8 +208,23 @@
 }
 
 @media (max-width: 1064px) { 
+  .events__container {
+    padding-bottom: 81px;
+  }
+
+  .events__articles-content {
+    width: calc((100% - 34px*2) / 3);
+    margin-right: 34px;
+  }
+
+  .events__articles-header {
+    min-width: 230px;
+  }
+
   .events__main-block {
-    min-height: 450px;
+    padding-left: 30px;
+    max-width: 270px;
+    min-height: 380px;
   }
 
   .events__articles-img {

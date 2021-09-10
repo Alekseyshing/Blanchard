@@ -146,9 +146,17 @@
   justify-content: space-between;
 }
 
+.catalogue__main {
+  display: flex;
+  justify-content: space-between;
+}
 .catalogue__main--1,
 .catalogue__main--2  {
   width: 50%;
+}
+
+.catalogue__main--1 {
+  margin-right: 50px;
 }
 
 .ui-accordion-content {
@@ -158,9 +166,8 @@
 
 .catalogue__article {
   display: none;
-  
   top: 0px;
-  width: 95%;
+  /* width: 95%; */
   height: 470px;
 }
 
@@ -181,7 +188,6 @@
 
 .catalogue__main {
   display: flex;
-  width: 100%;
 }
 
 .catalogue__article-ref {
@@ -211,10 +217,6 @@
   color: var(--text-color);
 }
 
-.catalogue__accordion {
-  min-width: 800px;
-}
-
 .catalogue__accordion-header:hover {
   cursor: pointer;
 }
@@ -241,11 +243,6 @@
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49 25C49 38.2548 38.2548 49 25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25Z' fill='%23D1A9F0' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M16.6667 27.3334L25 19L33.3333 27.3333' stroke='black'/%3E%3C/svg%3E");
 }
 
-/* .ui-accordion-header:focus-visible.catalogue__header-text {
-  background-color: var(--add-color);
-  color: #ffffff;
-} */
-
 .catalogue__header-text {
   color: var(--main-color);
 }  
@@ -267,10 +264,6 @@
 .catalogue__fl-btn:active::before {
   border: 2px solid #7943A4;
   box-shadow: none;
-}
-
-.catalogue__block {
-  display: flex;
 }
 
 .catalogue__item:first-child {
@@ -483,8 +476,17 @@
   box-shadow: none;
 }
 
-.catalogue__block {
-  display: flex;
+@media (max-width: 1220px) {
+  .catalogue__artists-list {
+    justify-content: space-between;
+    max-width: 430px;
+    max-height: 420px;
+    text-align: left;
+  }
+
+  .catalogue__persons-item {
+    max-width: 200px;
+  }
 }
 /* 
 @media (max-width: 1695px) {

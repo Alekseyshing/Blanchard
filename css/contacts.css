@@ -29,7 +29,7 @@
 
 .contacts__map {
   margin-top: -1px;
-  min-height: 703px;
+  min-height: 700px;
   width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); 
   margin-right: calc((-100vw + 100%) / 2);
 }
@@ -228,6 +228,7 @@
 
 @media (max-width: 1360px) {
   .contacts__left {
+    max-height: 700px;
     padding-top: 124px;
     width: calc(437 / 924 * 100%);
     border-right: 1px solid #cacaca;
@@ -235,6 +236,7 @@
 
   .contacts__map {
     width: calc(487 / 924 * 100% + ((100vw - 100%) / 2));
+    min-height: 700px;
   }
 
   .contacts__form-name,
