@@ -155,10 +155,6 @@
   width: 50%;
 }
 
-.catalogue__main--1 {
-  margin-right: 50px;
-}
-
 .ui-accordion-content {
   min-height: 250px;
   padding: 25px 0;
@@ -474,6 +470,12 @@
 .catalogue__fl-btn:active::before {
   border: 2px solid #7943A4;
   box-shadow: none;
+}
+
+@media (max-width: 1650px) {
+  .catalogue__main--1 {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 1220px) {
