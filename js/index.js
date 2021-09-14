@@ -50,10 +50,22 @@ window.addEventListener('DOMContentLoaded', function() {
   
   setMenuListener();
 
-  document.querySelector('#search-btn').addEventListener('click', function() {
+    document.querySelector('#search-btn').addEventListener('click', function() {
     document.querySelector('#search-form').classList.toggle('header__search-menu-active')
     document.querySelector('#search-btn').classList.toggle('header__search-btn-epsent')
   })
+
+  const button = document.querySelector('#search-btn') // находим кнопку для открытия/закрытия окна навигации
+  const nav = document.querySelector('#search-form') // находим окно навигации
+
+  window.addEventListener('click', e => { // при клике в любом месте окна браузера
+    const target = e.target // находим элемент, на котором был клик
+    if (!target.closest('.header__search-menu') && !target.closest('.header__search-btn') && !target.closest('.header__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      nav.classList.remove('header__search-menu-active') // то закрываем окно навигации, удаляя активный класс
+      document.querySelector('#search-btn').classList.remove('header__search-btn-epsent')
+    }
+  })
+
 
   document.querySelectorAll('.catalogue__fl-btn').forEach(function(tabsBtn1){
     tabsBtn1.addEventListener('click', function(event) {
@@ -245,21 +257,18 @@ const fadeIn = (el, timeout, display) => {
 
     const swiper1 = new Swiper('#swiper-1', {
       // Optional parameters
-      loop: true,
       slideActiveClass: 'hero__swiper-slide-active',
-
-      autoplay: {
-        delay: 7000,
-      },
+      effct: 'fade',
+      speed: 2500,
       
-      effct:'fade',
-
       fadeEffect: {
         crossFade: true
       },
 
-      speed: 1000,
-
+      autoplay: {
+        delay: 3000,
+      },
+      
       pagination: {
         el: 'swiper-pagination',
         clickable: true,
@@ -267,20 +276,38 @@ const fadeIn = (el, timeout, display) => {
     });  
 
   const swiper2 = new Swiper('#swiper-2', {
-    loop: false,
-    loopedSlides: 12,
-    autoheight: true,
-    zoom: true,
-
+    slidesPerView: 1,
     grid: {
-      rows: 2,
-      fill: 'column',
+      rows: 1,
+      fill: "row"
     },
+    spaceBetween: 20,
+
+    breakpoints: {
+      441: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2
+        },
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+      },
+  
+      1200: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2
+        },
+        spaceBetween: 50,
+        slidesPerGroup: 6,
+      }
+    },
+  
+    a11y: false,
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.galery__swiper-pagination',
       type: 'fraction',
-      clickable: true,
      },
 
      navigation: {
@@ -302,39 +329,6 @@ const fadeIn = (el, timeout, display) => {
       el: '.swiper-scrollbar',
       allowTouchMove: true,
     },
-
-    breakpoints: {
-      441: {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-        },
-        spaceBetween: 34,
-        slidesPerGroup: 4,
-      },
-
-      769: {
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-          columns: 2,
-          fill: 'column',
-        },
-        loopedSlides: 4,
-        spaceBetween: 34,
-        slidesPerGroup: 4,
-      },
-      
-
-      1485: {
-        slidesPerView: 3,
-        grid: {
-          rows: 2
-        },
-        spaceBetween: 50,
-        slidesPerGroup: 6,
-      },
-      },
     });
 
    const swiper3 = new Swiper('#swiper-3', {
@@ -360,7 +354,7 @@ const fadeIn = (el, timeout, display) => {
     },
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.editions__swiper-pagination',
       type: 'fraction',
       clickable: true,
     },
@@ -491,7 +485,7 @@ const fadeIn = (el, timeout, display) => {
       collapsible: true,
       icons: false,
       heightStyle: "content",
-      autoheight: true,
+      autoheight: false,
     });
   });
 

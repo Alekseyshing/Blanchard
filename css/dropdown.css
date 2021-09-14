@@ -6,7 +6,8 @@ a {
   display: flex;
   align-items: center;
   outline: none;
-  padding-right: 10px;
+  padding-left: 2px;
+  padding-right: 6px;
   border: none;
   background-color: transparent;
   font-size: 18px;
@@ -20,6 +21,8 @@ a {
 
 .header__nav-buttom-list {
   display: flex;
+  justify-content: space-between;
+  max-width: 1040px;
   list-style: none;
 }
 
@@ -41,12 +44,13 @@ a {
 .header__select::after {
   content: "";
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  left: 0;
+  margin-left: 4px;
   border-top: 1px solid;
   border-right: 1px solid;
-  margin-left: 10px;
-  margin-top: -3px;
   transform: rotate(135deg);
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   transform-origin: center;
@@ -91,13 +95,13 @@ a {
 .header__dropdown.header__drop-is-active {
   display: block;
   animation-name: dropdownOpen;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
 }
 
 .header__dropdown.header__drop-is-disabled {
   display: block;
   animation-name: dropdownClose;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
 }
 
 .header__drop-list {

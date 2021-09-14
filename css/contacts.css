@@ -121,17 +121,18 @@
 .contacts__form-btn::after { 
   position: absolute;
   display: block;
-  width: 167px;
-  height: 69px;
+  width: 168px;
+  height: 70px;
   content: '';
   top: -7px;
   right: 0;
   bottom: 0;
-  left: -6px;
-  padding: 22px 40px;
+  left: -7px;
+  padding: 23px 40px;
   border: 2px solid transparent;
   border-radius: 100px;
   transition: border .3s ease-in-out;
+  margin-bottom: 10px;
 }
 
 .contacts__form-btn::before { 

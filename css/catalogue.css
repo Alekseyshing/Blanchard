@@ -1,6 +1,6 @@
 .catalogue__container {
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
 }
 
 .catalogue__head {
@@ -49,8 +49,8 @@
   display: block;
   margin-right: 24px;
   padding: 0;
-  width: 72px;
-  height: 70px;
+  width: 71px;
+  height: 71px;
   outline: none;
   cursor: pointer;
   background-size: 48px;
@@ -156,15 +156,12 @@
 }
 
 .ui-accordion-content {
-  min-height: 250px;
   padding: 25px 0;
 }
 
 .catalogue__article {
   display: none;
   top: 0px;
-  /* width: 95%; */
-  height: 470px;
 }
 
 .catalogue__article--active {
@@ -210,6 +207,7 @@
   padding-top: 5px;
   font-size: 16px;
   line-height: 32px;
+  max-width: 749px;
   color: var(--text-color);
 }
 
@@ -290,10 +288,6 @@
   border-color: var(--add-color);
 }
 
-/* .catalogue__item:focus-within {
-  border-bottom: 1px solid #cacaca
-} */
-
 .catalogue__item:first-child:hover {
   border-top: 1px solid var(--add-color);
 }
@@ -304,9 +298,10 @@
   align-items: center;
   border: none;
   background-color: transparent;
-  padding-top: 31px;
-  padding-bottom: 31px;
-  padding-left: 2px;
+  padding-top: 28px;
+  padding-bottom: 35px;
+  padding-left: 0px;
+  padding-right: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -319,7 +314,8 @@
 }
 
 .ui-accordion-header-active {
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .ui-accordion-header-icon {
@@ -335,7 +331,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 730px;
-  max-height: 310px;
+  max-height: 298px;
 }
 
 .catalogue__accordion-button {
@@ -354,6 +350,7 @@
 .catalogue__persons-btn {
   font-size: 16px;
   line-height: 30px;
+  max-height: 30px;
   color: var(--text-color);
   padding: 0;
   border: 1px solid transparent;
@@ -367,7 +364,7 @@
 }
 
 .catalogue__left-img {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .catalogue__empty-header {
@@ -382,6 +379,28 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+}
+
+.catalogue__empty-img {
+  position: relative;
+  display: block;
+  width: 275px;
+  height: 189px;
+  border: 2px solid rgba(183, 183, 183, 1);
+  margin-right: 24px;
+}
+
+.catalogue__empty-img::after {
+  content:'';
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 10px;
+  width: 251px;
+  height: 165px;
+  background-color: rgba(183, 183, 183, 1);
 }
 
 .catalogue__gallery-ref {
@@ -481,7 +500,6 @@
 @media (max-width: 1220px) {
   .catalogue__artists-list {
     justify-content: space-between;
-    max-width: 430px;
     max-height: 420px;
     text-align: left;
   }
@@ -490,139 +508,15 @@
     max-width: 200px;
   }
 }
-/* 
-@media (max-width: 1695px) {
-  .catalogue__accordion {
-    min-width: 700px;
+
+@media (max-width: 960px) {
+  .catalogue__main {
+    flex-direction: column-reverse;
   }
 
-  .catalogue__article,
-  .catalogue__article--first::before,
-  .catalogue__article--second::before,
-  .catalogue__article--third::before,
-  .catalogue__article--fourth::before,
-  .catalogue__article--fifth::before,
-  .catalogue__article--six::before {
-    height: 400px;
-  }
+  .catalogue__main--1,
+  .catalogue__main--2  {
+    width: 100%;
 }
 
-@media (max-width: 1590px) {
-  .catalogue__accordion {
-    min-width: 680px;
-  }
-
-  .catalogue__article {
-    left: -750px;
-   }
-
-   .catalogue__block {
-    padding-left: 750px;
-  }
 }
-
-@media (max-width: 1520px) {
-  .catalogue__accordion {
-    min-width: 650px;
-  }
-
-  .catalogue__article {
-    left: -650px;
-   }
-
-   .catalogue__block {
-    padding-left: 650px;
-  }
-
-  .catalogue__artists-list {
-    max-height: 350px;
-  }
-}
-
-@media (max-width: 1410px) {
-  .catalogue__accordion {
-    min-width: 600px;
-  }
-
-  .catalogue__article {
-    left: -600px;
-   }
-
-   .catalogue__block {
-    padding-left: 600px;
-  }
-
-  .catalogue__artists-list {
-    min-height: 410px;
-  }
-
-  .catalogue__article {
-    padding-top: 400px;
-  }
-
-  .catalogue__article,
-  .catalogue__article--first::before,
-  .catalogue__article--second::before,
-  .catalogue__article--third::before,
-  .catalogue__article--fourth::before,
-  .catalogue__article--fifth::before,
-  .catalogue__article--six::before {
-    height: 330px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .catalogue__accordion {
-    min-width: 500px;
-  }
-
-  .catalogue__article {
-    left: -500px;
-   }
-
-   .catalogue__block {
-    padding-left: 500px;
-  }
-
-} 
-
-@media (max-width: 1124px) {
-  .catalogue__container {
-    padding-bottom: 30px;
-  }
-
-  .catalogue__article--first::before,
-  .catalogue__article--second::before,
-  .catalogue__article--third::before,
-  .catalogue__article--fourth::before,
-  .catalogue__article--fifth::before,
-  .catalogue__article--six::before {
-    height: 274px;
-  }
-
-  .catalogue__article {
-    padding-top: 310px;
-  }
-
-  .catalogue__accordion {
-    min-width: 470px;
-  }
-
-  .catalogue__article {
-    left: -470px;
-   }
-
-   .catalogue__block {
-    padding-left: 470px;
-  }
-
-  .catalogue__artists-list {
-    min-height: 410px;
-  }
-
-  .catalogue__item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
- */
