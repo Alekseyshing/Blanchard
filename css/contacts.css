@@ -249,6 +249,10 @@
     border-radius: 100px;
   }
 
+  .contacts__messangers-header {
+    margin-bottom: 11px;
+  }
+
   .contacts__whatsapp-logo,
   .contacts__telegram-logo {
     display: block;
@@ -256,5 +260,19 @@
     width: 60px;
     height: 60px;
     background-size: cover;
+  }
+
+  .contacts__whatsapp-logo {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 865px) {
+  .contacts__left {
+    width: calc(380 / 668 * 100%);
+  }
+  
+  .contacts__map {
+    width: calc(288 / 668 * 100% + ((100vw - 100%) / 2));
   }
 }

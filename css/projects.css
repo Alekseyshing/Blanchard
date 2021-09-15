@@ -46,83 +46,7 @@
 }
 
 .projects__main-block {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 150px;
-}
-
-.projects__button-prev,
-.projects__button-next  {
-  align-self: center;
-}
-
-.projects__swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.projects__swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.projects__sw-slide {
-  cursor: pointer;
-  display: block;
-  filter: grayscale(100%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  border: 1px solid transparent;
-  transition: border .3s ease-in-out, opacity .3s ease-in-out, filter .3s ease-in-out;
-}
-
-.projects__sw-slide--1 {
-  background-image: url(../img/proim1.png);
-}
-
-.projects__sw-slide--2 {
-  background-image: url(../img/proim2.png);
-}
-
-.projects__sw-slide--3 {
-  background-image: url(../img/proim3.png);
-}
-
-.projects__sw-slide--4 {
-  background-image: url(../img/proim4.png);
-}
-
-.projects__sw-slide--5 {
-  background-image: url(../img/proim5.png);
-}
-
-.projects__sw-slide--6 {
-  background-image: url(../img/proim6.png);
-}
-
-.projects__sw-slide--7 {
-  background-image: url(../img/proim7.png);
-}
-
-.projects__sw-slide--8 {
-  background-image: url(../img/proim8.png);
-}
-
-.projects__sw-slide--9 {
-  background-image: url(../img/proim9.png);
-}
-
-.projects__sw-slide:focus {
-  filter: grayscale(0%);
-  opacity: 1;
-  border: 1px solid var(--add-color);
-}
-
-.projects__sw-slide:hover {
-  filter: grayscale(0%);
-  opacity: 1;
+  position: relative;
 }
 
 .projects__button-prev,
@@ -130,7 +54,6 @@
   display: block;
   border: none;
   outline: none;
-  cursor: pointer;
   padding: 0;
   width: 35px;
   height: 35px;
@@ -139,13 +62,76 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
-  transition: all .3s ease-in-out;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out, background-image .3s ease-in-out, cursor .3s ease-in-out;
+}
+
+.projects__button-prev,
+.projects__button-next {
+  position: absolute;
+  top: 61px;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  overflow: visible;
+}
+
+.projects__button-prev {
+  left: 0;
+}
+
+.projects__button-next {
+  right: 0;
+}
+
+.projects__swiper-container {
+  max-width: 1450px;
+  min-height: 155px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.projects__swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.projects__sw-slide {
+  position: relative;
+  height: 100%;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.4;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition: outline .2s;
+  transition: outline .3s ease-in-out, opacity .3s ease-in-out, filter .3s ease-in-out;
+}
+
+.projects__sw-slide:focus {
+  filter: grayscale(0%);
+  opacity: 1;
+  outline: 1px solid var(--add-color);
+}
+
+.projects__sw-slide:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .projects__button-prev:hover,
 .projects__button-next:hover {
   filter: grayscale(0%);
   opacity: 1;
+  cursor: pointer;
 }
 
 .projects__button-prev {
@@ -244,6 +230,22 @@
   opacity: .1;
 }
 
+@media (max-width: 1640px) {
+  .projects__swiper-container {
+    max-width: 818px;
+    min-height: 128px;
+  }
+
+  .projects__button-prev,
+  .projects__button-next {
+    top: 50px;
+  }
+  
+  .projects__sw-img {
+    max-height: 128px;
+  }
+}
+
 @media (max-width: 1024px) {
   .projects__container {
     padding-bottom: 80px;
@@ -264,5 +266,44 @@
   }
   .projects__swiper-container {
     padding-top: 0;
+  }
+}
+
+@media (max-width: 998px) { 
+  .projects__swiper-container {
+    max-width: 668px; 
+  }
+
+  .projects__button-prev,
+  .projects__button-next {
+    top: 35px;
+  }
+
+  .projects__main-block {
+    height: 100px;
+  }
+}
+
+@media (max-width: 860px) { 
+  .projects__container {
+    padding-top: 82px;
+  }
+
+  .projects__swiper-container {
+    max-width: 562px;
+  }
+
+  .projects__button-prev,
+  .projects__button-next {
+    top: 25px;
+  }
+
+  .projects__description {
+    max-width: 650px;
+    margin-bottom: 25px;
+  }
+
+  .projects__partners-header {
+    margin-bottom: 38px;
   }
 }

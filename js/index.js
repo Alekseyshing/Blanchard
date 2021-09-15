@@ -289,7 +289,7 @@ const fadeIn = (el, timeout, display) => {
         grid: {
           rows: 2
         },
-        spaceBetween: 30,
+        spaceBetween: 34,
         slidesPerGroup: 2,
       },
   
@@ -337,20 +337,18 @@ const fadeIn = (el, timeout, display) => {
     zoom: true,
 
     breakpoints: {
-      1024: {
-        loopedSlides: 2,
+      300: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
+        spaceBetween: 34
       },
-
-
-      1310: {
-        loopedSlides: 3,
+      1005: {
+        slidesPerView: 2,
+        spaceBetween: 49
+      },
+      1611: {
         slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50,
-      },
+        spaceBetween: 49
+      }
     },
 
     pagination: {
@@ -377,18 +375,31 @@ const fadeIn = (el, timeout, display) => {
     zoom: true,
     slideToClickedSlide: true,
     
-    breakpoints: {
-      1024: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-        slidesPerGroup: 2,
-      },
+    // breakpoints: {
+    //   1024: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 15,
+    //     slidesPerGroup: 2,
+    //   },
 
-      1700: {
-        slidesPerView: 3,
-        spaceBetween: 45,
-        slidesPerGroup: 3,
+    //   1640: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 45,
+    //     slidesPerGroup: 3,
+    //   },
+    breakpoints: {
+      740: {
+        slidesPerView: 2,
+        spaceBetween: 34
       },
+      1005: {
+        slidesPerView: 2,
+        spaceBetween: 50
+      },
+      1640: {
+        slidesPerView: 3,
+        spaceBetween: 49
+      }
     },
 
     navigation: {

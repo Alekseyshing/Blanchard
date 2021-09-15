@@ -136,8 +136,8 @@
 
 @media (max-width: 1410px) {
   .hero__container {
-    padding-top: 110px;
-    padding-bottom: 41px;
+    padding-top: 112px;
+    padding-bottom: 38px;
   }
 
   .hero__container::before { 
@@ -150,7 +150,8 @@
 
   .hero__text {
     max-width: 660px;
-    margin-bottom: 131px;
+    line-height: 28px;
+    margin-bottom: 134px;
   }
 
   .hero__swiper-slide--1 {
@@ -166,7 +167,7 @@
   }
 }
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .hero {
     padding-bottom: 72px;
   }

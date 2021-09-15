@@ -410,7 +410,6 @@
   color: rgba(157, 92, 208, 1);
 }
 
-
 .catalogue__item:hover .catalogue__accordion-button {
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E%0A");
 }
@@ -498,10 +497,28 @@
 }
 
 @media (max-width: 1220px) {
+  .catalogue__container {
+    padding-bottom: 20px;
+  }
+
   .catalogue__artists-list {
-    justify-content: space-between;
+    align-content: space-between;
+    margin-right: 0;
     max-height: 420px;
     text-align: left;
+  }
+
+  .catalogue__fl-btn {
+    margin-right: 25px;
+  }
+
+  .catalogue__flag-item {
+    align-items: center;
+    height: 87px;
+  }
+
+  .catalogue__description-text {
+    margin-bottom: 34px;
   }
 
   .catalogue__persons-item {
@@ -514,9 +531,54 @@
     flex-direction: column-reverse;
   }
 
+  .catalogue__header {
+    margin-bottom: 0;
+  }
+
+  .catalogue__head {
+    max-height: 80px;
+  }
+
   .catalogue__main--1,
   .catalogue__main--2  {
     width: 100%;
-}
+  }
 
+  .catalogue__artists-list {
+    max-height: 298px;
+    align-items: flex-start;
+  }
+
+  .catalogue__persons-item {
+    line-height: 30px;
+  }
+
+  .catalogue__flags {
+    justify-content: space-between;
+  }
+
+  .catalogue__fl-btn--2 {
+    margin-right: 32px;
+  }
+
+  .catalogue__fl-btn--4 {
+    margin-right: 30px;
+  }
+
+  .catalogue__flag-item {
+    align-items: flex-start;
+  }
+
+  .ui-accordion-header {
+    padding-top: 31px;
+    padding-bottom: 33px;
+  }
+
+  .ui-accordion-header-active {
+    padding-top: 22px;
+  }
+
+  .catalogue__block {
+    margin-bottom: 45px;
+  }
 }
