@@ -153,6 +153,12 @@
     line-height: 28px;
     margin-bottom: 134px;
   }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-bottom: 72px;
+  }
 
   .hero__swiper-slide--1 {
     background-image: url(../img/hero-bckgrnd-1-1024.jpg);
@@ -164,12 +170,6 @@
 
   .hero__swiper-slide--3 {
     background-image: url(../img/hero-bckgrnd-3-1024.jpg);
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero {
-    padding-bottom: 72px;
   }
 }
 

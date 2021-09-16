@@ -90,6 +90,13 @@ h1, h2, h3, p, ul, ol {
     max-width: 1024px;   
     margin: 0 auto;
     padding: 0 50px;  
+  }  
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 740px;   
+    margin: 0 auto;
+    padding: 0 15px;  
   }
-  
 }

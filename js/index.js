@@ -53,6 +53,7 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#search-btn').addEventListener('click', function() {
     document.querySelector('#search-form').classList.toggle('header__search-menu-active')
     document.querySelector('#search-btn').classList.toggle('header__search-btn-epsent')
+    document.querySelector('.header__container').classList.add('header__search-open')
   })
 
   const button = document.querySelector('#search-btn') // находим кнопку для открытия/закрытия окна навигации
@@ -63,6 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (!target.closest('.header__search-menu') && !target.closest('.header__search-btn') && !target.closest('.header__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
       nav.classList.remove('header__search-menu-active') // то закрываем окно навигации, удаляя активный класс
       document.querySelector('#search-btn').classList.remove('header__search-btn-epsent')
+      document.querySelector('.header__container').classList.remove('header__search-open')
     }
   })
 
@@ -258,12 +260,13 @@ const fadeIn = (el, timeout, display) => {
     const swiper1 = new Swiper('#swiper-1', {
       // Optional parameters
       slideActiveClass: 'hero__swiper-slide-active',
-      effct: 'fade',
+      // effct: 'fade',
       speed: 2500,
+      spaceBetween: 0,
       
-      fadeEffect: {
-        crossFade: true
-      },
+      // fadeEffect: {
+      //   crossFade: true
+      // },
 
       autoplay: {
         delay: 3000,
