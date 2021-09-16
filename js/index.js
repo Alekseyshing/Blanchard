@@ -431,23 +431,29 @@ const fadeIn = (el, timeout, display) => {
   //   },
   //  });
 
+  const slider = document.querySelector('.events__swiper');
+
+  let swiper5; 
+
    function mobileSlider() {
     if (window.innerWidth <= 740 && slider.dataset.mobile == "false") {
-      mySwiper = new Swiper(slider, {
-        containerModifierClass: '#swiper-5',
-        wrapperClass: 'events__articles',
+      swiper5 = new Swiper(slider, {
         slideClass: 'events__articles-content',
-        speed: 400,
         slidesPerView: 1,
-        slidesPerColumn: 1,
         spaceBetween: 20,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
+        loop: true,
+        grid: {
+          fill: 'row',
+          rows: 1,
         },
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
+
+        // pagination: {
+        //   el: '.swiper-pagination',
+        //   clickable: true,
+        // },
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
       });
 
       slider.dataset.mobile = "true";
@@ -456,10 +462,16 @@ const fadeIn = (el, timeout, display) => {
     if (window.innerWidth > 740) {
       slider.dataset.mobile = "false";
       if (slider.classList.contains('swiper-container--eventsinitialized')) {
-        mySwiper.destroy();
+        swiper5.destroy();
       }
     }
   }
+  
+  mobileSlider()
+
+  window.addEventListener('resize', () => {
+    mobileSlider()
+  }); 
 
   ymaps.ready(init);
   function init() {

@@ -279,13 +279,15 @@
           </div>
           <div class="galery__swiper">
             <div class="galery__swiper-btns">
-              <button class="galery__nav-btn galery__button-prev" type="button" aria-label="К предыдущему слайду"></button>
+              <button class="galery__nav-btn galery__button-prev" type="button"
+                aria-label="К предыдущему слайду"></button>
               <div
                 class="galery__swiper-pagination swiper-pagination swiper-pagination-fraction galery__swiper-pagination-fraction">
                 <span class="swiper-pagination-current galery__swiper-pagination-current"></span>
                 <span class="swiper-pagination-total galery__swiper-pagination-total"></span>
               </div>
-              <button class="galery__nav-btn galery__button-next" type="button" aria-label="К следующему слайду"></button>
+              <button class="galery__nav-btn galery__button-next" type="button"
+                aria-label="К следующему слайду"></button>
             </div>
             <!-- Slider main container -->
             <div class="swiper galery__swiper-container" id="swiper-2">
@@ -318,16 +320,16 @@
                 </a>
                 <a class="swiper-slide galery__image-slider galery__image-slider--9 swiper-zoom-container" href="#">
                   <picture><img class="galery__img" src="img/Rectangle9.jpg" alt="картина галереи"></picture>
-                </a>                
+                </a>
                 <a class="swiper-slide galery__image-slider galery__image-slider--10 swiper-zoom-container" href="#">
                   <picture><img class="galery__img" src="img/Rectangle10.jpg" alt="картина галереи"></picture>
-                </a>                
+                </a>
                 <a class="swiper-slide galery__image-slider galery__image-slider--11 swiper-zoom-container" href="#">
                   <picture><img class="galery__img" src="img/Rectangle11.jpg" alt="картина галереи"></picture>
-                </a>                
+                </a>
                 <a class="swiper-slide galery__image-slider galery__image-slider--12 swiper-zoom-container" href="#">
                   <picture><img class="galery__img" src="img/Rectangle12.jpg" alt="картина галереи"></picture>
-                </a>              
+                </a>
               </div>
             </div>
           </div>
@@ -1152,81 +1154,88 @@
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="events__header">События</h2>
-        <div class="events__swiper-container swiper" id="#swiper-5" data-mobile="false">
-          <div class="events__articles swiper-wrapper">
-            <article
-              class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
-              <div class="events__articles-img events__articles-img--first"></div>
-              <p class="events__articles-museum">Музей им. Щусева </p>
-              <p class="events__articles-date">с 20 марта по 30 апреля</p>
-              <div class="events__main-block">
-                <div>
-                  <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
-                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
-                    основатель
-                    художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+        <div class="events__swiper swiper" id="#swiper-5" data-mobile="false">
+          <!-- <div class="events__swiper-container swiper-container--eventsinitialized"> -->
+            <div class="events__articles swiper-wrapper">
+              <article class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
+                <div class="events__articles-img events__articles-img--first"></div>
+                <p class="events__articles-museum">Музей им. Щусева </p>
+                <p class="events__articles-date">с 20 марта по 30 апреля</p>
+                <div class="events__main-block">
+                  <div>
+                    <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
+                    <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
+                      основатель
+                      художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                  </div>
+                  <a href="#" class="events__articles-ref">Подробнее</a>
                 </div>
-                <a href="#" class="events__articles-ref">Подробнее</a>
-              </div>
-            </article>
-            <article
-              class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
-              <div class="events__articles-img events__articles-img--second"></div>
-              <p class="events__articles-museum">ММОМА</p>
-              <p class="events__articles-date">24 марта 19:00</p>
-              <div class="events__main-block">
-                <div>
-                  <h3 class="events__articles-header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                  <p class="events__articles-description">Высокий уровень вовлечения представителей целевой аудитории
-                    является четким доказательством простого факта.</p>
+              </article>
+              <article
+                class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
+                <div class="events__articles-img events__articles-img--second"></div>
+                <p class="events__articles-museum">ММОМА</p>
+                <p class="events__articles-date">24 марта 19:00</p>
+                <div class="events__main-block">
+                  <div>
+                    <h3 class="events__articles-header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                    <p class="events__articles-description">Высокий уровень вовлечения представителей целевой аудитории
+                      является четким доказательством простого факта.</p>
+                  </div>
+                  <a href="#" class="events__articles-ref">Подробнее</a>
                 </div>
-                <a href="#" class="events__articles-ref">Подробнее</a>
-              </div>
-            </article>
-            <article class="events__articles-content events__articles-content--third swiper-slide events__swiper-slide">
-              <div class="events__articles-img events__articles-img--third"></div>
-              <p class="events__articles-museum">Еврейский музей</p>
-              <p class="events__articles-date">с 31 марта по 21 апреля</p>
-              <div class="events__main-block">
-                <div>
-                  <h3 class="events__articles-header">Выставка «Формация 2020»</h3>
-                  <p class="events__articles-description">Идейные соображения высшего порядка, а также современная
-                    методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+              </article>
+              <article
+                class="events__articles-content events__articles-content--third swiper-slide events__swiper-slide">
+                <div class="events__articles-img events__articles-img--third"></div>
+                <p class="events__articles-museum">Еврейский музей</p>
+                <p class="events__articles-date">с 31 марта по 21 апреля</p>
+                <div class="events__main-block">
+                  <div>
+                    <h3 class="events__articles-header">Выставка «Формация 2020»</h3>
+                    <p class="events__articles-description">Идейные соображения высшего порядка, а также современная
+                      методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                  </div>
+                  <a href="#" class="events__articles-ref">Подробнее</a>
                 </div>
-                <a href="#" class="events__articles-ref">Подробнее</a>
-              </div>
-            </article>
-            <article class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
-              <div class="events__articles-img events__articles-img--four"></div>
-              <p class="events__articles-museum">Третьяковка на Крымском валу</p>
-              <p class="events__articles-date">с 30 марта по 30 апреля</p>
-              <div class="events__main-block">
-                <div>
-                  <h3 class="events__articles-header">XXIV Международная биеннале молодого искусства</h3>
-                  <p class="events__articles-description">Внезапно, реплицированные с зарубежных источников, современные
-                    исследования.</p>
+              </article>
+              <article
+                class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
+                <div class="events__articles-img events__articles-img--four"></div>
+                <p class="events__articles-museum">Третьяковка на Крымском валу</p>
+                <p class="events__articles-date">с 30 марта по 30 апреля</p>
+                <div class="events__main-block">
+                  <div>
+                    <h3 class="events__articles-header">XXIV Международная биеннале молодого искусства</h3>
+                    <p class="events__articles-description">Внезапно, реплицированные с зарубежных источников,
+                      современные
+                      исследования.</p>
+                  </div>
+                  <a href="#" class="events__articles-ref">Подробнее</a>
                 </div>
-                <a href="#" class="events__articles-ref">Подробнее</a>
-              </div>
-            </article>
-            <article class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
-              <div class="events__articles-img events__articles-img--five"></div>
-              <p class="events__articles-museum">ММАМ</p>
-              <p class="events__articles-date">с 8 апреля по 20 мая</p>
-              <div class="events__main-block">
-                <div>
-                  <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
-                    основатель
-                    художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+              </article>
+              <article
+                class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
+                <div class="events__articles-img events__articles-img--five"></div>
+                <p class="events__articles-museum">ММАМ</p>
+                <p class="events__articles-date">с 8 апреля по 20 мая</p>
+                <div class="events__main-block">
+                  <div>
+                    <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                    <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
+                      основатель
+                      художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                  </div>
+                  <a href="#" class="events__articles-ref">Подробнее</a>
                 </div>
-                <a href="#" class="events__articles-ref">Подробнее</a>
-              </div>
-            </article>
+              </article>
+            </div>
+            <div>
+            <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
           </div>
-          <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
         </div>
       </div>
+      <!-- </div> -->
     </section>
     <section class="editions" id="editions">
       <div class="container editions__container">
@@ -1332,11 +1341,13 @@
           </div>
           <div class="editions__swiper">
             <div class="editions__swiper-btns">
-              <button class="editions__nav-btn editions__button-prev" type="button" aria-label="предыдущее изображение"></button>
+              <button class="editions__nav-btn editions__button-prev" type="button"
+                aria-label="предыдущее изображение"></button>
               <div
                 class="editions__swiper-pagination swiper-pagination swiper-pagination-fraction editions__swiper-pagination-fraction">
               </div>
-              <button class="editions__nav-btn editions__button-next" type="button" aria-label="следующее изображение"></button>
+              <button class="editions__nav-btn editions__button-next" type="button"
+                aria-label="следующее изображение"></button>
             </div>
             <div class="swiper editions__swiper-container" id="swiper-3">
               <div class="swiper-wrapper editions__swiper-slider">
@@ -1397,7 +1408,7 @@
                     <picture>
                       <img class="editions__img" src="img/swim35.jpg" alt="картинка издания">
                     </picture>
-                  </div>                  
+                  </div>
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Модульные сетки в граф...</p>
                     <p class="editions__block-price">1 450 руб</p>
