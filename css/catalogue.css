@@ -582,3 +582,57 @@
     margin-bottom: 45px;
   }
 }
+
+@media (max-width: 720px) { 
+  .catalogue__head {
+    flex-direction: column;
+    max-height: 160px;
+  }
+
+  .catalogue__flags {
+    margin-bottom: 40px;
+  }
+
+  .catalogue__artists-list {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 520px) { 
+  .catalogue__fl-btn {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+  }
+
+  .catalogue__flags {
+    text-align: center;
+  }
+
+  .catalogue__flag-item {
+    max-height: 47px;
+  }
+
+  .catalogue__fl-btn::before {
+    position: absolute;
+    content: '';
+    display: block;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 29px;
+    cursor: pointer;
+    background-size: 48px;
+    background-position: center;
+  }
+}
+
+@media (max-width: 410px) { 
+  .catalogue__artists-list {
+    max-height: 768px;
+  }
+}

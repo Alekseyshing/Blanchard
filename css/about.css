@@ -17,3 +17,17 @@
   line-height: 32px;
   color: var(--text-color);
 }
+
+@media (max-width: 740px) {
+  .about__header {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .about__text {
+    max-width: 1080px;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--text-color);
+  }
+}

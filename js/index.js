@@ -260,6 +260,8 @@ const fadeIn = (el, timeout, display) => {
     const swiper1 = new Swiper('#swiper-1', {
       // Optional parameters
       slideActiveClass: 'hero__swiper-slide-active',
+      slidesPerView: 1,
+      spaceBetween: 0,
       // effct: 'fade',
       speed: 2500,
       spaceBetween: 0,
@@ -280,14 +282,15 @@ const fadeIn = (el, timeout, display) => {
 
   const swiper2 = new Swiper('#swiper-2', {
     slidesPerView: 1,
+    spaceBetween: 50,
     grid: {
       rows: 1,
+      columns: 1,
       fill: "row"
     },
-    spaceBetween: 20,
 
     breakpoints: {
-      441: {
+      740: {
         slidesPerView: 2,
         grid: {
           rows: 2
