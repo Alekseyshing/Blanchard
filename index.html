@@ -94,9 +94,12 @@
                 </li>
               </ul>
               <button class="header__enter-btn" type="button">
-                <svg class="header__enter-icn" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-                  </svg>
+                <svg class="header__enter-icn" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+                    fill="white" />
+                </svg>
                 Войти
               </button>
             </nav>
@@ -116,10 +119,12 @@
               <button class="header__btn-x" type="button">
                 <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.7">
-                    <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
-                    <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+                    <rect width="37.2801" height="3.72801"
+                      transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white" />
+                    <rect width="37.2801" height="3.72801"
+                      transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white" />
                   </g>
-                </svg>  
+                </svg>
               </button>
             </form>
           </div>
@@ -280,13 +285,10 @@
             <div class="galery__description">
               <div class="galery__filter">
                 <label for="filter" class="galery__label">Фильтр:</label>
-                <select class="galery__select" name="filter" id="filter" tabindex="0" >
-                    <option value="Живопись" aria-selected="true" selected="selected">Живопись</option>
-                    <option value="Рисунок">Рисунок</option>
-                    <option value="Скульптура">Скульптура</option>
-                    <option value="Автор" aria-selected="true" selected="selected">Автор</option>
-                    <option value="Направление">Направление</option>
-                    <option value="Техника">Техника</option>
+                <select class="galery__select" name="filter" id="filter" tabindex="0">
+                  <option value="Живопись" aria-selected="true" selected="selected">Живопись</option>
+                  <option value="Рисунок">Рисунок</option>
+                  <option value="Скульптура">Скульптура</option>
                 </select>
               </div>
             </div>
@@ -1168,9 +1170,9 @@
     <section class="events" id="events">
       <div class="container events__container">
         <h2 class="events__header">События</h2>
-        <div class="events__swiper swiper" id="#swiper-5" data-mobile="false">
+        <div class="events__swiper" id="#swiper-5">
           <!-- <div class="events__swiper-container swiper-container--eventsinitialized"> -->
-            <div class="events__articles swiper-wrapper">
+            <div class="events__articles">
               <article class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
                 <div class="events__articles-img events__articles-img--first"></div>
                 <p class="events__articles-museum">Музей им. Щусева </p>
@@ -1256,94 +1258,96 @@
         <div class="editions__main">
           <div class="editions__left">
             <h2 class="editions__header">Издания</h2>
-            <h3 class="editions__categories-header">Категории</h3>
-            <ul class="editions__categories">
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1">
-                  <span class="editions__ckeckbox-text">Бестселлеры</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2">
-                  <span class="editions__ckeckbox-text">Искусство</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3">
-                  <span class="editions__ckeckbox-text">Архитектура</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked
-                    aria-checked="true">
-                  <span class="editions__ckeckbox-text">Дизайн</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5">
-                  <span class="editions__ckeckbox-text">Мода</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6">
-                  <span class="editions__ckeckbox-text">Детям</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7">
-                  <span class="editions__ckeckbox-text">Художественная литература</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8">
-                  <span class="editions__ckeckbox-text">Публицистика</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9">
-                  <span class="editions__ckeckbox-text">Путеводители</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10" name="check-10">
-                  <span class="editions__ckeckbox-text">Философия</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11" name="check-11">
-                  <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-              <li class="editions__item">
-                <label class="editions__label">
-                  <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12" name="check-12">
-                  <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
-                  <span class="editions__span"></span>
-                </label>
-              </li>
-            </ul>
+            <div>
+              <h3 class="editions__categories-header">Категории</h3>
+              <ul class="editions__categories">
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1">
+                    <span class="editions__ckeckbox-text">Бестселлеры</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2">
+                    <span class="editions__ckeckbox-text">Искусство</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3">
+                    <span class="editions__ckeckbox-text">Архитектура</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked
+                      aria-checked="true">
+                    <span class="editions__ckeckbox-text">Дизайн</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5">
+                    <span class="editions__ckeckbox-text">Мода</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6">
+                    <span class="editions__ckeckbox-text">Детям</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7">
+                    <span class="editions__ckeckbox-text">Художественная литература</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8">
+                    <span class="editions__ckeckbox-text">Публицистика</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9">
+                    <span class="editions__ckeckbox-text">Путеводители</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10" name="check-10">
+                    <span class="editions__ckeckbox-text">Философия</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11" name="check-11">
+                    <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+                <li class="editions__item">
+                  <label class="editions__label">
+                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12" name="check-12">
+                    <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
+                    <span class="editions__span"></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
             <h3 class="editions__form-header">Цена</h3>
             <div class="editions__price-form">
               <label for="Минимальная цена" class="editions__from">От</label>

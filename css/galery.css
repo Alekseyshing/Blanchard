@@ -100,39 +100,6 @@ html {
   display: none;
 }
 
-/* .choices__list [role="listbox"] [data-id="1"],
-.choices__list [role="listbox"] [data-id="2"] {
-  display: none;
-} */
-
-.choices__list [data-id="1"] {
-  display: block;
-}
-
-.choices__list [data-id="3"] {
-  display: none;
-}
-
-.choices__list [data-id="6"] {
-  display: none;
-}
-
-.choices__list [data-id="2"] {
-  display: block;
-}
-
-.choices__list [data-id="4"] {
-  display: block;
-}
-
-.choices__list [data-id="5"] {
-  display: block;
-}
-
-.choices__list--single [data-id="2"] {
-  display: block;
-}
-
 .galery__swiper-btns {
   position: relative;
   display: flex;
@@ -395,46 +362,6 @@ html {
   .galery__header {
     font-size: 28px;
     line-height: 38px;
-  }
-
-  .galery__sheet--1 {
-    display: none;
-  }
-  
-  .galery__sheet--2 {
-    display: block;
-  }
-
-  .choices__list [role="listbox"] [data-id="1"] {
-    display: none;
-  }
-
-  /* .choices__list--single [data-id="1"] {
-    display: block;
-  }  */
-
-  .choices__list [data-id="1"] {
-    display: block;
-  }
-  
-  .choices__list [data-id="3"] {
-    display: block;
-  }
-  
-  .choices__list [data-id="6"] {
-    display: block;
-  }
-
-  .choices__list [data-id="5"] {
-    display: none;
-  }
-
-  .choices__list [data-id="4"] {
-    display: none;
-  }
-
-  .choices__list [data-id="2"] {
-    display: none;
   }
 
   .galery__swiper {

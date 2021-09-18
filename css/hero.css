@@ -187,7 +187,16 @@
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 756px) {
+  .hero {
+    padding-bottom: 0;
+  }
+
+  .hero__container {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
   .hero__content {
     display: flex;
     flex-direction: column;
@@ -230,17 +239,6 @@
   }  
 }
 
-@media (max-width: 410px) {
-  .hero__container {
-    padding-top: 30px;
-    padding-bottom: 45px;
-  }
-
-  .hero__text {
-    margin-bottom: 20px;
-  }
-}
-
 @media (max-width: 320px) {
   .hero {
     padding-bottom: 0;
@@ -248,7 +246,7 @@
 
   .hero__container {
     padding-top: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
   }
 
   .hero__text {
@@ -269,6 +267,5 @@
   .hero__swiper-slide--3 {
     background-image: url(../img/hero-bckgrnd-3-320.jpg);
     height: 355px;
-
   }
 }
