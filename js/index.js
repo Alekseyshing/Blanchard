@@ -337,43 +337,45 @@ const fadeIn = (el, timeout, display) => {
     },
     });
 
-   const swiper3 = new Swiper('#swiper-3', {
-    loop: false,
-    autoheight: false,
-    zoom: true,
+  //  const swiper3 = new Swiper('#swiper-3', {
+  //   loop: false,
+  //   autoheight: false,
+  //   zoom: true,
 
-    breakpoints: {
-      300: {
-        slidesPerView: 2,
-        spaceBetween: 34
-      },
-      1005: {
-        slidesPerView: 2,
-        spaceBetween: 49
-      },
-      1611: {
-        slidesPerView: 3,
-        spaceBetween: 49
-      }
-    },
+  //   breakpoints: {
+  //     300: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 34
+  //     },
+  //     1005: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 49
+  //     },
+  //     1611: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 49
+  //     }
+  //   },
 
-    pagination: {
-      el: '.editions__swiper-pagination',
-      type: 'fraction',
-      clickable: true,
-    },
+  //   pagination: {
+  //     el: '.editions__swiper-pagination',
+  //     type: 'fraction',
+  //     clickable: true,
+  //   },
 
-    zoom: {
-      maxRatio: 2,
-      minRatio: 1,
-      toggle: true,
-    },
+  //   zoom: {
+  //     maxRatio: 2,
+  //     minRatio: 1,
+  //     toggle: true,
+  //   },
 
-    navigation: {
-      nextEl: '.editions__button-next',
-      prevEl: '.editions__button-prev',
-    },
-   });
+  //   navigation: {
+  //     nextEl: '.editions__button-next',
+  //     prevEl: '.editions__button-prev',
+  //   },
+  //  });
+
+
 
    const swiper4 = new Swiper('#swiper-4', {
     // Optional parameters
@@ -506,11 +508,11 @@ window.addEventListener('resize', function () {
 
 // const MOBILE_WIDTH = 580;
 
-// const sliderParams = {
+// const sliderEditionsParams = {
 //   cardsContainerName: "editions__swiper-container",
 //   cardsWrapName: "editions__swiper-slider",
 //   card: "editions__article",
-//   paginationClassName: "editions__swiper-pagination",
+//   paginationClassName: "editions__swiper-pagination-fraction",
 //   navClassName: "editions__swiper-btns",
 //   navBtnClassName: "editions__nav-btn",
 //   navPrev: "editions__button-prev",
@@ -612,10 +614,10 @@ window.addEventListener('resize', function () {
 //   }
 // }
 
-// checkWindowWidth(sliderParams);
+// checkWindowWidth(sliderEditionsParams);
 
 // window.addEventListener("resize", function () {
-//   checkWindowWidth(sliderParams);
+//   checkWindowWidth(sliderEditionsParams);
 // });
 
   ymaps.ready(init);
