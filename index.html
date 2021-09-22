@@ -49,6 +49,7 @@
   <script src="js/just-validate.min.js" defer></script>
   <script src="js/inputmask.min.js" defer></script>
   <script src="js/editionsswiperjs.js" defer></script>
+  <script src="js/mobilecheckbox.js" defer></script>
   <script src="js/index.js" defer></script>
 </head>
 
@@ -1173,81 +1174,79 @@
         <h2 class="events__header">События</h2>
         <div class="events__swiper" id="#swiper-5">
           <!-- <div class="events__swiper-container swiper-container--eventsinitialized"> -->
-            <div class="events__articles">
-              <article class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
-                <div class="events__articles-img events__articles-img--first"></div>
-                <p class="events__articles-museum">Музей им. Щусева </p>
-                <p class="events__articles-date">с 20 марта по 30 апреля</p>
-                <div class="events__main-block">
-                  <div>
-                    <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
-                    <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
-                      основатель
-                      художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                  </div>
-                  <a href="#" class="events__articles-ref">Подробнее</a>
+          <div class="events__articles">
+            <article
+              class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--first"></div>
+              <p class="events__articles-museum">Музей им. Щусева </p>
+              <p class="events__articles-date">с 20 марта по 30 апреля</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">Книжная гравюра в живом восприятии</h3>
+                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
+                    основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                 </div>
-              </article>
-              <article
-                class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
-                <div class="events__articles-img events__articles-img--second"></div>
-                <p class="events__articles-museum">ММОМА</p>
-                <p class="events__articles-date">24 марта 19:00</p>
-                <div class="events__main-block">
-                  <div>
-                    <h3 class="events__articles-header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                    <p class="events__articles-description">Высокий уровень вовлечения представителей целевой аудитории
-                      является четким доказательством простого факта.</p>
-                  </div>
-                  <a href="#" class="events__articles-ref">Подробнее</a>
+                <a href="#" class="events__articles-ref">Подробнее</a>
+              </div>
+            </article>
+            <article
+              class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--second"></div>
+              <p class="events__articles-museum">ММОМА</p>
+              <p class="events__articles-date">24 марта 19:00</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                  <p class="events__articles-description">Высокий уровень вовлечения представителей целевой аудитории
+                    является четким доказательством простого факта.</p>
                 </div>
-              </article>
-              <article
-                class="events__articles-content events__articles-content--third swiper-slide events__swiper-slide">
-                <div class="events__articles-img events__articles-img--third"></div>
-                <p class="events__articles-museum">Еврейский музей</p>
-                <p class="events__articles-date">с 31 марта по 21 апреля</p>
-                <div class="events__main-block">
-                  <div>
-                    <h3 class="events__articles-header">Выставка «Формация 2020»</h3>
-                    <p class="events__articles-description">Идейные соображения высшего порядка, а также современная
-                      методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
-                  </div>
-                  <a href="#" class="events__articles-ref">Подробнее</a>
+                <a href="#" class="events__articles-ref">Подробнее</a>
+              </div>
+            </article>
+            <article class="events__articles-content events__articles-content--third swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--third"></div>
+              <p class="events__articles-museum">Еврейский музей</p>
+              <p class="events__articles-date">с 31 марта по 21 апреля</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">Выставка «Формация 2020»</h3>
+                  <p class="events__articles-description">Идейные соображения высшего порядка, а также современная
+                    методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
                 </div>
-              </article>
-              <article
-                class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
-                <div class="events__articles-img events__articles-img--four"></div>
-                <p class="events__articles-museum">Третьяковка на Крымском валу</p>
-                <p class="events__articles-date">с 30 марта по 30 апреля</p>
-                <div class="events__main-block">
-                  <div>
-                    <h3 class="events__articles-header">XXIV Международная биеннале молодого искусства</h3>
-                    <p class="events__articles-description">Внезапно, реплицированные с зарубежных источников,
-                      современные
-                      исследования.</p>
-                  </div>
-                  <a href="#" class="events__articles-ref">Подробнее</a>
+                <a href="#" class="events__articles-ref">Подробнее</a>
+              </div>
+            </article>
+            <article class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--four"></div>
+              <p class="events__articles-museum">Третьяковка на Крымском валу</p>
+              <p class="events__articles-date">с 30 марта по 30 апреля</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">XXIV Международная биеннале молодого искусства</h3>
+                  <p class="events__articles-description">Внезапно, реплицированные с зарубежных источников,
+                    современные
+                    исследования.</p>
                 </div>
-              </article>
-              <article
-                class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
-                <div class="events__articles-img events__articles-img--five"></div>
-                <p class="events__articles-museum">ММАМ</p>
-                <p class="events__articles-date">с 8 апреля по 20 мая</p>
-                <div class="events__main-block">
-                  <div>
-                    <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                    <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
-                      основатель
-                      художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                  </div>
-                  <a href="#" class="events__articles-ref">Подробнее</a>
+                <a href="#" class="events__articles-ref">Подробнее</a>
+              </div>
+            </article>
+            <article class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
+              <div class="events__articles-img events__articles-img--five"></div>
+              <p class="events__articles-museum">ММАМ</p>
+              <p class="events__articles-date">с 8 апреля по 20 мая</p>
+              <div class="events__main-block">
+                <div>
+                  <h3 class="events__articles-header">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                  <p class="events__articles-description">Один из ведущих флорентийских художников Кватроченто,
+                    основатель
+                    художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                 </div>
-              </article>
-            </div>
-            <div>
+                <a href="#" class="events__articles-ref">Подробнее</a>
+              </div>
+            </article>
+          </div>
+          <div>
             <button type="button" class="events__all-events-btn" id="events-btn">Все&nbsp;события</button>
           </div>
         </div>
@@ -1260,94 +1259,105 @@
           <div class="editions__left">
             <h2 class="editions__header">Издания</h2>
             <div>
-              <h3 class="editions__categories-header">Категории</h3>
-              <ul class="editions__categories">
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1">
-                    <span class="editions__ckeckbox-text">Бестселлеры</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2">
-                    <span class="editions__ckeckbox-text">Искусство</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3">
-                    <span class="editions__ckeckbox-text">Архитектура</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4" checked
-                      aria-checked="true">
-                    <span class="editions__ckeckbox-text">Дизайн</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5">
-                    <span class="editions__ckeckbox-text">Мода</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6">
-                    <span class="editions__ckeckbox-text">Детям</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7">
-                    <span class="editions__ckeckbox-text">Художественная литература</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8">
-                    <span class="editions__ckeckbox-text">Публицистика</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9">
-                    <span class="editions__ckeckbox-text">Путеводители</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10" name="check-10">
-                    <span class="editions__ckeckbox-text">Философия</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11" name="check-11">
-                    <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-                <li class="editions__item">
-                  <label class="editions__label">
-                    <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12" name="check-12">
-                    <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
-                    <span class="editions__span"></span>
-                  </label>
-                </li>
-              </ul>
+              <form class="editions__accordion-wrap" action="/" method="post">
+                <div class="editions-accordion">
+                  <div class="editions__question">
+                    <h3 class="editions__categories-header">Категории
+                      <span class="editions__head-icon"></span>
+                    </h3>
+                    <ul class="editions__categories">
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="1">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1">
+                          <span class="editions__ckeckbox-text">Бестселлеры</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="2">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2">
+                          <span class="editions__ckeckbox-text">Искусство</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="3">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3">
+                          <span class="editions__ckeckbox-text">Архитектура</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="4">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4"
+                            checked aria-checked="true">
+                          <span class="editions__ckeckbox-text">Дизайн</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="5">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5">
+                          <span class="editions__ckeckbox-text">Мода</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="6">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6">
+                          <span class="editions__ckeckbox-text">Детям</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="7">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7">
+                          <span class="editions__ckeckbox-text">Художественная литература</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="8">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8">
+                          <span class="editions__ckeckbox-text">Публицистика</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="9">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9">
+                          <span class="editions__ckeckbox-text">Путеводители</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="10">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10"
+                            name="check-10">
+                          <span class="editions__ckeckbox-text">Философия</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="11">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11"
+                            name="check-11">
+                          <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                      <li class="editions__item">
+                        <label class="editions__label editions__checkbox-wrap" data-position="12">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12"
+                            name="check-12">
+                          <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
+                          <span class="editions__span"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
             </div>
             <h3 class="editions__form-header">Цена</h3>
             <div class="editions__price-form">
