@@ -220,7 +220,7 @@
 #check-10+span::before,
 #check-11+span::before,
 #check-12+span::before  { 
-  top: 0px;
+  top: 8px;
   left: 3px;
 }
 
@@ -236,7 +236,7 @@
 #check-10+span::after,
 #check-11+span::after,
 #check-12+span::after  { 
-  top: 10px;
+  top: 18px;
   left: 0px;
 }
 }

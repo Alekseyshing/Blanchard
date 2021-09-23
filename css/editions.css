@@ -52,7 +52,7 @@
 }
 
 .editions__item {
-  display: block;
+  display: inline-block;
   font-weight: 400;
   width: 350px;
   transition: all .3s ease-in-out;
@@ -357,6 +357,13 @@
   min-height: 100px;
 }
 
+.editions__checkbox-btn {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+
 @media (max-width: 1310px) {
   .editions__swiper {
     width: calc(1100 / 1600 * 100%);
@@ -530,10 +537,14 @@
       margin-top: -1px;
       margin-bottom: 20px;
       border-top: 1px solid transparent;
-      max-height: 500px;
+      max-height: 100%;
       margin-bottom: 7px;
       border-bottom: 1px solid rgba(255, 255, 255, .5);
       transition: border-color 0.3s ease-in-out;
+    }
+
+    .ui-accordion-content-active {
+      height: auto;
     }
 
     .editions__question:first-child {
@@ -583,19 +594,9 @@
 
     .editions__categories {
       cursor: pointer;
-      justify-content: flex-start;
-      align-content: flex-start;
+      flex-wrap: nowrap;
       padding: 0;
-      height: auto;
-      min-height: auto;
-    }
-
-    .editions__label {
-      width: 100%;
-      border-top: 1px solid rgba(255, 255, 255, .5);
-      display: inline-block;
-      text-align: left;
-      min-height: 38px;
+      /* min-height: auto; */
     }
 
     .editions__checkbox:checked ~ .editions__ckeckbox-text {
@@ -613,8 +614,48 @@
       border-color: var(--add-color);
     }
 
-    /* .editions__checkbox-wrap.editions__ckeckbox-text{
-      margin-top: 5px;
-    } */
+    .editions__checkbox-mobile--open .editions__label {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, .5);
+      display: inline-block;
+      text-align: left;
+      min-height: 38px;
+    }
 
+    .editions__accordion-wrap {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .editions__accordion-wrap .editions__checkbox-wrap {
+      display: inline-flex;
+      justify-content: space-between;
+      padding-top: 7px;
+      padding-bottom: 13px;
+    }
+
+    .editions__checkbox-active .editions__checkbox-btn {
+      display: inline-block;
+      padding: 0;
+      animation-name: fade-in;
+      animation-duration: 1s;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    .editions__checkbox-active {
+      display: inline-flex;
+    }
+
+    .editions__checkbox-mobile--close .editions__checkbox-active {
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
 }

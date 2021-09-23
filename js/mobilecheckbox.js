@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         collapsible: true,
         active: false,
         icons: false,
-        heightStyle: "content",
+        heightStyle: "auto",
         activate: function (evt, ui) {
           console.log(ui);
           onAccordionClick(evt, ui);
@@ -83,4 +83,18 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", function () {
     checkWindowWidth();
   });
+
+    // мобильный спойлер
+    document.querySelector('.editions__categories-header').addEventListener('click', function(){
+      document.querySelector('.editions__checkbox-mobile').classList.toggle('editions__checkbox-mobile--open')
+      document.querySelector('.editions__checkbox-mobile').classList.toggle('editions__checkbox-mobile--close')
+    })
+  
+    document.querySelectorAll('.editions__checkbox').forEach(function(evLabel){
+      evLabel.addEventListener("change", function(evLabelClick){
+        const path5 = evLabelClick.currentTarget.dataset.path
+        document.querySelector(`[data-target="${path5}"]`).classList.toggle('editions__checkbox-active')
+      })
+    })
+  
 });
