@@ -553,7 +553,7 @@
 
     .editions__question:first-child:hover,
     .editions__question:hover,
-    .editions__question:focus-within {
+    .editions__question:focus-visible {
       border-color: var(--add-color);
     }
 
@@ -619,7 +619,6 @@
       border-top: 1px solid rgba(255, 255, 255, .5);
       display: inline-block;
       text-align: left;
-      min-height: 38px;
     }
 
     .editions__accordion-wrap {
@@ -655,7 +654,7 @@
       display: inline-flex;
     }
 
-    .editions__checkbox-mobile--close .editions__checkbox-active {
+    .editions__checkbox-mobile--close .editions__checkbox-wrap {
       border-bottom: 1px solid rgba(255, 255, 255, .5);
     }
 }

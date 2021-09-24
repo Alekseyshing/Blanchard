@@ -13,18 +13,7 @@
 }
 
 
-#check-1+.editions__span,
-#check-2+.editions__span,
-#check-3+.editions__span,
-#check-4+.editions__span,
-#check-5+.editions__span,
-#check-6+.editions__span,
-#check-7+.editions__span,
-#check-8+.editions__span,
-#check-9+.editions__span,
-#check-10+.editions__span,
-#check-11+.editions__span,
-#check-12+.editions__span {
+.editions__checkbox + .editions__span {
   position: absolute;
   display: inline-block;
   cursor: pointer;
@@ -39,18 +28,7 @@
   transition: all .3s ease-in-out;
 }
 
-#check-1+span::before,
-#check-2+span::before,
-#check-3+span::before,
-#check-4+span::before,
-#check-5+span::before,
-#check-6+span::before,
-#check-7+span::before,
-#check-8+span::before,
-#check-9+span::before,
-#check-10+span::before,
-#check-11+span::before,
-#check-12+span::before  { 
+.editions__checkbox+span::before { 
   position: absolute;
   display: inline-block;
   cursor: pointer;
@@ -66,33 +44,11 @@
   color: #C283F3;
 }
 
-#check-1:checked+span:before,
-#check-2:checked+span:before,
-#check-3:checked+span:before,
-#check-4:checked+span:before,
-#check-5:checked+span:before,
-#check-6:checked+span:before,
-#check-7:checked+span:before,
-#check-8:checked+span:before,
-#check-9:checked+span:before,
-#check-10:checked+span:before,
-#check-11:checked+span:before,
-#check-12:checked+span:before  { 
+.editions__checkbox:checked+span:before { 
   opacity: 1;
 }
 
-#check-1+span::after,
-#check-2+span::after,
-#check-3+span::after,
-#check-4+span::after,
-#check-5+span::after,
-#check-6+span::after,
-#check-7+span::after,
-#check-8+span::after,
-#check-9+span::after,
-#check-10+span::after,
-#check-11+span::after,
-#check-12+span::after  { 
+.editions__checkbox+span::after { 
   content: '';
   position: absolute;
   display: inline-block;
@@ -106,18 +62,7 @@
   transition: all .3s ease-in-out;
 }
 
-#check-1:checked+span::after,
-#check-2:checked+span::after,
-#check-3:checked+span::after,
-#check-4:checked+span::after,
-#check-5:checked+span::after,
-#check-6:checked+span::after,
-#check-7:checked+span::after,
-#check-8:checked+span::after,
-#check-9:checked+span::after,
-#check-10:checked+span::after,
-#check-11:checked+span::after,
-#check-12:checked+span::after  { 
+.editions__checkbox:checked+span::after { 
   border: 1px solid #C283F3;
 }
 
@@ -126,48 +71,15 @@
   color: #C283F3;
 }
 
-.editions__label:hover #check-1+span::after,
-.editions__label:hover #check-2+span::after,
-.editions__label:hover #check-3+span::after,
-.editions__label:hover #check-4+span::after,
-.editions__label:hover #check-5+span::after,
-.editions__label:hover #check-6+span::after,
-.editions__label:hover #check-7+span::after,
-.editions__label:hover #check-8+span::after,
-.editions__label:hover #check-9+span::after,
-.editions__label:hover #check-10+span::after,
-.editions__label:hover #check-11+span::after,
-.editions__label:hover #check-12+span::after {
+.editions__label:hover .editions__checkbox + span::after {
   border: 1px solid #C283F3;
 }
 
-.editions__item:focus-within #check-1+span::after,
-.editions__item:focus-within #check-2+span::after,
-.editions__item:focus-within #check-3+span::after,
-.editions__item:focus-within #check-4+span::after,
-.editions__item:focus-within #check-5+span::after,
-.editions__item:focus-within #check-6+span::after,
-.editions__item:focus-within #check-7+span::after,
-.editions__item:focus-within #check-8+span::after,
-.editions__item:focus-within #check-9+span::after,
-.editions__item:focus-within #check-10+span::after,
-.editions__item:focus-within #check-11+span::after,
-.editions__item:focus-within #check-12+span::after {
+.editions__item:focus-within .editions__checkbox + span::after {
   border: 1px solid #C283F3;
 }
 
-.editions__label:focus-within #check-1+span::after,
-.editions__label:focus-within #check-2+span::after,
-.editions__label:focus-within #check-3+span::after,
-.editions__label:focus-within #check-4+span::after,
-.editions__label:focus-within #check-5+span::after,
-.editions__label:focus-within #check-6+span::after,
-.editions__label:focus-within #check-7+span::after,
-.editions__label:focus-within #check-8+span::after,
-.editions__label:focus-within #check-9+span::after,
-.editions__label:focus-within #check-10+span::after,
-.editions__label:focus-within #check-11+span::after,
-.editions__label:focus-within #check-12+span::after  {
+.editions__label:focus-within .editions__checkbox + span::after {
   border: 1px solid #C283F3;
 }
 
@@ -179,64 +91,25 @@
   color: #C283F3 !important;
 }
 
-
-.editions__item #check-1:checked+span,
-.editions__item #check-2:checked+span,
-.editions__item #check-3:checked+span,
-.editions__item #check-4:checked+span,
-.editions__item #check-5:checked+span,
-.editions__item #check-6:checked+span,
-.editions__item #check-7:checked+span,
-.editions__item #check-8:checked+span,
-.editions__item #check-9:checked+span,
-.editions__item #check-10:checked+span,
-.editions__item #check-11:checked+span,
-.editions__item #check-12:checked+span,
-.editions__label:focus-within #check-1+span,
-.editions__label:focus-within #check-2+span,
-.editions__label:focus-within #check-3+span,
-.editions__label:focus-within #check-4+span,
-.editions__label:focus-within #check-5+span,
-.editions__label:focus-within #check-6+span,
-.editions__label:focus-within #check-7+span,
-.editions__label:focus-within #check-8+span,
-.editions__label:focus-within #check-9+span,
-.editions__label:focus-within #check-10+span,
-.editions__label:focus-within #check-11+span,
-.editions__label:focus-within #check-12+span  {
+.editions__item .editions__checkbox:checked+span,
+.editions__label:focus-within .editions__checkbox + span {
   color: #C283F3;
 }
 
 @media (max-width: 580px) {
-  #check-1+span::before,
-#check-2+span::before,
-#check-3+span::before,
-#check-4+span::before,
-#check-5+span::before,
-#check-6+span::before,
-#check-7+span::before,
-#check-8+span::before,
-#check-9+span::before,
-#check-10+span::before,
-#check-11+span::before,
-#check-12+span::before  { 
+
+.editions__checkbox+span::before  { 
   top: 8px;
   left: 3px;
 }
 
-#check-1+span::after,
-#check-2+span::after,
-#check-3+span::after,
-#check-4+span::after,
-#check-5+span::after,
-#check-6+span::after,
-#check-7+span::after,
-#check-8+span::after,
-#check-9+span::after,
-#check-10+span::after,
-#check-11+span::after,
-#check-12+span::after  { 
+.editions__checkbox+span::after { 
   top: 18px;
   left: 0px;
+}
+
+.editions__checkbox-mobile--close .editions__checkbox+span::after {
+  top: 10px;
+  left: 0;
 }
 }

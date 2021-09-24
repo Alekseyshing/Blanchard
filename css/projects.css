@@ -307,3 +307,10 @@
     margin-bottom: 38px;
   }
 }
+
+@media (max-width: 580px) {
+.projects__button-prev, 
+.projects__button-next {
+    top: 45px;
+}
+}

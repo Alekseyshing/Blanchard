@@ -276,3 +276,56 @@
     width: calc(288 / 668 * 100% + ((100vw - 100%) / 2));
   }
 }
+
+@media (max-width: 580px) {
+  .contacts__container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .contacts__map {
+    width: 100%;
+  }
+
+  .contacts__left {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+  }
+
+  .contacts__company-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .contacts__company-adress {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .contacts__form-btn {
+    padding: 12px 35px;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 128px;
+  }
+
+  .contacts__form-header,
+  .contacts__messangers-header {
+    font-size: 18px;
+  }
+
+  .contacts__form-name, 
+  .contacts__form-tel {
+    min-width: 290px;
+    max-width: 290px;
+  }
+
+  .contacts__whatsapp-logo,
+  .contacts__telegram-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
