@@ -501,11 +501,23 @@
     padding-bottom: 20px;
   }
 
+  .catalogue__header {
+    margin-right: 35px;
+  }
+
   .catalogue__artists-list {
     align-content: space-between;
     margin-right: 0;
-    max-height: 420px;
+    max-height: 384px;
     text-align: left;
+  }
+
+  .catalogue__persons-item {
+    max-height: 32px;
+  }
+
+  .catalogue__persons-btn {
+    height: 19px;
   }
 
   .catalogue__fl-btn {
@@ -514,15 +526,42 @@
 
   .catalogue__flag-item {
     align-items: center;
-    height: 87px;
   }
 
+  .ui-accordion-content-active {
+    padding-bottom: 24px;
+  }
+  
+
   .catalogue__description-text {
-    margin-bottom: 34px;
+    margin-bottom: 40px;
   }
 
   .catalogue__persons-item {
     max-width: 200px;
+  }
+
+  .catalogue__fl-btn {
+    margin-right: 30px;
+    padding: 0;
+    width: 66px;
+    height: 66px;
+  }
+
+  .catalogue__fl-btn::before {
+    width: 46px;
+    height: 46px;
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  .catalogue__left-img {
+    margin-bottom: 20px;
+  }
+
+  .ui-accordion-header-collapsed { 
+    padding-top: 35px;
+    padding-bottom: 29px;
   }
 }
 

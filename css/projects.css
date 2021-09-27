@@ -1,19 +1,18 @@
 .projects__container {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
 }
 
 .projects__header {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
 }
 
 .projects__description {
-  max-width: 1100px;
-  margin-bottom: 20px;
-  font-weight: 600;
+  max-width: 1080px;
+  margin-bottom: 22px;
   font-size: 16px;
   line-height: 32px;
 }
@@ -104,22 +103,22 @@
 
 .projects__sw-slide {
   position: relative;
-  height: 100%;
+  max-height: 150px;
   flex-shrink: 0;
   cursor: pointer;
   display: block;
   filter: grayscale(100%);
   opacity: 0.4;
-  outline: 1px solid transparent;
+  border: 1px solid transparent;
   outline-offset: -1px;
-  transition: outline .2s;
-  transition: outline .3s ease-in-out, opacity .3s ease-in-out, filter .3s ease-in-out;
+  transition: border .2s;
+  transition: border .3s ease-in-out, outline-offset .3s ease-in-out, filter .3s ease-in-out;
 }
 
 .projects__sw-slide:focus {
   filter: grayscale(0%);
   opacity: 1;
-  outline: 1px solid var(--add-color);
+  border: 1px solid var(--add-color);
 }
 
 .projects__sw-slide:hover {
@@ -248,7 +247,11 @@
 
 @media (max-width: 1024px) {
   .projects__container {
-    padding-bottom: 80px;
+    padding-bottom: 76px;
+  }
+
+  .projects__header {
+    margin-bottom: 14px;
   }
 
   .projects__main-block {
@@ -257,7 +260,7 @@
 
   .projects__description {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 32px;
   }
 

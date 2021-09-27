@@ -8,7 +8,7 @@
 }
 
 .contacts__header {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
@@ -19,7 +19,7 @@
 }
 
 .contacts__left {
-  padding-top: 124px;
+  padding-top: 125px;
   padding-bottom: 30px;
   padding-right: 40px;
   padding-left: 0;
@@ -63,11 +63,11 @@
 
 .contacts__messangers-header {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contacts__form {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .contacts__form-name {
@@ -80,7 +80,7 @@
 }
 
 .contacts__form-tel {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .contacts__form-name,
@@ -109,7 +109,7 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
   border: 2px solid var(--add-color);
   border-radius: 100px;
   background-color: transparent;
@@ -250,7 +250,7 @@
   }
 
   .contacts__messangers-header {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
 
   .contacts__whatsapp-logo,
@@ -263,7 +263,7 @@
   }
 
   .contacts__whatsapp-logo {
-    margin-right: 10px;
+    margin-right: 9px;
   }
 }
 

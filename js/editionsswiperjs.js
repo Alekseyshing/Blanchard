@@ -2,7 +2,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 const MOBILE_WIDTH = 580;
 
-const sliderEditionsParams = {
+const sliderParamsNotMobile = {
+  sliderWrap: 'editions__swiper',
   cardsContainerName: "editions__swiper-container",
   cardsWrapName: "editions__swiper-slider",
   card: "editions__article",
@@ -43,7 +44,7 @@ function activateSlider(params) {
   navBtnNext.classList.add(params.navNext);
   navigation.append(navBtnNext);
   
-  params.cardsContainer.prepend(navigation);
+  params.sliderWrapElem.prepend(navigation);
 
   params.cardsContainer.classList.add("swiper-container");
   params.cardsWrap.classList.add("swiper-wrapper");
@@ -70,7 +71,7 @@ function activateSlider(params) {
     },
     
     pagination: {
-      el: `.${params.cardsContainerName} .${params.paginationClassName}`,
+      el: `.${params.sliderWrap} .${params.paginationClassName}`,
       type: "fraction"
     },
 
@@ -110,6 +111,7 @@ function destroySlider(params) {
 
 function checkWindowWidth(params) {
   const currentWidth = getWindowWidth();
+  params.sliderWrapElem = document.querySelector(`.${params.sliderWrap}`);
   params.cardsContainer = document.querySelector(
     `.${params.cardsContainerName}`
   );
@@ -125,9 +127,9 @@ function checkWindowWidth(params) {
   }
 }
 
-checkWindowWidth(sliderEditionsParams);
+checkWindowWidth(sliderParamsNotMobile);
 
 window.addEventListener("resize", function () {
-  checkWindowWidth(sliderEditionsParams);
+  checkWindowWidth(sliderParamsNotMobile);
 });
-})
+});

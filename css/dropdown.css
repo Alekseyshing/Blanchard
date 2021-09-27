@@ -5,9 +5,10 @@ a {
 .header__select {
   display: flex;
   align-items: center;
+  padding: 0;
   outline: none;
-  padding-left: 2px;
-  padding-right: 6px;
+  /* padding-left: 2px;
+  padding-right: 6px; */
   border: none;
   background-color: transparent;
   font-size: 18px;
@@ -21,8 +22,7 @@ a {
 
 .header__nav-buttom-list {
   display: flex;
-  justify-content: space-between;
-  max-width: 1040px;
+  max-width: 1037px;
   list-style: none;
 }
 
@@ -30,7 +30,7 @@ a {
   position: relative;
   color: var(--main-color);
   height: 26px;
-  margin-right: 7%;
+  margin-right: 100px;
 }
 
 .header__nav-buttom-item:last-child {
@@ -48,6 +48,7 @@ a {
   height: 8px;
   top: 0;
   left: 0;
+  padding: 0;
   margin-left: 4px;
   border-top: 1px solid;
   border-right: 1px solid;
@@ -308,3 +309,9 @@ a {
   color: var(--two);
 }
 
+@media (max-width: 1470px) {
+  .header__nav-buttom-item {
+    margin-right: 50px;
+  }
+  
+}

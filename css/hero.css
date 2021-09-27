@@ -157,7 +157,7 @@
 
 @media (max-width: 1024px) {
   .hero {
-    padding-bottom: 72px;
+    padding-bottom: 78px;
   }
 
   .hero__swiper-slide--1 {
@@ -170,6 +170,10 @@
 
   .hero__swiper-slide--3 {
     background-image: url(../img/hero-bckgrnd-3-1024.jpg);
+  }
+
+  .hero__btn {
+    padding: 20px 32px;
   }
 }
 
