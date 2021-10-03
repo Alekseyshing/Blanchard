@@ -96,11 +96,14 @@
 
 @media (max-width: 580px) {
   .footer__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
     flex-direction: column-reverse;
   }
 
   .footer__social-media-list {
-    margin-bottom: 20px;
+    min-width: 210px;
+    margin-bottom: 18px;
   }
 
   .footer__vk, 
@@ -108,5 +111,9 @@
   .footer__facebook {
     width: 50px;
     height: 50px;
+  }
+
+  .footer__img {
+    width: 96px;
   }
 }

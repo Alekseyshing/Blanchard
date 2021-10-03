@@ -96,8 +96,17 @@
   color: #C283F3;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 768px) { 
+  .editions__checkbox+span::before { 
+    top: 0px;
+  } 
 
+  .editions__checkbox+span::after { 
+    top: 10px;
+  } 
+}
+
+@media (max-width: 580px) {
 .editions__checkbox+span::before  { 
   top: 8px;
   left: 3px;
@@ -112,4 +121,15 @@
   top: 10px;
   left: 0;
 }
+}
+
+@media (max-width: 320px) {
+  .editions__checkbox-mobile--close .editions__checkbox+span::before  { 
+    top: 4px;
+  }
+
+  .editions__checkbox-mobile--close .editions__checkbox+span::after {
+    top: 6px;
+    left: 0;
+  }
 }

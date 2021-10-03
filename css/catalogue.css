@@ -395,11 +395,11 @@
   position: absolute;
   display: block;
   top: 10px;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
   left: 10px;
-  width: 251px;
-  height: 165px;
+  /* width: 251px;
+  height: 165px; */
   background-color: rgba(183, 183, 183, 1);
 }
 
@@ -516,10 +516,6 @@
     max-height: 32px;
   }
 
-  .catalogue__persons-btn {
-    height: 19px;
-  }
-
   .catalogue__fl-btn {
     margin-right: 25px;
   }
@@ -572,6 +568,7 @@
 
   .catalogue__header {
     margin-bottom: 0;
+    margin-right: 30px;
   }
 
   .catalogue__head {
@@ -594,14 +591,16 @@
 
   .catalogue__flags {
     justify-content: space-between;
+    align-items: center;
+    transform: translateY(1px);
   }
 
-  .catalogue__fl-btn--2 {
-    margin-right: 32px;
+  .catalogue__fl-btn {
+    margin-right: 34px;
   }
 
-  .catalogue__fl-btn--4 {
-    margin-right: 30px;
+  .catalogue__fl-btn--5 {
+    margin-right: 0;
   }
 
   .catalogue__flag-item {
@@ -620,6 +619,32 @@
   .catalogue__block {
     margin-bottom: 45px;
   }
+
+  .catalogue__description-text {
+    margin-bottom: 20px;
+  }
+
+  .ui-accordion-header-active {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .ui-accordion-content {
+    padding-bottom: 25px;
+  }
+
+  .ui-accordion-header-collapsed {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .catalogue__block {
+    margin-bottom: 50px;
+  }
+
+  .catalogue__left-img {
+    margin-bottom: 22px;
+  }
 }
 
 @media (max-width: 720px) { 
@@ -637,41 +662,185 @@
   }
 }
 
-@media (max-width: 520px) { 
+@media (max-width: 580px) { 
+  .catalogue__header {
+    margin-right: 0;
+  }
+
   .catalogue__fl-btn {
-    width: 32px;
-    height: 32px;
-    align-self: center;
-  }
-
-  .catalogue__flags {
-    text-align: center;
-  }
-
-  .catalogue__flag-item {
-    max-height: 47px;
+    width: 64px;
+    height: 64px;
+    background-size: 42px;
   }
 
   .catalogue__fl-btn::before {
-    position: absolute;
-    content: '';
+    width: 64px;
+    height: 64px;
+    top: -2px;
+    left: -2px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .catalogue__flag-item {
     display: block;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 48px;
-    height: 48px;
-    outline: none;
-    border: 2px solid transparent;
-    border-radius: 29px;
-    cursor: pointer;
-    background-size: 48px;
-    background-position: center;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 520px) { 
+  .catalogue__container {
+    padding-bottom: 10px;
   }
 }
 
 @media (max-width: 410px) { 
   .catalogue__artists-list {
     max-height: 768px;
+  }
+
+  .catalogue__fl-btn {
+    width: 44px;
+    height: 44px;
+    background-size: 32px;
+  }
+
+  .catalogue__fl-btn::before {
+    width: 44px;
+    height: 44px;
+    top: -2px;
+    left: -2px;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .catalogue__flag-item {
+    display: block;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 320px) { 
+  .catalogue__container {
+    padding-top: 50px;
+  }
+
+  .catalogue__header {
+    margin-bottom: 5px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .catalogue__description-text {
+    display: none;
+  }
+
+  .catalogue__head {
+    max-height: 105px;
+  }
+
+  .catalogue__fl-btn--1 {
+    transform: translateX(-5px);
+  }
+
+  .catalogue__fl-btn--2 {
+    transform: translateX(-3px);
+  }
+
+  .catalogue__fl-btn--4 {
+    transform: translateX(3px);
+  }
+
+  .catalogue__fl-btn--5 {
+    transform: translateX(5px);
+  }
+
+  .catalogue__header-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .ui-accordion-header-active.catalogue__accordion-header span {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z' fill='%23D1A9F0' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M33.3333 26.6667L25 18.3333L16.6667 26.6667' stroke='black'/%3E%3C/svg%3E%0A");
+    background-position: right;
+  }
+
+  .catalogue__accordion-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' fill='%23ECECEC'/%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' stroke='%23ECECEC'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");  background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .catalogue__accordion-header:active:not(focus):not(hover) .catalogue__accordion-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='14' transform='matrix(1 1.74846e-08 -2.91409e-08 -1 15 15)' fill='%23D1A9F0' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M20 16L15 11L10 16' stroke='black'/%3E%3C/svg%3E ");  
+    background-position: right;
+  }
+
+  .catalogue__accordion-header:focus-visible span {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");
+    background-position: right;
+  }
+
+  .catalogue__item:hover .catalogue__accordion-button {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E%0A");
+    background-position: right;
+  }
+
+
+
+  .ui-accordion-header-active {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .ui-accordion-content-active {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .ui-accordion-header-collapsed {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .catalogue__empty-header {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .catalogue__empty-img {
+    margin-right: 25px;
+    max-width: 90px;
+    max-height: 130px;
+  }
+
+  .catalogue__empty-img::after {
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    left: 6px;
+  }
+
+  .catalogue__empty-go-to,
+  .catalogue__gallery-ref {
+    font-size: 16px;
+  }
+
+  .catalogue__left-img,
+  .catalogue__artist-name {
+    margin-bottom: 12px;
+  }
+
+  .catalogue__artist-description {
+    padding: 0;
+  }
+
+  .catalogue__date {
+    margin-bottom: 7px;
+  }
+
+  .catalogue__artist-description {
+    max-width: 289px;
   }
 }

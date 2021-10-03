@@ -17,3 +17,9 @@
 .ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
   background-image: url("data:image/svg+xml,%3Csvg height='10pt' viewBox='0 -192 469.33333 469' width='469pt' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m437.332031.167969h-405.332031c-17.664062 0-32 14.335937-32 32v21.332031c0 17.664062 14.335938 32 32 32h405.332031c17.664063 0 32-14.335938 32-32v-21.332031c0-17.664063-14.335937-32-32-32zm0 0'/%3E%3C/svg%3E");
 }
+
+@media (max-width: 580px) {
+  .ymaps-2-1-79-controls__control {
+    display: none;
+  }
+}

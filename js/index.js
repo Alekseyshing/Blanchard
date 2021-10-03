@@ -382,19 +382,11 @@ const fadeIn = (el, timeout, display) => {
     autoheight: false,
     zoom: true,
     slideToClickedSlide: true,
+    speed: 400,
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    spaceBetween: 50,
     
-    // breakpoints: {
-    //   1024: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 15,
-    //     slidesPerGroup: 2,
-    //   },
-
-    //   1640: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 45,
-    //     slidesPerGroup: 3,
-    //   },
     breakpoints: {
       740: {
         slidesPerView: 2,

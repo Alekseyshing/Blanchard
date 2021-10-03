@@ -268,12 +268,26 @@
 }
 
 @media (max-width: 865px) {
+  .contacts__header {
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+
   .contacts__left {
     width: calc(380 / 668 * 100%);
   }
   
   .contacts__map {
     width: calc(288 / 668 * 100% + ((100vw - 100%) / 2));
+  }
+
+  .contacts__company-title {
+    margin-bottom: 3px;
+  }
+
+  .contacts__form-header {
+    margin-top: 28px;
+    margin-bottom: 16px;
   }
 }
 
@@ -283,8 +297,27 @@
     padding: 0;
   }
 
+  .contacts__header {
+    margin-bottom: 70px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .contacts__company-title {
+    margin-bottom: 0;
+  }
+
+  .contacts__company-title,
+  .contacts__company-adress {
+    transform: translateY(-378px);
+  }
+
   .contacts__map {
     width: 100%;
+    min-height: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin-right: 0;
   }
 
   .contacts__left {
@@ -327,5 +360,51 @@
   .contacts__telegram-logo {
     width: 50px;
     height: 50px;
+  }
+
+  .contacts__left {
+    padding-top: 0;
+    padding-bottom: 10px;
+    max-height: 368px;
+  }
+
+  .contacts__form {
+    transform: translateY(-50px);
+  }
+
+  .contacts__form-name {
+    margin-bottom: 20px;
+  }
+
+  .contacts__form-tel {
+    margin-bottom: 20px;
+  }
+
+  .contacts__form-btn {
+    height: 40px;
+    padding: 11px 34px;
+  }
+
+  .contacts__form-btn::before {
+    top: -2px;
+    height: 40px;
+    padding: 11px 34px;
+  }
+
+  .contacts__form-btn::after {
+    width: 138px;
+    height: 50px;
+  }
+
+  .contacts__messengers {
+    transform: translateY(-68px);
+  }
+
+  .contacts__messangers-header {
+    margin-bottom: 7px;
+  }
+
+  .contacts__messangers-item {
+    margin-right: 10px;
   }
 }

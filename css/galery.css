@@ -29,6 +29,10 @@ html {
   margin-right: 0;
 }
 
+.galery__swiper-slider {
+  padding-left: 0px;
+}
+
 .galery__left {
   display: inline-block;
   width: calc(400 / 1600 * 100%);
@@ -66,7 +70,7 @@ html {
 }
 
 .galery__label {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .galery__filter {
@@ -109,8 +113,9 @@ html {
   display: flex;
   left: 2px;
   justify-content: space-between;
-  margin: 25px 0;
-  max-width: 135px;
+  margin: 25px 0 30px 0;
+  max-width: 130px;
+  align-items: center;
 }
 
 .galery__image-slider {
@@ -231,11 +236,12 @@ html {
   outline: none;
   cursor: pointer;
   padding: 0;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-color: transparent;
   transition: all .3s ease-in-out;
+  background-position: center;
 }
 
 .galery__button-prev,
@@ -333,7 +339,7 @@ html {
 
 @media (max-width: 1010px) { 
   .galery__container {
-    padding-bottom: 69px;
+    padding-bottom: 80px;
   }
 
   .galery__content-wrap {
@@ -344,24 +350,42 @@ html {
     min-width: 280px;
   }
 
+  .galery__label {
+    margin-bottom: 13px;
+  }
+
   .galery__swiper {
     padding-top: 0;
     margin-top: 28px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .galery__content-wrap {
+    align-content: flex-start;
+  }
+
+  .galery__swiper-slider {
+    padding-left: 0;
   }
 
   .galery__image-slider {
     max-height: 280px;
   }
 
+  .galery__image-slider::before {
+    padding-top: 87%;
+  }
+
+
   .galery__swiper-btns {
-    max-width: 140px;
+    max-width: 129px;
+    margin-bottom: 29px;
   }
 
   .galery__swiper-pagination {
     top: 7px;
-    left: 27px;
+    left: 22px;
   }
 
   .galery__last {
@@ -414,5 +438,43 @@ html {
     height: 367px;
     object-fit: cover;
   }
+}
 
+@media (max-width: 320px) { 
+  .galery__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .galery__header {
+    margin-bottom: 17px;
+  }
+
+  .galery__filter {
+    min-width: 290px;
+    margin-bottom: 10px;
+  }
+
+  .galery__label {
+    margin-bottom: 9px;
+  }
+
+  .galery__swiper {
+    margin-bottom: 0px;
+    max-height: 446px;
+  }
+
+  .galery__image-slider {
+    min-height: 367px;
+  }
+
+  .galery__swiper-btns {
+    margin-top: 20px;
+    max-width: 130px;
+    margin-bottom: 10px;
+  }
+
+  .galery__swiper-pagination {
+    top: 10px;
+  }
 }

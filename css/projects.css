@@ -21,6 +21,7 @@
   color: var(--add-color);
   cursor: pointer;
   transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
+
 }
 
 .projects__description-ref:hover {
@@ -251,7 +252,7 @@
   }
 
   .projects__header {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   .projects__main-block {
@@ -269,6 +270,10 @@
   }
   .projects__swiper-container {
     padding-top: 0;
+  }
+
+  .projects__tooltip__span {
+    transform: translate(-2px, 4px);
   }
 }
 
@@ -289,25 +294,33 @@
 
 @media (max-width: 860px) { 
   .projects__container {
-    padding-top: 82px;
+    padding-top: 80px;
   }
 
   .projects__swiper-container {
     max-width: 562px;
   }
 
+  .projects__sw-img {
+    min-height: 106px;
+  }
+
   .projects__button-prev,
   .projects__button-next {
-    top: 25px;
+    top: 36px;
   }
 
   .projects__description {
-    max-width: 650px;
-    margin-bottom: 25px;
+    max-width: 660px;
+    margin-bottom: 26px;
   }
 
   .projects__partners-header {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
+  }
+
+  .projects__tooltip__span {
+    transform: translate(-2px, 4px);
   }
 }
 
@@ -316,4 +329,59 @@
 .projects__button-next {
     top: 45px;
 }
+}
+
+@media (max-width: 420px) { 
+  .projects__container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .projects__header {
+    margin-bottom: 13px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .projects__tooltip__span {
+    transform: translate(0px, 2px);
+  }
+
+  .projects__description {
+    margin-bottom: 10px;
+  }
+
+  .projects__partners-header {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .projects__sw-img {
+    width: 200px;
+    max-height: 63px;
+    min-height: 63px;
+  }
+
+  .projects__sw-slide {
+    max-height: 65px;
+  }
+
+  .projects__button-prev, 
+  .projects__button-next {
+    top: 15px;
+  }
+
+  .projects__swiper-container {
+    max-width: 200px;
+    min-height: 70px;
+  }
+
+  .projects__swiper-wrapper {
+    max-width: 200px;
+  }
+
+  .projects__main-block {
+    max-height: 85px;
+  }
 }

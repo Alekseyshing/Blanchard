@@ -53,19 +53,20 @@ function activateSlider(params) {
     slidesPerView: 2,
     spaceBetween: 20,
 
-        breakpoints: {
-      300: {
+        breakpoints: {       
+      321: {
         slidesPerView: 2,
-        spaceBetween: 34
+        spaceBetween: 25,
+        slidesPerGroup: 2,
       },
       1005: {
         slidesPerView: 2,
-        spaceBetween: 49,
+        spaceBetween: 47,
         slidesPerGroup: 2,
       },
       1611: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 47,
         slidesPerGroup: 3,
       }
     },

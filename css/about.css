@@ -31,3 +31,14 @@
     color: var(--text-color);
   }
 }
+
+@media (max-width: 320px) {
+  .about__container {
+    padding-top: 53px;
+    padding-bottom: 40px;
+  }
+
+  .about__header {
+    margin-bottom: 13px;
+  }
+}

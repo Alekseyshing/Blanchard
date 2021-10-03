@@ -58,9 +58,9 @@
     <header class="header">
       <div class="header__main-block">
         <div class="container header__container">
-          <div id="burger" class="header__burger">
+          <button class="header__burger" type="button" id="burger">
             <span class="header__burger-span"></span>
-          </div>
+          </button>
           <a class="header__logo header__logo-mobile" id="header-logo">
             <img class="header__img" src="img/logo.svg" alt="логотип blanchard">
           </a>
@@ -119,7 +119,7 @@
                   name="input-search-name">
               </label>
               <button class="header__btn-x" type="button">
-                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="19" height="19" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.7">
                     <rect width="37.2801" height="3.72801"
                       transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white" />
@@ -1445,7 +1445,7 @@
               <label for="Минимальная цена" class="editions__from">От</label>
               <input id="min-price" name="Минимальная цена" placeholder="50" class="editions__min-price">
               <label for="Максимальная цена" class="editions__before">До</label>
-              <input id="max-price" name="Максимальная цена" placeholder="25000" class="editions__max-price">
+              <input class="editions__max-price" id="max-price" name="Максимальная цена" placeholder="25000">
               <p class="editions__currency">руб.</p>
             </div>
           </div>
@@ -1470,8 +1470,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Искусство цвета</p>
                     <p class="editions__block-price">620 руб</p>
+                    <p class="editions__article-text">Иттен, Иоханнес</p>
                   </div>
-                  <p class="editions__article-text">Иттен, Иоханнес</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
                 <article class="swiper-slide editions__article">
@@ -1483,8 +1483,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Типографика</p>
                     <p class="editions__block-price">2 450 руб</p>
+                    <p class="editions__article-text">Рудер, Эмиль</p>
                   </div>
-                  <p class="editions__article-text">Рудер, Эмиль</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
                 <article class="swiper-slide editions__article">
@@ -1496,8 +1496,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Книга про буквы</p>
                     <p class="editions__block-price">2 200 руб</p>
+                    <p class="editions__article-text">Гордон, Юрий </p>
                   </div>
-                  <p class="editions__article-text">Гордон, Юрий </p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
                 <article class="swiper-slide editions__article">
@@ -1509,8 +1509,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Николай Ильин</p>
                     <p class="editions__block-price">1 100 руб</p>
+                    <p class="editions__article-text">Кричевский, Владимир</p>
                   </div>
-                  <p class="editions__article-text">Кричевский, Владимир</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
                 <article class="swiper-slide editions__article">
@@ -1522,8 +1522,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Модульные сетки в граф...</p>
                     <p class="editions__block-price">1 450 руб</p>
+                    <p class="editions__article-text">Мюллер-Брокманн, Йозеф</p>
                   </div>
-                  <p class="editions__article-text">Мюллер-Брокманн, Йозеф</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
                 <article class="swiper-slide editions__article">
@@ -1535,8 +1535,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Эволюция графических ст...</p>
                     <p class="editions__block-price">3 200 руб</p>
+                    <p class="editions__article-text"> Хеллер, Чваст</p>
                   </div>
-                  <p class="editions__article-text"> Хеллер, Чваст</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
                 <article class="swiper-slide editions__article">
@@ -1548,8 +1548,8 @@
                   <div class="editions__article-text-block">
                     <p class="editions__block-left-element">Искусство и визуальное в...</p>
                     <p class="editions__block-price">2 200 руб</p>
+                    <p class="editions__article-text">Арнхейм, Рудольф</p>
                   </div>
-                  <p class="editions__article-text">Арнхейм, Рудольф</p>
                   <button type="button" class="editions__article-btn">Заказать</button>
                 </article>
               </div>
@@ -1568,7 +1568,7 @@
               ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за
               чего
               возрастает
-              их статус бесполезности. Прежде всего, постоянное информационно-&nbsp;пропагандистское
+              их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
               <a class="projects__tooltip__span" href="#" id="myButton-1"></a>
               обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
               принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
