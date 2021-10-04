@@ -21,5 +21,6 @@
 @media (max-width: 580px) {
   .ymaps-2-1-79-controls__control {
     display: none;
+    visibility: hidden;
   }
 }

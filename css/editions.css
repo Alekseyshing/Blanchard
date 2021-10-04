@@ -432,6 +432,15 @@
   .editions__img {
     max-height: 319px;
   }
+
+  .editions__article-btn::after {
+    width: 120px;
+    left: -3px;
+  }
+
+  .editions__article-btn::before {
+    left: -7px;
+  }
 }
 
 @media (max-width: 1010px) { 
@@ -565,6 +574,15 @@
 
   .editions__article-text {
     margin-bottom: 18px;
+  }
+
+  .editions__article-btn::after {
+    width: 120px;
+    left: -3px;
+  }
+
+  .editions__article-btn::before {
+    left: -7px;
   }
 }
 
@@ -826,6 +844,11 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    .editions__article-btn::after {
+      width: 132px;
+      left: -3px;
     }
 
     .editions__article-btn::before {

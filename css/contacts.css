@@ -265,6 +265,13 @@
   .contacts__whatsapp-logo {
     margin-right: 9px;
   }
+
+  .contacts__form-btn::before { 
+    width: 160px;
+    height: 62px;
+    top: -3px;
+    left: -5px;
+  }
 }
 
 @media (max-width: 865px) {
@@ -406,5 +413,10 @@
 
   .contacts__messangers-item {
     margin-right: 10px;
+  }
+
+  .contacts__form-btn::before { 
+    left: -3px;
+    width: 130px;
   }
 }
