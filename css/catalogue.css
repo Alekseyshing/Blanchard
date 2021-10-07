@@ -150,8 +150,8 @@
   display: flex;
   justify-content: space-between;
 }
-.catalogue__main--1,
-.catalogue__main--2  {
+.catalogue__main-1,
+.catalogue__main-2  {
   width: 50%;
 }
 
@@ -224,7 +224,7 @@
   color: var(--add-color);
 }
 
-.catalogue__accordion-header:focus-visible span {
+.catalogue__accordion-header:focus-visible .catalogue__accordion-button {
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");
 }
 
@@ -445,7 +445,7 @@
   border-bottom: 1px solid #cacaca;
 }
 
-.ui-accordion-header-active.catalogue__accordion-header span {
+.ui-accordion-header-active.catalogue__accordion-header .catalogue__accordion-button {
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z' fill='%23D1A9F0' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M33.3333 26.6667L25 18.3333L16.6667 26.6667' stroke='black'/%3E%3C/svg%3E%0A");
 }
 
@@ -461,7 +461,7 @@
   color: var(--main-color);
 }
 
-.catalogue__accordion-header:focus-visible span {
+.catalogue__accordion-header:focus-visible .catalogue__accordion-button {
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");
 }
 
@@ -491,7 +491,7 @@
 }
 
 @media (max-width: 1650px) {
-  .catalogue__main--1 {
+  .catalogue__main-1 {
     margin-right: 50px;
   }
 }
@@ -575,8 +575,8 @@
     max-height: 80px;
   }
 
-  .catalogue__main--1,
-  .catalogue__main--2  {
+  .catalogue__main-1,
+  .catalogue__main-2  {
     width: 100%;
   }
 
@@ -762,7 +762,7 @@
     line-height: 32px;
   }
 
-  .ui-accordion-header-active.catalogue__accordion-header span {
+  .ui-accordion-header-active.catalogue__accordion-header .catalogue__accordion-button {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M49 25C49 11.7452 38.2548 1.00001 25 1.00001C11.7452 1.00001 1 11.7452 1 25C1 38.2548 11.7452 49 25 49C38.2548 49 49 38.2548 49 25Z' fill='%23D1A9F0' stroke='%239D5CD0' stroke-width='2'/%3E%3Cpath d='M33.3333 26.6667L25 18.3333L16.6667 26.6667' stroke='black'/%3E%3C/svg%3E%0A");
     background-position: right;
   }
@@ -770,6 +770,7 @@
   .catalogue__accordion-button {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' fill='%23ECECEC'/%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' stroke='%23ECECEC'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");  background-repeat: no-repeat;
     background-position: right;
+    transition: background-image .3s ease-in-out;
   }
 
   .catalogue__accordion-header:active:not(focus):not(hover) .catalogue__accordion-button {
@@ -777,7 +778,7 @@
     background-position: right;
   }
 
-  .catalogue__accordion-header:focus-visible span {
+  .catalogue__accordion-header:focus-visible .catalogue__accordion-button {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23D1A9F0'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");
     background-position: right;
   }

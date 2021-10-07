@@ -110,11 +110,11 @@
             </button>
             <form class="header__form" id="search-form" action="https://jsonplaceholder.typicode.com/posts"
               method="POST">
+              <span class="visually-hidden">
+                Введите текст для поиска
+              </span>
+              <button class="header__search-btn" type="submit"></button>
               <label class="header__label">
-                <span class="visually-hidden">
-                  Введите текст для поиска
-                </span>
-                <button class="header__search-btn" type="submit"></button>
                 <input class="header__input" id="input-search-name" type="text" placeholder="Поиск по сайту"
                   name="input-search-name">
               </label>
@@ -138,7 +138,7 @@
             <ul class="header__nav-buttom-list">
               <li class="header__nav-buttom-item">
                 <button class="header__select" data-path="eight">
-                  <p class="header__select-text">Реализм</p>
+                  <span class="header__select-text">Реализм</span>
                   <span class="header__select-arrow"></span>
                 </button>
                 <div class="header__dropdown" data-target="eight">
@@ -158,7 +158,7 @@
               </li>
               <li class="header__nav-buttom-item">
                 <button class="header__select" data-path="nine">
-                  <p class="header__select-text">Импрессионизм</p>
+                  <span class="header__select-text">Импрессионизм</span>
                   <span class="header__select-arrow"></span>
                 </button>
                 <div class="header__dropdown" data-target="nine">
@@ -180,7 +180,7 @@
               </li>
               <li class="header__nav-buttom-item">
                 <button class="header__select" data-path="ten">
-                  <p class="header__select-text">Постимпрессионизм</p>
+                  <span class="header__select-text">Постимпрессионизм</span>
                   <span class="header__select-arrow"></span>
                 </button>
                 <div class="header__dropdown" data-target="ten">
@@ -200,7 +200,7 @@
               </li>
               <li class="header__nav-buttom-item">
                 <button class="header__select" data-path="eleven">
-                  <p class="header__select-text">Авангард</p>
+                  <span class="header__select-text">Авангард</span>
                   <span class="header__select-arrow"></span>
                 </button>
                 <div class="header__dropdown" data-target="eleven">
@@ -220,7 +220,7 @@
               </li>
               <li class="header__nav-buttom-item">
                 <button class="header__select" data-path="twelve">
-                  <p class="header__select-text">Футуризм</p>
+                  <span class="header__select-text">Футуризм</span>
                   <span class="header__select-arrow"></span>
                 </button>
                 <div class="header__dropdown" data-target="twelve">
@@ -288,7 +288,7 @@
               <div class="galery__filter">
                 <label for="filter" class="galery__label">Фильтр:</label>
                 <select class="galery__select" name="filter" id="filter" tabindex="0">
-                  <option value="Живопись" aria-selected="true" selected="selected">Живопись</option>
+                  <option value="Живопись" selected="selected">Живопись</option>
                   <option value="Рисунок">Рисунок</option>
                   <option value="Скульптура">Скульптура</option>
                 </select>
@@ -389,7 +389,7 @@
             рыбные тексты. Lorem, семь? Знаках парадигматическая вопрос путь семантика жаренные собрал они гор мир,
             маленький моей, заманивший раз языком предупреждал что? Грустный.</p>
           <div class="catalogue__main">
-            <div class="catalogue__main--1">
+            <div class="catalogue__main-1">
               <article class="catalogue__article catalogue__article--active catalogue__article--third" id="Anastaise"
                 data-target="20">
                 <div class="catalogue__left-img">
@@ -416,12 +416,12 @@
                 <a href="#" class="catalogue__article-ref">В галерею</a>
               </article>
             </div>
-            <div class="catalogue__main--2">
+            <div class="catalogue__main-2">
               <div id="accordion-1" class="catalogue__block catalogue__block--france">
                 <ul class="catalogue__accordion">
                   <li class="catalogue__item">
                     <button class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__header-text">C 1400 по 1499 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <ul class="catalogue__artists-list">
@@ -438,7 +438,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header" tabindex="0">
-                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__header-text">C 1500 по 1599 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -453,7 +453,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__header-text">C 1600 по 1699 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -468,7 +468,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__header-text">C 1700 по 1799 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -483,7 +483,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__header-text">C 1800 по 1899 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -498,7 +498,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__header-text">C 1900 по 1999 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -513,7 +513,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__header-text">C 2000 г.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -536,8 +536,8 @@
             рыбные тексты. Своего, решила скатился! Грамматики запятых о букв журчит одна вскоре безорфографичный своих,
             обеспечивает над которой, правилами предупредила себя назад однажды.</p>
           <div class="catalogue__main">
-            <div class="catalogue__main--1">
-              <article class="catalogue__article catalogue__article--active catalogue__article--fourth" id=""
+            <div class="catalogue__main-1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--fourth"
                 data-target="22">
                 <div class="catalogue__left-img">
                   <img src="img/HansBurgkmair.jpg" alt="HansBurgkmair">
@@ -563,12 +563,12 @@
                 <a href="#" class="catalogue__article-ref">В галерею</a>
               </article>
             </div>
-            <div class="catalogue__main--2">
+            <div class="catalogue__main-2">
               <div id="accordion-2" class="catalogue__block catalogue__block--germany">
                 <ul class="catalogue__accordion">
                   <li class="catalogue__item">
                     <button class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__header-text">C 1400 по 1499 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div>
@@ -585,7 +585,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header" tabindex="0">
-                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__header-text">C 1500 по 1599 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -600,7 +600,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__header-text">C 1600 по 1699 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -615,7 +615,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__header-text">C 1700 по 1799 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -630,7 +630,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__header-text">C 1800 по 1899 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -645,7 +645,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__header-text">C 1900 по 1999 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -660,7 +660,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__header-text">C 2000 г.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -685,11 +685,11 @@
             традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть
             функционально разнесены на независимые элементы.</p>
           <div class="catalogue__main">
-            <div class="catalogue__main--1">
+            <div class="catalogue__main-1">
               <article class="catalogue__article catalogue__article--active catalogue__article--first" id="tabs-1"
                 data-target="6">
                 <div class="catalogue__left-img">
-                  <img src="img/catalogue img1.jpg" alt="Доменико Гирландайо">
+                  <img src="img/catalogue-img1.jpg" alt="Доменико Гирландайо">
                 </div>
                 <h3 class="catalogue__artist-name">Доменико Гирландайо</h3>
                 <p class="catalogue__date">2 июня 1448 — 11 января 1494.</p>
@@ -710,12 +710,12 @@
                 <a href="#" class="catalogue__article-ref">В галерею</a>
               </article>
             </div>
-            <div class="catalogue__main--2">
+            <div class="catalogue__main-2">
               <div id="accordion" class="catalogue__block catalogue__block--italian">
                 <ul class="catalogue__accordion">
                   <li class="catalogue__item">
                     <button class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__header-text">C 1400 по 1499 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div>
@@ -798,7 +798,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header" tabindex="0">
-                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__header-text">C 1500 по 1599 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -813,7 +813,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__header-text">C 1600 по 1699 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -828,7 +828,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__header-text">C 1700 по 1799 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -843,7 +843,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__header-text">C 1800 по 1899 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -858,7 +858,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__header-text">C 1900 по 1999 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -873,7 +873,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__header-text">C 2000 г.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -897,7 +897,7 @@
             он
             языком, необходимыми реторический однажды курсивных даль буквоград имеет дороге. Точках?</p>
           <div class="catalogue__main">
-            <div class="catalogue__main--1">
+            <div class="catalogue__main-1">
               <article class="catalogue__article catalogue__article--active catalogue__article--fifth" id="tabs-7"
                 data-target="25">
                 <div class="catalogue__left-img">
@@ -919,12 +919,12 @@
                 <a href="#" class="catalogue__article-ref">В галерею</a>
               </article>
             </div>
-            <div class="catalogue__main--2">
+            <div class="catalogue__main-2">
               <div id="accordion-3" class="catalogue__block catalogue__block--rus">
                 <ul class="catalogue__accordion">
                   <li class="catalogue__item">
                     <button class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__header-text">C 1400 по 1499 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div>
@@ -941,7 +941,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header" tabindex="0">
-                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__header-text">C 1500 по 1599 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -956,7 +956,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__header-text">C 1600 по 1699 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -971,7 +971,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__header-text">C 1700 по 1799 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -986,7 +986,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__header-text">C 1800 по 1899 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1001,7 +1001,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__header-text">C 1900 по 1999 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1016,7 +1016,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__header-text">C 2000 г.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1039,9 +1039,8 @@
             рыбные тексты. Все назад снова но даже взгляд осталось алфавит маленькая если своего вскоре послушавшись,
             строчка деревни наш имеет свой запятой текстами!</p>
           <div class="catalogue__main">
-            <div class="catalogue__main--1">
-              <article class="catalogue__article catalogue__article--active catalogue__article--six" id=""
-                data-target="30">
+            <div class="catalogue__main-1">
+              <article class="catalogue__article catalogue__article--active catalogue__article--six" data-target="30">
                 <div class="catalogue__left-img">
                   <img src="img/HieronymusBosch.jpg" alt="HieronymusBosch">
                 </div>
@@ -1055,12 +1054,12 @@
                   представлены копии всех его произведений.</p>
               </article>
             </div>
-            <div class="catalogue__main--2">
+            <div class="catalogue__main-2">
               <div id="accordion-4" class="catalogue__block catalogue__block--belgium">
                 <ul class="catalogue__accordion">
                   <li class="catalogue__item">
                     <button class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1400 по 1499 гг.</h3>
+                      <span class="catalogue__header-text">C 1400 по 1499 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div>
@@ -1074,7 +1073,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header" tabindex="0">
-                      <h3 class="catalogue__header-text">C 1500 по 1599 гг.</h3>
+                      <span class="catalogue__header-text">C 1500 по 1599 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1089,7 +1088,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1600 по 1699 гг.</h3>
+                      <span class="catalogue__header-text">C 1600 по 1699 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1104,7 +1103,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1700 по 1799 гг.</h3>
+                      <span class="catalogue__header-text">C 1700 по 1799 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1119,7 +1118,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1800 по 1899 гг.</h3>
+                      <span class="catalogue__header-text">C 1800 по 1899 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1134,7 +1133,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 1900 по 1999 гг.</h3>
+                      <span class="catalogue__header-text">C 1900 по 1999 гг.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1149,7 +1148,7 @@
                   </li>
                   <li class="catalogue__item">
                     <button type="button" class="catalogue__accordion-header">
-                      <h3 class="catalogue__header-text">C 2000 г.</h3>
+                      <span class="catalogue__header-text">C 2000 г.</span>
                       <span class="catalogue__accordion-button"></span>
                     </button>
                     <div class="catalogue__text-empty">
@@ -1173,12 +1172,11 @@
       <div class="container events__container">
         <h2 class="events__header">События</h2>
         <div class="events__swiper" id="#swiper-5">
-          <!-- <div class="events__swiper-container swiper-container--eventsinitialized"> -->
           <div class="events__articles">
             <article
               class="events__articles-content events__articles-content-active events__articles-content--first swiper-slide events__swiper-slide">
               <div class="events__articles-img">
-                <img class="events__articles-img--first" src="img/events1.jpg" alt="Рисунок рука и перо">
+                <img class="events__articles-img-first" src="img/events1.jpg" alt="Рисунок рука и перо">
               </div>
               <p class="events__articles-museum">Музей им. Щусева </p>
               <p class="events__articles-date">с 20 марта по 30 апреля</p>
@@ -1192,9 +1190,10 @@
                 <a href="#" class="events__articles-ref">Подробнее</a>
               </div>
             </article>
-            <article class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
+            <article
+              class="events__articles-content events__articles-content-active events__articles-content--second swiper-slide events__swiper-slide">
               <div class="events__articles-img">
-                <img class="events__articles-img--second" src="img/events2.jpg" alt="Фото двое мужчин">
+                <img class="events__articles-img-second" src="img/events2.jpg" alt="Фото двое мужчин">
               </div>
               <p class="events__articles-museum">ММОМА</p>
               <p class="events__articles-date">24 марта 19:00</p>
@@ -1209,7 +1208,7 @@
             </article>
             <article class="events__articles-content events__articles-content--third swiper-slide events__swiper-slide">
               <div class="events__articles-img">
-                <img class="events__articles-img--third" src="img/events3.jpg" alt="Фото галереи">
+                <img class="events__articles-img-third" src="img/events3.jpg" alt="Фото галереи">
               </div>
               <p class="events__articles-museum">Еврейский музей</p>
               <p class="events__articles-date">с 31 марта по 21 апреля</p>
@@ -1224,7 +1223,7 @@
             </article>
             <article class="events__articles-content events__articles-content--four swiper-slide events__swiper-slide">
               <div class="events__articles-img">
-                <img class="events__articles-img--four" src="img/events4.jpg" alt="Картина разноцветные мазки">
+                <img class="events__articles-img-four" src="img/events4.jpg" alt="Картина разноцветные мазки">
               </div>
               <p class="events__articles-museum">Третьяковка на Крымском валу</p>
               <p class="events__articles-date">с 30 марта по 30 апреля</p>
@@ -1240,7 +1239,7 @@
             </article>
             <article class="events__articles-content events__articles-content--five swiper-slide events__swiper-slide">
               <div class="events__articles-img">
-                <img class="events__articles-img--five" src="img/events5.jpg" alt="Картина разноцветные мазки">
+                <img class="events__articles-img-five" src="img/events5.jpg" alt="Картина разноцветные мазки">
               </div>
               <p class="events__articles-museum">ММАМ</p>
               <p class="events__articles-date">с 8 апреля по 20 мая</p>
@@ -1260,7 +1259,6 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </section>
     <section class="editions" id="editions">
       <div class="container editions__container">
@@ -1268,7 +1266,8 @@
           <div class="editions__left">
             <h2 class="editions__header">Издания</h2>
             <div>
-              <form class="editions__accordion-wrap editions__checkbox-mobile editions__checkbox-mobile--close" action="/" method="post">
+              <form class="editions__accordion-wrap editions__checkbox-mobile editions__checkbox-mobile--close"
+                action="/" method="post">
                 <div class="editions-accordion">
                   <div class="editions__question">
                     <h3 class="editions__categories-header">Категории
@@ -1276,164 +1275,236 @@
                     </h3>
                     <div class="editions__categories">
                       <div class="editions__item">
-                        <label class="editions__label editions__checkbox-wrap"  data-position="1" data-target="check-1">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1" data-path="check-1">
+                        <label class="editions__label editions__checkbox-wrap" data-position="1" data-target="check-1">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-1" name="check-1"
+                            data-path="check-1">
                           <span class="editions__ckeckbox-text">Бестселлеры</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="2" data-target="check-2">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2" data-path="check-2">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-2" name="check-2"
+                            data-path="check-2">
                           <span class="editions__ckeckbox-text">Искусство</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset"  type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="3" data-target="check-3">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3" data-path="check-3">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-3" name="check-3"
+                            data-path="check-3">
                           <span class="editions__ckeckbox-text">Архитектура</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
-                        <label class="editions__label editions__checkbox-wrap  editions__checkbox-active" data-position="4" data-target="check-4">
+                        <label class="editions__label editions__checkbox-wrap  editions__checkbox-active"
+                          data-position="4" data-target="check-4">
                           <input type="checkbox" class="editions__checkbox visually-hidden" id="check-4" name="check-4"
-                            checked aria-checked="true" data-path="check-4">
+                            checked data-path="check-4">
                           <span class="editions__ckeckbox-text">Дизайн</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="5" data-target="check-5">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5" data-path="check-5">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-5" name="check-5"
+                            data-path="check-5">
                           <span class="editions__ckeckbox-text">Мода</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="6" data-target="check-6">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6" data-path="check-6">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-6" name="check-6"
+                            data-path="check-6">
                           <span class="editions__ckeckbox-text">Детям</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="7" data-target="check-7">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7" data-path="check-7">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-7" name="check-7"
+                            data-path="check-7">
                           <span class="editions__ckeckbox-text">Художественная литература</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="8" data-target="check-8">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8" data-path="check-8">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-8" name="check-8"
+                            data-path="check-8">
                           <span class="editions__ckeckbox-text">Публицистика</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
                         <label class="editions__label editions__checkbox-wrap" data-position="9" data-target="check-9">
-                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9" data-path="check-9">
+                          <input type="checkbox" class="editions__checkbox visually-hidden" id="check-9" name="check-9"
+                            data-path="check-9">
                           <span class="editions__ckeckbox-text">Путеводители</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
-                        <label class="editions__label editions__checkbox-wrap" data-position="10" data-target="check-10">
+                        <label class="editions__label editions__checkbox-wrap" data-position="10"
+                          data-target="check-10">
                           <input type="checkbox" class="editions__checkbox visually-hidden" id="check-10"
                             name="check-10" data-path="check-10">
                           <span class="editions__ckeckbox-text">Философия</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
-                        <label class="editions__label editions__checkbox-wrap" data-position="check-11" data-target="check-11">
+                        <label class="editions__label editions__checkbox-wrap" data-position="check-11"
+                          data-target="check-11">
                           <input type="checkbox" class="editions__checkbox visually-hidden" id="check-11"
                             name="check-11" data-path="check-11">
                           <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                       <div class="editions__item">
-                        <label class="editions__label editions__checkbox-wrap" data-position="12" data-target="check-12">
+                        <label class="editions__label editions__checkbox-wrap" data-position="12"
+                          data-target="check-12">
                           <input type="checkbox" class="editions__checkbox visually-hidden" id="check-12"
                             name="check-12" data-path="check-12">
                           <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
                           <span class="editions__span"></span>
-                          <button class="editions__checkbox-btn reset" type="button">
-                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z" fill="#C283F3"/>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z" fill="#C283F3"/>
-                            </svg>                        
-                          </button>
                         </label>
+                        <button class="editions__checkbox-btn reset" type="button">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z"
+                              fill="#C283F3" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z"
+                              fill="#C283F3" />
+                          </svg>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1442,10 +1513,10 @@
             </div>
             <h3 class="editions__form-header">Цена</h3>
             <div class="editions__price-form">
-              <label for="Минимальная цена" class="editions__from">От</label>
-              <input id="min-price" name="Минимальная цена" placeholder="50" class="editions__min-price">
-              <label for="Максимальная цена" class="editions__before">До</label>
-              <input class="editions__max-price" id="max-price" name="Максимальная цена" placeholder="25000">
+              <label for="min-price" class="editions__from">От</label>
+              <input id="min-price" name="min-price" placeholder="50" class="editions__min-price">
+              <label for="max-price" class="editions__before">До</label>
+              <input class="editions__max-price" id="max-price" name="max-price" placeholder="25000">
               <p class="editions__currency">руб.</p>
             </div>
           </div>
@@ -1468,7 +1539,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Искусство цвета</p>
+                    <h3 class="editions__block-left-element">Искусство цвета</h3>
                     <p class="editions__block-price">620 руб</p>
                     <p class="editions__article-text">Иттен, Иоханнес</p>
                   </div>
@@ -1481,7 +1552,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Типографика</p>
+                    <h3 class="editions__block-left-element">Типографика</h3>
                     <p class="editions__block-price">2 450 руб</p>
                     <p class="editions__article-text">Рудер, Эмиль</p>
                   </div>
@@ -1494,7 +1565,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Книга про буквы</p>
+                    <h3 class="editions__block-left-element">Книга про буквы</h3>
                     <p class="editions__block-price">2 200 руб</p>
                     <p class="editions__article-text">Гордон, Юрий </p>
                   </div>
@@ -1507,7 +1578,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Николай Ильин</p>
+                    <h3 class="editions__block-left-element">Николай Ильин</h3>
                     <p class="editions__block-price">1 100 руб</p>
                     <p class="editions__article-text">Кричевский, Владимир</p>
                   </div>
@@ -1520,7 +1591,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Модульные сетки в граф...</p>
+                    <h3 class="editions__block-left-element">Модульные сетки в граф...</h3>
                     <p class="editions__block-price">1 450 руб</p>
                     <p class="editions__article-text">Мюллер-Брокманн, Йозеф</p>
                   </div>
@@ -1533,7 +1604,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Эволюция графических ст...</p>
+                    <h3 class="editions__block-left-element">Эволюция графических ст...</h3>
                     <p class="editions__block-price">3 200 руб</p>
                     <p class="editions__article-text"> Хеллер, Чваст</p>
                   </div>
@@ -1546,7 +1617,7 @@
                     </picture>
                   </div>
                   <div class="editions__article-text-block">
-                    <p class="editions__block-left-element">Искусство и визуальное в...</p>
+                    <h3 class="editions__block-left-element">Искусство и визуальное в...</h3>
                     <p class="editions__block-price">2 200 руб</p>
                     <p class="editions__article-text">Арнхейм, Рудольф</p>
                   </div>
@@ -1569,23 +1640,22 @@
               чего
               возрастает
               их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
-              <a class="projects__tooltip__span" href="#" id="myButton-1"></a>
+              <button class="projects__tooltip__span" id="myButton-1" type="button"></button>
               обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
               принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-              <a class="projects__tooltip__span" href="#" id="myButton-2"></a>
+              <button class="projects__tooltip__span" id="myButton-2" type="button"></button>
               исключительно в разрезе маркетинговых и финансовых
-              <a class="projects__tooltip__span" href="#" id="myButton-3"></a>
+              <button class="projects__tooltip__span" id="myButton-3" type="button"></button>
               предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов
               призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до
               степени совершенной неузнаваемости. Подробнее:
-              <a href="" class="projects__description-ref">blanchard-&nbsp;art.ru/projects/about</a>
+              <a class="projects__description-ref" href="#">blanchard-&nbsp;art.ru/projects/about</a>
             </p>
           </div>
         </div>
-
         <h3 class="projects__partners-header">Партнёры проектов:</h3>
         <div class="projects__main-block">
-          <div class="projects__button-prev" aria-label="предыдущий слайд"></div>
+          <div class="projects__button-prev"></div>
           <div class="swiper projects__swiper-container" id="swiper-4">
             <div class="swiper-wrapper projects__swiper-wrapper">
               <!-- Slides -->
@@ -1618,7 +1688,7 @@
               </a>
             </div>
           </div>
-          <div class="projects__button-next" aria-label="следующий слайд"></div>
+          <div class="projects__button-next"></div>
         </div>
       </div>
     </section>

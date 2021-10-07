@@ -104,23 +104,30 @@
 
 .projects__sw-slide {
   position: relative;
-  max-height: 150px;
   flex-shrink: 0;
   cursor: pointer;
   display: block;
   filter: grayscale(100%);
   opacity: 0.4;
-  border: 1px solid transparent;
   outline-offset: -1px;
-  transition: border .2s;
-  transition: border .3s ease-in-out, outline-offset .3s ease-in-out, filter .3s ease-in-out;
+  transition: outline-offset .3s ease-in-out, filter 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .projects__sw-slide:focus {
   filter: grayscale(0%);
   opacity: 1;
-  border: 1px solid var(--add-color);
 }
+
+.projects__sw-img {
+  border: 1px solid transparent;
+  transition: border-color .3s ease-in-out;
+}
+
+.projects__sw-slide:focus .projects__sw-img {
+  border-color: var(--add-color);
+}
+
+
 
 .projects__sw-slide:hover {
   filter: grayscale(0%);
@@ -145,11 +152,13 @@
 .projects__tooltip__span {
   display: inline-block;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
   width: 16px;
   height: 16px;
   background-image: url(../img/i\ -\ Тултип.svg);
   background-repeat: no-repeat;
-  transition: all .3s ease-in-out;
+  transition: background-image .3s ease-in-out;
 }
 
 .projects__tooltip__span:hover,
@@ -242,7 +251,7 @@
   }
   
   .projects__sw-img {
-    max-height: 128px;
+    max-height: 132px;
   }
 }
 

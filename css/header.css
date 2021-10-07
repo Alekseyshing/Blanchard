@@ -62,7 +62,7 @@
 }
 
 .header__nav-list-item {
-  margin-right: 63px;
+  margin-right: 60px;
 }
 
 .header__nav-list-item:last-child {
@@ -70,10 +70,13 @@
 }
 
 .header__nav-link {
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: var(--main-color);
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out,;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
 }
 
 .header__burger {
@@ -170,8 +173,8 @@
   align-items: center;
   color: var(--main-color);
   background-color: transparent;
-  border: none;
   padding: 0;
+  border: 1px solid transparent;
   transition: color .3s ease-in-out, background-color .1s ease-in-out, border .3s ease-in-out, outline .3s ease-in-out, outline-offset .3s ease-in-out;
 }
 
@@ -538,9 +541,10 @@
     top: 40px;
     right: 30px;
     width: auto;
-    height: 30px;
+    height: 27px;
     display: flex;
-    background-color: #18171B;
+      align-items: end;
+    background-color: rgba(0, 0, 0, .9);
     animation-name: fade-in;
     animation-duration: .5s;
   }
@@ -577,14 +581,23 @@
 
 @media (max-width: 1024px) {
   .header__container {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    min-height: 99px;
   }
 
   .header__logo-mobile {
     position: absolute;
     left: calc(50% - 94.5px);
     display: inline-block;
+  }
+
+  .header__search-menu-active {
+    max-height: 20px;
+  }
+
+  .header__search-btn {
+    max-height: 25px;
   }
   
   .header__img {
@@ -841,6 +854,7 @@
     .header__container {
       padding-top: 10px;
       padding-bottom: 7px;
+      min-height: 20px;
     }
 
     .header__nav-list {

@@ -6,23 +6,22 @@ a {
   display: flex;
   align-items: center;
   padding: 0;
+  margin-bottom: 23px;
   outline: none;
-  /* padding-left: 2px;
-  padding-right: 6px; */
-  border: none;
+  border: 1px solid transparent;
   background-color: transparent;
   font-size: 18px;
   font-weight: 400;
   max-width: 220px;
   height: 26px;
   color: #ffffff;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out, outline 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .header__nav-buttom-list {
   display: flex;
-  max-width: 1037px;
+  min-width: 1040px;
   list-style: none;
 }
 
@@ -303,6 +302,9 @@ a {
 
 .header__select:focus-visible {
   background-color: var(--two);
+  border: 1px solid var(--two);
+  outline: 6px solid var(--two);
+  outline-offset: 0;
 }
 
 .header__select:active {

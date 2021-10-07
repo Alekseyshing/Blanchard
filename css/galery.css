@@ -121,14 +121,12 @@ html {
 .galery__image-slider {
   position: relative;
   overflow: hidden;
-  display: block;
   max-height: 350px;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   cursor: pointer;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  transition: all .3s ease-in-out;
+  /* background-size: cover;
+  background-position: center; */
+  transition: border-color .3s ease-in-out;
 }
 
 .galery__img {
@@ -138,6 +136,16 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 3px solid transparent;
+  transition: border-сolor .3s ease-in-out;
+}
+
+.galery__image-slider:focus-visible .galery__img {
+  border-color: var(--two);
+}
+
+.galery__image-slider:active:not(focus-visible) .galery__img {
+  border-color: #D1A9F0;
 }
 
 .galery__image-slider::before {
@@ -146,8 +154,9 @@ html {
   z-index: 1;
   display: block;
   padding-top: 100%;
+  width: 100%;
   border: 3px solid transparent;
-  transition: background-color .3s ease, border-color .3s ease;
+  transition: background-color .3s ease, border-сolor .3s ease-in-out;
 }
 
 .galery__image-slider::after {
@@ -164,7 +173,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-clip: content-box;
-  transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out, background-image .3s ease-in-out;
   background-image: url(../img/gallery-hover.png);
   opacity: 0;
 }
@@ -173,10 +182,18 @@ html {
   opacity: 1;
 }
 
-.galery__image-slider:active::before {
+.galery__image-slider:active:not(focus-visible)::before {
   background-color: rgba(194, 131, 243, 0.4);
   opacity: 1;
 }
+
+.galery__image-slider:focus {
+  outline: none;
+}
+
+/* .galery__image-slider:focus-visible::before {
+  border-color: var(--two);
+} */
 
 .galery__image-slider:active::after {
   background-image: url(../img/gallery-hover.png);
@@ -318,12 +335,13 @@ html {
     max-height: 280px;
   }
 
-  .galery__img {
-    height: 280px;
+  .galery__swiper-pagination {
+    top: 9px;
+    left: 23px;
   }
 
   .galery__label {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 
   .choices__inner {
@@ -464,7 +482,8 @@ html {
     max-height: 446px;
   }
 
-  .galery__image-slider {
+  .galery__image-slider,
+  .galery__image-slider::before  {
     min-height: 367px;
   }
 

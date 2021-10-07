@@ -227,6 +227,12 @@
   border: 3px solid #D1A9F0;
 }
 
+.js-validate-error-label {
+  transform: translate(20px, -80px);
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media (max-width: 1360px) {
   .contacts__left {
     max-height: 700px;
