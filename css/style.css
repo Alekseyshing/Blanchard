@@ -19,6 +19,11 @@ body {
   line-height: 1;
 }
 
+.fix {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+  
 button, input {
   font: inherit;
 }

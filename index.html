@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/galery.css">
+  <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/catalogue.css">
   <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/editions.css">
@@ -50,10 +51,11 @@
   <script src="js/inputmask.min.js" defer></script>
   <script src="js/editionsswiperjs.js" defer></script>
   <script src="js/mobilecheckbox.js" defer></script>
+  <script src="js/popup.js" defer></script>
   <script src="js/index.js" defer></script>
 </head>
 
-<body>
+<body class="body">
   <div class="top-wrapper">
     <header class="header">
       <div class="header__main-block">
@@ -312,40 +314,52 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-slider galery__swiper-slider">
                 <!-- Slides -->
-                <a class="swiper-slide galery__image-slider galery__image-slider--1 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--1 swiper-zoom-container" href="#"
+                  data-path="galery-content-1" onclick="event.preventDefault()"> 
                   <picture><img class="galery__img" src="img/Rectangle1.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--2 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--2 swiper-zoom-container" href="#"
+                  data-path="galery-content-2" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle2.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--3 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--3 swiper-zoom-container" href="#"
+                  data-path="galery-content-3" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle3.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--4 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--4 swiper-zoom-container" href="#"
+                  data-path="galery-content-4" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle4.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--5 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--5 swiper-zoom-container" href="#"
+                  data-path="galery-content-5" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle5.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--6 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--6 swiper-zoom-container" href="#"
+                  data-path="galery-content-6" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle6.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--7 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--7 swiper-zoom-container" href="#"
+                  data-path="galery-content-7" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle7.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--8 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--8 swiper-zoom-container" href="#"
+                  data-path="galery-content-8" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle8.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--9 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--9 swiper-zoom-container" href="#"
+                  data-path="galery-content-9" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle9.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--10 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--10 swiper-zoom-container" href="#"
+                  data-path="galery-content-10" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle10.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--11 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--11 swiper-zoom-container" href="#"
+                  data-path="galery-content-11" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle11.jpg" alt="картина галереи"></picture>
                 </a>
-                <a class="swiper-slide galery__image-slider galery__image-slider--12 swiper-zoom-container" href="#">
+                <a class="swiper-slide galery__image-slider galery__image-slider--12 swiper-zoom-container" href="#"
+                  data-path="galery-content-12" onclick="event.preventDefault()">
                   <picture><img class="galery__img" src="img/Rectangle12.jpg" alt="картина галереи"></picture>
                 </a>
               </div>
@@ -356,6 +370,318 @@
               Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
               <a href="" class="galery__text-authorize">авторизуйтесь</a>
               , либо воспользуйтесь лицензией.
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-1">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle1.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-2">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle2.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-3">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle3.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-4">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle4.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-5">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle5.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-6">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle6.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-7">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle7.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-8">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle8.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-9">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle9.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-10">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle10.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-11">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle11.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="galery__popup" data-target="galery-content-12">
+            <div class="galery__popup-body">
+              <img class="galery__popup-img" src="img/Rectangle12.jpg" alt="картина галереи">
+              <div class="galery__popup-box">
+                <button class="galery__popup-btn">
+                  <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                      fill="black" />
+                  </svg>
+                </button>
+                <h3 class="galery__popup-artist">Казимир Малевич</h3>
+                <span class="galery__popup-title">“Женщина с граблями”</span>
+                <span class="galery__popup-date">1931-1932</span>
+                <p class="galery__popup-text">
+                  Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание
+                  в 1930&#8209;1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок
+                  в 1927 году.
+                </p>
+              </div>
             </div>
           </div>
         </div>

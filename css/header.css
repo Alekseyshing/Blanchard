@@ -939,6 +939,10 @@
       transition: fade-in .3s ease-in-out,;
       z-index: 5;
     } 
+
+    .header__search-btn {
+      align-self: flex-end;
+    }
   }
 }
 

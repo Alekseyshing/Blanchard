@@ -1,0 +1,105 @@
+.galery__popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  overflow-y: auto;
+  color: #000000;
+  background: rgba(0, 0, 0, .6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out, visability .3s ease-in-out;
+}
+
+.galery__popup-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: cursor .3s ease-in-out;
+}
+
+.galery__popup-body {
+  position: relative;
+  display: flex;
+  width: 900px;
+  min-height: 500px;
+  background: #ffffff;
+  box-shadow: 0px 0px 80px rgb(0 0 0 / 80%);
+  opacity: 0;
+  transform: scale(.5, .5);
+  transition: opacity .6s ease-in-out, transform .6s ease-in-out;
+}
+
+.galery__popup--active .galery__popup-body {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.galery__popup-img {
+  display: inline-flex;
+  object-fit: cover;
+  min-width: 400px;
+  z-index: -1;
+}
+
+
+.galery__popup-icon path {
+  transition: fill .3s ease-in-out;
+}
+
+.galery__popup-btn:hover svg path {
+  fill: var(--add-color);
+}
+
+.galery__popup-btn:active svg path {
+  fill: #7943A4;
+}
+.galery__popup-box {
+  padding: 121px 50px 121px 48px;
+}
+
+.galery__popup-artist {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.galery__popup-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.galery__popup-date {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 12px;
+  color: #969696;
+}
+
+.galery__popup-text {
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.galery__popup--active {
+  opacity: 1;
+  visibility: visible;
+}
+/* 
+.body.galery__popup--active {
+  overflow-y: hidden;
+} */
