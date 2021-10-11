@@ -37,6 +37,24 @@
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/footer.css">
 
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/apple-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
@@ -1593,7 +1611,7 @@
             <h2 class="editions__header">Издания</h2>
             <div>
               <form class="editions__accordion-wrap editions__checkbox-mobile editions__checkbox-mobile--close"
-                action="/" method="post">
+                action="/" method="POST">
                 <div class="editions-accordion">
                   <div class="editions__question">
                     <h3 class="editions__categories-header">Категории
@@ -2027,7 +2045,9 @@
           <div class="contacts__left">
             <h3 class="contacts__company-title">Шоурум №4</h3>
             <p class="contacts__company-adress">Леонтьевский переулок, дом 5/1</p>
-            <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <form class="contacts__form" action="mail.php" enctype="multipart/form-data" method="POST">
+              <input type="hidden" name="admin_e-mail[]" value="alekseytim@mail.ru">
+              <input type="hidden" name="form__subject" value="Тема письма">
               <h4 class="contacts__form-header">Заказать обратный звонок</h4>
               <label for="name">
                 <span class="visually-hidden">Введите ваше имя</span>

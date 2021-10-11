@@ -507,11 +507,14 @@ window.addEventListener('resize', function () {
     itemSelectText: '',
   });
 
+    // Маска ввода телефона
   const selector = document.querySelector("input[type='tel']");
   const im = new Inputmask("+7 (999)-999-99-99");
-  
   im.mask(selector);
 
+
+    // валидация и отправка формы
+    
   new JustValidate('.contacts__form', {    
     rules: {
       name: {
@@ -530,15 +533,68 @@ window.addEventListener('resize', function () {
           console.log(phone)
           return Number(phone) && phone.length === 10
         },
-
-    },
+      
+      submitHandler: function (contacts__form) {
+        let formData = new formData(contacts__form);
+    
+        let xhr = new XMLHttpRequest ();
+    
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+              console.log('Отправлено')
+            }
+          }
+        }
+    
+        xhr.open('POST', 'mail.php', true);
+        xhr.send(formData);
+        contacts__form.reset();
+      }
   },
+},
+
   messages: {
     name: 'Недопустимый формат',
     tel: 'Это обязательное поле',
   },
   colorWrong: '#d11616'
-  
 });
+
+// function thanksPopup() {
+//   document.querySelector('.thanks-popup').classList.add('thanks-popup--active');
+//   document.querySelector('.thanks-popup__btn').addEventListener('click', function(){
+//     document.querySelector('.thanks-popup').classList.remove('thanks-popup--active')
+//   })
+// }
+
+// let validateForms = function(selector, rules, messages, successModal, yaGoal) {
+//   new window.JustValidate(selector, {
+//     rules: rules,
+//     messages: messages,
+//     submitHandler: function(form) {
+//       let formData = new FormData(form);
+
+//       let xhr = new XMLHttpRequest();
+
+//       xhr.onreadystatechange = function() {
+//         if (xhr.readyState === 4) {
+//           if (xhr.status === 200) {
+//             console.log('Отправлено');
+//             thanksPopup();
+//           }
+//         }
+//       }
+
+//       xhr.open('POST', 'mail.php', true);
+//       xhr.send(formData);
+
+//       form.reset();
+//     }
+//   });
+// }
+
+// validateForms('.form', { name: {required: true, minLength: 2, maxLength: 30, strength: {custom: '^[a-zA-Zа-яА-Я]+$'}, tel: {required: true} }, name: {required: 'Обязательное поле для заполнение'}, tel: {required: 'Обязательное поле для заполнение'} }, '.thanks-popup', 'send goal');
+
 });
 
