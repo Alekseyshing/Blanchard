@@ -138,14 +138,14 @@
 .contacts__form-btn::before { 
   position: absolute;
   display: block;
-  width: 100%;
+  min-width: 157px;
   height: 100%;
   content: '';
-  padding: 18px 36px;
-  top: 0px;
+  padding: 28px 36px;
+  top: -3px;
   right: 0;
   bottom: 0;
-  left: 0px;
+  left: -2px;
   border: 3px solid transparent;
   border-radius: 100px;
   transition: border .3s ease-in-out;

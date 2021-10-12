@@ -70,6 +70,7 @@
   <script src="js/editionsswiperjs.js" defer></script>
   <script src="js/mobilecheckbox.js" defer></script>
   <script src="js/popup.js" defer></script>
+  <script src="js/mail.js" defer></script>
   <script src="js/index.js" defer></script>
 </head>
 
@@ -78,7 +79,7 @@
     <header class="header">
       <div class="header__main-block">
         <div class="container header__container">
-          <button class="header__burger" type="button" id="burger">
+          <button class="header__burger" type="button" id="burger" aria-label="Меню">
             <span class="header__burger-span"></span>
           </button>
           <a class="header__logo header__logo-mobile" id="header-logo">
@@ -115,7 +116,7 @@
                     onclick="event.preventDefault()">Контакты</a>
                 </li>
               </ul>
-              <button class="header__enter-btn" type="button">
+              <button class="header__enter-btn" type="button" aria-label="Войти">
                 <svg class="header__enter-icn" width="13" height="13" viewBox="0 0 13 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -125,20 +126,20 @@
                 Войти
               </button>
             </nav>
-            <button type="button" id="search-btn" class="header__search-menu">
+            <button type="button" id="search-btn" class="header__search-menu" aria-label="Кнопка поиска">
               <span class="header__search-menu-span"></span>
             </button>
             <form class="header__form" id="search-form" action="https://jsonplaceholder.typicode.com/posts"
               method="POST">
-              <span class="visually-hidden">
-                Введите текст для поиска
-              </span>
-              <button class="header__search-btn" type="submit"></button>
-              <label class="header__label">
+              <button class="header__search-btn" type="submit" aria-label="Поиск"></button>
+              <label class="header__label" for="input-search-name">
+                <span class="visually-hidden">
+                  Введите текст для поиска
+                </span>
                 <input class="header__input" id="input-search-name" type="text" placeholder="Поиск по сайту"
                   name="input-search-name">
               </label>
-              <button class="header__btn-x" type="button">
+              <button class="header__btn-x" type="button" aria-label="Кнопка закрыть форму поиска">
                 <svg width="19" height="19" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.7">
                     <rect width="37.2801" height="3.72801"
@@ -394,7 +395,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle1.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -420,7 +421,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle2.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -446,7 +447,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle3.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -472,7 +473,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle4.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -498,7 +499,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle5.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -524,7 +525,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle6.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -550,7 +551,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle7.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -576,7 +577,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle8.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -602,7 +603,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle9.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -628,7 +629,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle10.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -654,7 +655,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle11.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -680,7 +681,7 @@
             <div class="galery__popup-body">
               <img class="galery__popup-img" src="img/Rectangle12.jpg" alt="картина галереи">
               <div class="galery__popup-box">
-                <button class="galery__popup-btn">
+                <button class="galery__popup-btn" aria-label="Закрыть модальное окно">
                   <svg class="galery__popup-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -711,20 +712,20 @@
           <h2 class="catalogue__header">Каталог</h2>
           <ul class="catalogue__flags">
             <li class="catalogue__flag-item">
-              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--1" data-path="one"></button>
+              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--1" data-path="one" aria-label="Флаг Франции"></button>
             </li>
             <li class="catalogue__flag-item">
-              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--2" data-path="two"></button>
+              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--2" data-path="two" aria-label="Флаг Германии"></button>
             </li>
             <li class="catalogue__flag-item">
               <button type="button" class="catalogue__fl-btn catalogue__fl-btn--3 catalogue__fl-btn--active"
-                data-path="three"></button>
+                data-path="three" aria-label="Флаг Италии"></button>
             </li>
             <li class="catalogue__flag-item">
-              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--4" data-path="four"></button>
+              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--4" data-path="four" aria-label="Флаг России"></button>
             </li>
             <li class="catalogue__flag-item">
-              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--5" data-path="five"></button>
+              <button type="button" class="catalogue__fl-btn catalogue__fl-btn--5" data-path="five" aria-label="Флаг Бельгии"></button>
             </li>
           </ul>
         </div>
@@ -1625,7 +1626,7 @@
                           <span class="editions__ckeckbox-text">Бестселлеры</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1644,7 +1645,7 @@
                           <span class="editions__ckeckbox-text">Искусство</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1663,7 +1664,7 @@
                           <span class="editions__ckeckbox-text">Архитектура</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1683,7 +1684,7 @@
                           <span class="editions__ckeckbox-text">Дизайн</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1702,7 +1703,7 @@
                           <span class="editions__ckeckbox-text">Мода</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1721,7 +1722,7 @@
                           <span class="editions__ckeckbox-text">Детям</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1740,7 +1741,7 @@
                           <span class="editions__ckeckbox-text">Художественная литература</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1759,7 +1760,7 @@
                           <span class="editions__ckeckbox-text">Публицистика</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1778,7 +1779,7 @@
                           <span class="editions__ckeckbox-text">Путеводители</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1798,7 +1799,7 @@
                           <span class="editions__ckeckbox-text">Философия</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1818,7 +1819,7 @@
                           <span class="editions__ckeckbox-text">Учебная&nbsp;литература</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1838,7 +1839,7 @@
                           <span class="editions__ckeckbox-text">Журналы&nbsp;и&nbsp;газеты</span>
                           <span class="editions__span"></span>
                         </label>
-                        <button class="editions__checkbox-btn reset" type="button">
+                        <button class="editions__checkbox-btn reset" type="button" aria-label="Удалить выбранное">
                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1984,16 +1985,16 @@
               чего
               возрастает
               их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
-              <button class="projects__tooltip__span" id="myButton-1" type="button"></button>
+              <button class="projects__tooltip__span" id="myButton-1" type="button" aria-label="Дополнительная информация"></button>
               обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
               принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-              <button class="projects__tooltip__span" id="myButton-2" type="button"></button>
+              <button class="projects__tooltip__span" id="myButton-2" type="button" aria-label="Дополнительная информация"></button>
               исключительно в разрезе маркетинговых и финансовых
-              <button class="projects__tooltip__span" id="myButton-3" type="button"></button>
+              <button class="projects__tooltip__span" id="myButton-3" type="button" aria-label="Дополнительная информация"></button>
               предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов
               призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до
               степени совершенной неузнаваемости. Подробнее:
-              <a class="projects__description-ref" href="#">blanchard-&nbsp;art.ru/projects/about</a>
+              <a class="projects__description-ref" href="#" aria-label="Проекты бланчард">blanchard-&nbsp;art.ru/projects/about</a>
             </p>
           </div>
         </div>
@@ -2046,8 +2047,8 @@
             <h3 class="contacts__company-title">Шоурум №4</h3>
             <p class="contacts__company-adress">Леонтьевский переулок, дом 5/1</p>
             <form class="contacts__form" action="mail.php" enctype="multipart/form-data" method="POST">
-              <input type="hidden" name="admin_e-mail[]" value="alekseytim@mail.ru">
-              <input type="hidden" name="form__subject" value="Тема письма">
+              <input type="hidden" name="admin_email[]" value="alekseytim@mail.ru">
+              <input type="hidden" name="form__subject" value="Заявка с сайта Blanchard">
               <h4 class="contacts__form-header">Заказать обратный звонок</h4>
               <label for="name">
                 <span class="visually-hidden">Введите ваше имя</span>
@@ -2059,16 +2060,16 @@
                 <input type="tel" name="phone" id="phone" class="contacts__form-tel" placeholder="Телефон*"
                   data-validate-field="tel">
               </label>
-              <button type="submit" class="contacts__form-btn">Заказать</button>
+              <button type="submit" class="contacts__form-btn" aria-label="Заказать">Заказать</button>
             </form>
             <div class="contacts__messengers">
               <h4 class="contacts__messangers-header">Связаться в один клик</h4>
               <ul class="contacts__messangers-list">
                 <li class="contacts__messangers-item">
-                  <a href="" class="contacts__whatsapp-logo"></a>
+                  <a href="" class="contacts__whatsapp-logo" aria-label="Приложение Ватсап"></a>
                 </li>
                 <li class="contacts__messangers-item">
-                  <a href="" class="contacts__telegram-logo"></a>
+                  <a href="" class="contacts__telegram-logo" aria-label="Приложение Телеграм"></a>
                 </li>
               </ul>
             </div>
@@ -2080,18 +2081,18 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <a class="footer__logo">
+      <a class="footer__logo" aria-label="Логотип бланчард">
         <img class="footer__img" src="img/logo.svg" alt="blanchard логотип">
       </a>
       <ul class="footer__social-media-list">
         <li class="footer__social-media-item">
-          <a href="" class="footer__vk" aria-label="vkontakte"></a>
+          <a href="" class="footer__vk" aria-label="Приложение вконтакте"></a>
         </li>
         <li class="footer__social-media-item">
-          <a href="" class="footer__inst" aria-label="instagram"></a>
+          <a href="" class="footer__inst" aria-label="Приложение инстаграм"></a>
         </li>
         <li class="footer__social-media-item">
-          <a href="" class="footer__facebook" aria-label="facebook"></a>
+          <a href="" class="footer__facebook" aria-label="Приложение фейсбук"></a>
         </li>
       </ul>
     </div>
