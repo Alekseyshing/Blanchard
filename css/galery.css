@@ -1,11 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .galery {
@@ -18,10 +27,17 @@ html {
 }
 
 .galery__content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;  
-  justify-content: space-between;
-  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;  
+  -webkit-box-pack: justify;  
+      -ms-flex-pack: justify;  
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .galery__swiper {
@@ -53,7 +69,9 @@ html {
   line-height: 32px;
   font-weight: 600;
   color: var(--main-color);
-  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .galery__header {
@@ -66,6 +84,8 @@ html {
 
 .galery__text-authorize {
   color: var(--add-color);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -74,8 +94,13 @@ html {
 }
 
 .galery__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .galery__label,
@@ -110,12 +135,18 @@ html {
 
 .galery__swiper-btns {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 2px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 25px 0 30px 0;
   max-width: 130px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .galery__image-slider {
@@ -126,6 +157,8 @@ html {
   cursor: pointer;
   /* background-size: cover;
   background-position: center; */
+  -webkit-transition: border-color .3s ease-in-out;
+  -o-transition: border-color .3s ease-in-out;
   transition: border-color .3s ease-in-out;
 }
 
@@ -135,8 +168,11 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 3px solid transparent;
+  -webkit-transition: border-сolor .3s ease-in-out;
+  -o-transition: border-сolor .3s ease-in-out;
   transition: border-сolor .3s ease-in-out;
 }
 
@@ -156,6 +192,8 @@ html {
   padding-top: 100%;
   width: 100%;
   border: 3px solid transparent;
+  -webkit-transition: background-color .3s ease, border-сolor .3s ease-in-out;
+  -o-transition: background-color .3s ease, border-сolor .3s ease-in-out;
   transition: background-color .3s ease, border-сolor .3s ease-in-out;
 }
 
@@ -168,11 +206,14 @@ html {
   top: 0;
   left: 0;
   padding: 25px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
   background-clip: content-box;
+  -webkit-transition: opacity .3s ease-in-out, background-image .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out, background-image .3s ease-in-out;
   transition: opacity .3s ease-in-out, background-image .3s ease-in-out;
   background-image: url(../img/gallery-hover.png);
   opacity: 0;
@@ -206,7 +247,9 @@ html {
   display: inline-block;
   top: 7px;
   left: 25px;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   max-width: 80px;
   max-height: 23px;
 }
@@ -225,7 +268,8 @@ html {
 
 .galery__nav-btn {
   position: relative;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 26px;
   height: 26px;
   background-color: #527590;
@@ -240,8 +284,12 @@ html {
   top: calc(50% - 7px / 2);
   width: 7px;
   height: 7px;
-  transform: rotate(45deg);
-  transform-origin: center;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
 }
 
 .galery__button-prev,
@@ -257,6 +305,8 @@ html {
   height: 30px;
   background-repeat: no-repeat;
   background-color: transparent;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   background-position: center;
 }
@@ -361,7 +411,10 @@ html {
   }
 
   .galery__content-wrap {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .galery__filter {
@@ -380,7 +433,8 @@ html {
   }
 
   .galery__content-wrap {
-    align-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
 
   .galery__swiper-slider {
@@ -424,15 +478,23 @@ html {
   }
 
   .galery__swiper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     max-width: 290px;
     min-height: 400px;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
-    align-items: center;
-    align-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
    }
 
    .galery__swiper-slider {
@@ -447,14 +509,17 @@ html {
    }
 
    .galery__swiper-btns {
-     align-self: center;
+     -ms-flex-item-align: center;
+         -ms-grid-row-align: center;
+         align-self: center;
      width: 157px;
    }
 
   .galery__img {   
     width: 290px;
     height: 367px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

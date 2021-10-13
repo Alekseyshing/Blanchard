@@ -576,7 +576,7 @@ function validateForms(selector, rules, successModal, yaGoal) {
   },
     rules: rules,
     submitHandler: function(contacts__form) {
-      let formData = new formData (contacts__form);
+      let formData = new FormData(contacts__form);
 
       let xhr = new XMLHttpRequest ();
 

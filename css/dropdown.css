@@ -1,10 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 a {
   text-decoration: none;
 }
 
 .header__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin-bottom: 23px;
   outline: none;
@@ -15,11 +26,15 @@ a {
   max-width: 220px;
   height: 26px;
   color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out, outline 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out, outline 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out, outline 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .header__nav-buttom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-width: 1040px;
   list-style: none;
@@ -51,9 +66,17 @@ a {
   margin-left: 4px;
   border-top: 1px solid;
   border-right: 1px solid;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  transform-origin: center;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
 }
 
 .header__select.header__drop-is-active {
@@ -61,7 +84,9 @@ a {
 }
 
 .header__select.header__drop-is-active::after {
-  transform: rotate(-45deg) translateY(4px);
+  -webkit-transform: rotate(-45deg) translateY(4px);
+      -ms-transform: rotate(-45deg) translateY(4px);
+          transform: rotate(-45deg) translateY(4px);
 }
 
 .header__select:active {
@@ -94,14 +119,18 @@ a {
 
 .header__dropdown.header__drop-is-active {
   display: block;
-  animation-name: dropdownOpen;
-  animation-duration: 0.5s;
+  -webkit-animation-name: dropdownOpen;
+          animation-name: dropdownOpen;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .header__dropdown.header__drop-is-disabled {
   display: block;
-  animation-name: dropdownClose;
-  animation-duration: 0.5s;
+  -webkit-animation-name: dropdownClose;
+          animation-name: dropdownClose;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .header__drop-list {
@@ -110,6 +139,8 @@ a {
 }
 
 .header__select-text {
+  -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, background-color .3s ease-in-out;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
@@ -131,6 +162,8 @@ a {
   border: none;
   background-color: rgba(216, 143, 153, 1);
   text-align: start;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -147,6 +180,8 @@ a {
   bottom: 0;
   left: 0px;
   border: 2px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -278,12 +313,30 @@ a {
   opacity: 1;
 }
 
+@-webkit-keyframes dropdownOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes dropdownOpen {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes dropdownClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 

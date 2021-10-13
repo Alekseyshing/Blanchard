@@ -6,7 +6,7 @@ foreach ( $_POST["admin_email"] as $key => $value ) {
 	array_push($admin_email, $value);
 }
 
-// $admin_email = 'alekseytim@mail.ru';
+$admin_email = 'alekseytim@mail.ru';
 
 $form_subject = trim($_POST["form_subject"]);
 

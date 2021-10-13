@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .galery__popup {
   position: fixed;
   width: 100%;
@@ -6,15 +13,23 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 50;
   overflow-y: auto;
   color: #000000;
   background: rgba(0, 0, 0, .6);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity .3s ease-in-out, visability .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out, visability .3s ease-in-out;
   transition: opacity .3s ease-in-out, visability .3s ease-in-out;
 }
 
@@ -27,35 +42,53 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  -webkit-transition: cursor .3s ease-in-out;
+  -o-transition: cursor .3s ease-in-out;
   transition: cursor .3s ease-in-out;
 }
 
 .galery__popup-body {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 900px;
   min-height: 500px;
   background: #ffffff;
-  box-shadow: 0px 0px 80px rgb(0 0 0 / 80%);
+  -webkit-box-shadow: 0px 0px 80px rgb(0 0 0 / 80%);
+          box-shadow: 0px 0px 80px rgb(0 0 0 / 80%);
   opacity: 0;
-  transform: scale(.5, .5);
+  -webkit-transform: scale(.5, .5);
+      -ms-transform: scale(.5, .5);
+          transform: scale(.5, .5);
+  -webkit-transition: opacity .6s ease-in-out, -webkit-transform .6s ease-in-out;
+  transition: opacity .6s ease-in-out, -webkit-transform .6s ease-in-out;
+  -o-transition: opacity .6s ease-in-out, transform .6s ease-in-out;
   transition: opacity .6s ease-in-out, transform .6s ease-in-out;
+  transition: opacity .6s ease-in-out, transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
 }
 
 .galery__popup--active .galery__popup-body {
   opacity: 1;
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .galery__popup-img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 400px;
   z-index: -1;
 }
 
 
 .galery__popup-icon path {
+  -webkit-transition: fill .3s ease-in-out;
+  -o-transition: fill .3s ease-in-out;
   transition: fill .3s ease-in-out;
 }
 
@@ -122,7 +155,9 @@
 
 @media (max-width:768px) {
   .galery__popup {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 15px 15px;
   }
 
@@ -146,7 +181,10 @@
   }
 
   .galery__popup-body {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 290px;
     min-height: 627px;
   }

@@ -1,13 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .catalogue__container {
   padding-top: 80px;
   padding-bottom: 46px;
 }
 
 .catalogue__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .catalogue__flag-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -36,6 +47,8 @@
 }
 
 .catalogue__flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -79,7 +92,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
+  -webkit-transition: border 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  transition: border 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+  -o-transition: box-shadow 300ms ease-in-out, border 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, border 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, border 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
 }
 
 .catalogue__fl-btn :last-child {
@@ -116,19 +133,33 @@
 }
 
 .catalogue__fl-btn:focus-visible::before {
-  box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
+          box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
 }
 
 .catalogue__fl-btn--active .catalogue__fl-btn::before {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 
 .catalogue__description--active {
   display: block;
   min-height: 130px;
-  animation-name: fade-in;
-  animation-duration: 1s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; 
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade-in {
@@ -142,13 +173,21 @@
 }
 
 .catalogue__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .catalogue__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .catalogue__main-1,
 .catalogue__main-2  {
@@ -166,8 +205,10 @@
 
 .catalogue__article--active {
   display: block;
-  animation-name: fade-in;
-  animation-duration: 1s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @keyframes fade-in {
@@ -180,6 +221,8 @@
 }
 
 .catalogue__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -242,22 +285,28 @@
 }  
 
 .catalogue__persons { 
+  -webkit-transition: color .3s ease-in-out; 
+  -o-transition: color .3s ease-in-out; 
   transition: color .3s ease-in-out;
 }
 
 .catalogue__persons-item {
   border-bottom: 1px solid transparent;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .catalogue__fl-btn:hover::before,
 .catalogue__fl-btn:focus-visible::before {
-  box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
+          box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
 }
 
 .catalogue__fl-btn:active::before {
   border: 2px solid #7943A4;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .catalogue__item:first-child {
@@ -269,9 +318,18 @@
   margin-top: -1px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #cacaca;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -293,9 +351,15 @@
 }
 
 .catalogue__accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   background-color: transparent;
   padding-top: 28px;
@@ -310,6 +374,8 @@
   font-size: 24px;
   line-height: 32px;
   color: var(--text-color);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -323,13 +389,21 @@
 }
 
 .catalogue__header-text {
+ -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
+ -o-transition: color .3s ease-in-out, background-color .3s ease-in-out;
  transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .catalogue__artists-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 730px;
   max-height: 298px;
 }
@@ -344,6 +418,8 @@
   outline: none;
   cursor: pointer;
   background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' fill='%23ECECEC'/%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' stroke='%23ECECEC'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");  background-repeat: no-repeat;
+  -webkit-transition: background-image .3s ease-in-out;
+  -o-transition: background-image .3s ease-in-out;
   transition: background-image .3s ease-in-out;
 }
 
@@ -356,10 +432,14 @@
   border: 1px solid transparent;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
   transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .catalogue__text-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -473,6 +553,8 @@
 }  
 
 .catalogue__persons { 
+  -webkit-transition: color .3s ease-in-out; 
+  -o-transition: color .3s ease-in-out; 
   transition: color .3s ease-in-out;
 }
 
@@ -482,12 +564,14 @@
 
 .catalogue__fl-btn:hover::before,
 .catalogue__fl-btn:focus-visible::before {
-  box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
+          box-shadow: 0px 0px 20px 0px rgba(157, 92, 208, 0.7);
 }
 
 .catalogue__fl-btn:active::before {
   border: 2px solid #7943A4;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 1650px) {
@@ -506,7 +590,8 @@
   }
 
   .catalogue__artists-list {
-    align-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     margin-right: 0;
     max-height: 384px;
     text-align: left;
@@ -521,7 +606,9 @@
   }
 
   .catalogue__flag-item {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .ui-accordion-content-active {
@@ -563,7 +650,10 @@
 
 @media (max-width: 960px) {
   .catalogue__main {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .catalogue__header {
@@ -582,7 +672,9 @@
 
   .catalogue__artists-list {
     max-height: 298px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .catalogue__persons-item {
@@ -590,9 +682,15 @@
   }
 
   .catalogue__flags {
-    justify-content: space-between;
-    align-items: center;
-    transform: translateY(1px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+            transform: translateY(1px);
   }
 
   .catalogue__fl-btn {
@@ -604,7 +702,9 @@
   }
 
   .catalogue__flag-item {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .ui-accordion-header {
@@ -649,7 +749,10 @@
 
 @media (max-width: 720px) { 
   .catalogue__head {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-height: 160px;
   }
 
@@ -742,19 +845,27 @@
   }
 
   .catalogue__fl-btn--1 {
-    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
 
   .catalogue__fl-btn--2 {
-    transform: translateX(-3px);
+    -webkit-transform: translateX(-3px);
+        -ms-transform: translateX(-3px);
+            transform: translateX(-3px);
   }
 
   .catalogue__fl-btn--4 {
-    transform: translateX(3px);
+    -webkit-transform: translateX(3px);
+        -ms-transform: translateX(3px);
+            transform: translateX(3px);
   }
 
   .catalogue__fl-btn--5 {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px);
   }
 
   .catalogue__header-text {
@@ -770,6 +881,8 @@
   .catalogue__accordion-button {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' fill='%23ECECEC'/%3E%3Cpath d='M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z' stroke='%23ECECEC'/%3E%3Cpath d='M33.3333 23.3333L25 31.6667L16.6667 23.3333' stroke='black'/%3E%3C/svg%3E ");  background-repeat: no-repeat;
     background-position: right;
+    -webkit-transition: background-image .3s ease-in-out;
+    -o-transition: background-image .3s ease-in-out;
     transition: background-image .3s ease-in-out;
   }
 

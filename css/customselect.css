@@ -1,6 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .choices {
   border-radius: 6px;
   border-color: #ffffff;
+  -webkit-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
 }
 
@@ -11,6 +20,8 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 2.5px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   padding: 0px 0px 0px 10px;
   min-height: 40px;
@@ -47,6 +58,8 @@
 
 .choices__item {
   color: rgba(255, 255, 255, 1);
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -117,6 +130,8 @@
 
 .choices__item--choice {
   border: 1px solid transparent;
+  -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
   transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
 }
 
@@ -131,6 +146,8 @@
 }
 
 .choices {
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 

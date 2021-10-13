@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .projects__container {
   padding-top: 80px;
   padding-bottom: 72px;
@@ -20,6 +27,8 @@
 .projects__description-ref {
   color: var(--add-color);
   cursor: pointer;
+  -webkit-transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
   transition: color .3s ease-in-out, border-bottom .3s ease-in-out, background-color .3s ease-in-out;
 
 }
@@ -57,12 +66,17 @@
   padding: 0;
   width: 35px;
   height: 35px;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   opacity: 0.4;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
+  -webkit-transition: opacity .3s ease-in-out, background-image .3s ease-in-out, cursor .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  transition: opacity .3s ease-in-out, background-image .3s ease-in-out, cursor .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  -o-transition: filter .3s ease-in-out, opacity .3s ease-in-out, background-image .3s ease-in-out, cursor .3s ease-in-out;
   transition: filter .3s ease-in-out, opacity .3s ease-in-out, background-image .3s ease-in-out, cursor .3s ease-in-out;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out, background-image .3s ease-in-out, cursor .3s ease-in-out, -webkit-filter .3s ease-in-out;
 }
 
 .projects__button-prev,
@@ -97,29 +111,41 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   text-align: center;
 }
 
 .projects__sw-slide {
   position: relative;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   cursor: pointer;
   display: block;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   opacity: 0.4;
   outline-offset: -1px;
+  -webkit-transition: outline-offset .3s ease-in-out, opacity 1s ease-in-out, -webkit-filter 1s ease-in-out;
+  transition: outline-offset .3s ease-in-out, opacity 1s ease-in-out, -webkit-filter 1s ease-in-out;
+  -o-transition: outline-offset .3s ease-in-out, filter 1s ease-in-out, opacity 1s ease-in-out;
   transition: outline-offset .3s ease-in-out, filter 1s ease-in-out, opacity 1s ease-in-out;
+  transition: outline-offset .3s ease-in-out, filter 1s ease-in-out, opacity 1s ease-in-out, -webkit-filter 1s ease-in-out;
 }
 
 .projects__sw-slide:focus {
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
   opacity: 1;
 }
 
 .projects__sw-img {
   border: 1px solid transparent;
+  -webkit-transition: border-color .3s ease-in-out;
+  -o-transition: border-color .3s ease-in-out;
   transition: border-color .3s ease-in-out;
 }
 
@@ -130,13 +156,15 @@
 
 
 .projects__sw-slide:hover {
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
   opacity: 1;
 }
 
 .projects__button-prev:hover,
 .projects__button-next:hover {
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
   opacity: 1;
   cursor: pointer;
 }
@@ -158,6 +186,8 @@
   height: 16px;
   background-image: url(../img/i\ -\ Тултип.svg);
   background-repeat: no-repeat;
+  -webkit-transition: background-image .3s ease-in-out;
+  -o-transition: background-image .3s ease-in-out;
   transition: background-image .3s ease-in-out;
 }
 
@@ -171,6 +201,8 @@
 }
 
 .tippy-box[data-theme~='light-1'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   width: 300px;
@@ -182,6 +214,8 @@
 }
 
 .tippy-box[data-theme~='light-2'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 264px;
   padding: 7px 11px 19px 11px;
@@ -192,6 +226,8 @@
 }
 
 .tippy-box[data-theme~='light-3'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
   max-width: 250px;
@@ -282,7 +318,9 @@
   }
 
   .projects__tooltip__span {
-    transform: translate(-2px, 4px);
+    -webkit-transform: translate(-2px, 4px);
+        -ms-transform: translate(-2px, 4px);
+            transform: translate(-2px, 4px);
   }
 }
 
@@ -329,7 +367,9 @@
   }
 
   .projects__tooltip__span {
-    transform: translate(-2px, 4px);
+    -webkit-transform: translate(-2px, 4px);
+        -ms-transform: translate(-2px, 4px);
+            transform: translate(-2px, 4px);
   }
 }
 
@@ -353,7 +393,9 @@
   }
 
   .projects__tooltip__span {
-    transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+        -ms-transform: translate(0px, 2px);
+            transform: translate(0px, 2px);
   }
 
   .projects__description {

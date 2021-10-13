@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .simplebar-content-wrapper {
   overflow: auto;
 }
@@ -20,7 +27,8 @@
 }
 
 .simplebar-visible {
-  transform: translate3d(0px, 190px, 0px)
+  -webkit-transform: translate3d(0px, 190px, 0px);
+          transform: translate3d(0px, 190px, 0px)
 }
 
 .header__scroll-1-inactive {
@@ -32,7 +40,8 @@
 }
 
 .header__scroll-list-item:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4)));
+  background: -o-linear-gradient(bottom, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
   background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
   outline: 2px solid #D1A9F0;
 }
-

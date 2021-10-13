@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .hero {
   padding-bottom: 45px;
   z-index: 1;
@@ -38,6 +45,8 @@
   color: var(--main-color);
   background-color: var(--add-color);
   cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
@@ -92,22 +101,43 @@
 }
 
 .hero__swiper-slide-active {
-  animation: zoomImage infinite 7s ease-in-out;
+  -webkit-animation: zoomImage infinite 7s ease-in-out;
+          animation: zoomImage infinite 7s ease-in-out;
   background-size: cover;
   overflow: hidden;
 }
 
-@keyframes zoomImage {
+@-webkit-keyframes zoomImage {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomImage {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -222,8 +252,13 @@
   }
 
   .hero__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 
@@ -232,19 +267,25 @@
     font-size: 32px;
     line-height: 43px;
     margin-right: 0;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .hero__text {
     max-width: 265px;
     font-size: 12px;
     line-height: 16px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .hero__btn {
     padding: 11px 19px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     font-size: 12px;
     line-height: 16px;
   }

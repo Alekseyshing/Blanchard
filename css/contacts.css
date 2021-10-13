@@ -1,10 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .contacts {
   overflow-x: hidden;
 }
 
 .contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts__header {
@@ -35,7 +46,8 @@
 }
 
 [class*="ground-pane"] {
-  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .contacts__company-title {
@@ -75,8 +87,13 @@
 }
 
 .contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contacts__form-tel {
@@ -90,7 +107,37 @@
   min-height: 40px;
   border: 1px solid var(--text-color);
   border-radius: 100px;
+  -webkit-transition: cursor .3s ease-in-out, background-color .3s ease-in-out;
+  -o-transition: cursor .3s ease-in-out, background-color .3s ease-in-out;
   transition: cursor .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.contacts__form-name::-webkit-input-placeholder, .contacts__form-tel::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.contacts__form-name::-moz-placeholder, .contacts__form-tel::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.contacts__form-name:-ms-input-placeholder, .contacts__form-tel:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+.contacts__form-name::-ms-input-placeholder, .contacts__form-tel::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
 }
 
 .contacts__form-name::placeholder,
@@ -114,6 +161,8 @@
   border-radius: 100px;
   background-color: transparent;
   color: var(--add-color);
+  -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
   transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
   z-index: 4;
 }
@@ -131,6 +180,8 @@
   padding: 23px 40px;
   border: 2px solid transparent;
   border-radius: 100px;
+  -webkit-transition: border .3s ease-in-out;
+  -o-transition: border .3s ease-in-out;
   transition: border .3s ease-in-out;
   margin-bottom: 10px;
 }
@@ -148,10 +199,14 @@
   left: -2px;
   border: 3px solid transparent;
   border-radius: 100px;
+  -webkit-transition: border .3s ease-in-out;
+  -o-transition: border .3s ease-in-out;
   transition: border .3s ease-in-out;
 }
 
 .contacts__messangers-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -172,6 +227,8 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: cursor .3s ease-in-out, opacity .3s ease-in-out, border .3s ease-in-out, border-radius .3s ease-in-out;
+  -o-transition: cursor .3s ease-in-out, opacity .3s ease-in-out, border .3s ease-in-out, border-radius .3s ease-in-out;
   transition: cursor .3s ease-in-out, opacity .3s ease-in-out, border .3s ease-in-out, border-radius .3s ease-in-out;
 }
 
@@ -228,7 +285,9 @@
 }
 
 .js-validate-error-label {
-  transform: translate(20px, -80px);
+  -webkit-transform: translate(20px, -80px);
+      -ms-transform: translate(20px, -80px);
+          transform: translate(20px, -80px);
   font-size: 12px;
   line-height: 16px;
 }
@@ -306,7 +365,10 @@
 
 @media (max-width: 580px) {
   .contacts__container {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     padding: 0;
   }
 
@@ -322,7 +384,9 @@
 
   .contacts__company-title,
   .contacts__company-adress {
-    transform: translateY(-378px);
+    -webkit-transform: translateY(-378px);
+        -ms-transform: translateY(-378px);
+            transform: translateY(-378px);
   }
 
   .contacts__map {
@@ -382,7 +446,9 @@
   }
 
   .contacts__form {
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
 
   .contacts__form-name {
@@ -401,6 +467,7 @@
   .contacts__form-btn::before {
     top: -2px;
     height: 40px;
+    min-width: 120px;
     padding: 11px 34px;
   }
 
@@ -410,7 +477,9 @@
   }
 
   .contacts__messengers {
-    transform: translateY(-68px);
+    -webkit-transform: translateY(-68px);
+        -ms-transform: translateY(-68px);
+            transform: translateY(-68px);
   }
 
   .contacts__messangers-header {
