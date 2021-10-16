@@ -588,7 +588,7 @@ function validateForms(selector, rules, successModal, yaGoal) {
         }
       }
 
-      xhr.open('POST', 'mail.php', true);
+      xhr.open('POST', 'https://formsubmit.co/alekseytim@mail.ru', true);
       xhr.send(formData);
       contacts__form.reset();
     }
