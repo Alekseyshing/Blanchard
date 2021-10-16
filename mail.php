@@ -20,7 +20,7 @@ $mail->Port = 465; // TCP port to connect to / этот порт может от
 
 $mail->setFrom('testskillbox5@gmail.com', 'Художественная галерея Blanchard'); // от кого будет уходить письмо?
 $mail->addAddress('alekseytim@mail.ru');     // Кому будет уходить письмо 
-$mail->addAddress('test@yandex.ru');               // Name is optional            // Name is optional
+$mail->addAddress('alekseytim@mail.ru');               // Name is optional            // Name is optional
 
 $mail->isHTML(true);                                  // Set email format to HTML
 
